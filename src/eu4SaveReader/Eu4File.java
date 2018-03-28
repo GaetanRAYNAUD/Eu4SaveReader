@@ -4,7 +4,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map.Entry;
+
+import eu4SaveReader.Utils.Util;
 
 public class Eu4File {
 	
@@ -16,12 +19,6 @@ public class Eu4File {
 	public Eu4File(String savePath) {
 		loadSave(savePath);
 		extractDate();
-	}
-	
-	public void extractPlayersInfos() {
-		for(Player p : players) {
-			extractInfosPlayer(p);
-		}
 	}
 	
 	private void loadSave(String savePath) {
@@ -44,21 +41,21 @@ public class Eu4File {
 	    }    
 	}
 	
-	private void extractInfosPlayer(Player player) {
+	private void extractInfosCountry(Country country) {
 	    int startAddr, endAddr;
-	    String playerInfos, provinceInfos;
+	    String countryInfos, provinceInfos;
 
-	    startAddr = save.indexOf("\n\t" + player.getCountry().getTag() + "={") + 2;
-	    if(startAddr != -1) {
+	    if((startAddr = save.indexOf("\n\t" + country.getTag() + "={")) != -1) {
+	    	startAddr += 2;
 	    	endAddr = save.indexOf("subject_focus=", startAddr);
 	    	endAddr = save.indexOf("subject_focus=", endAddr + 1);
-	    	playerInfos = save.substring(startAddr, endAddr);
-	    	endAddr = playerInfos.lastIndexOf("}") + 1;
-	    	playerInfos = playerInfos.substring(0, endAddr);
-		    player.extractInfos(playerInfos);
+	    	countryInfos = save.substring(startAddr, endAddr);
+	    	endAddr = countryInfos.lastIndexOf("}") + 1;
+	    	countryInfos = countryInfos.substring(0, endAddr);
+	    	country.extractInfos(countryInfos);
 	    }
 	    
-	    for(Entry<Integer, Province> entryProv : player.getCountry().getProvinces().entrySet()) {
+	    for(Entry<Integer, Province> entryProv : country.getProvinces().entrySet()) {
 	    	Province p = entryProv.getValue();
 	    	
 		    startAddr = save.indexOf("\n-" + p.getId() + "={") + 5;
@@ -69,16 +66,86 @@ public class Eu4File {
 		    }
 	    }
 	    
-	    player.updateProvinceBasedInfos();
+	    country.updateProvinceBasedInfos();
+	}
+	
+	private void updateDependencyName(Country country) {
+	    int startAddr, endAddr;
+	    String countryInfos;
+	    
+	    if((startAddr = save.indexOf("\n\t" + country.getTag() + "={")) != -1) {
+	    	startAddr += 2;
+	    	endAddr = save.indexOf("subject_focus=", startAddr);
+	    	endAddr = save.indexOf("subject_focus=", endAddr + 1);
+	    	countryInfos = save.substring(startAddr, endAddr);
+	    	endAddr = countryInfos.lastIndexOf("}") + 1;
+	    	countryInfos = countryInfos.substring(0, endAddr);
+	    	country.updateName(countryInfos);
+	    }		
+	}
+	
+	private void updateDependencyNbProvinces(Country country) {
+	    int startAddr, endAddr;
+	    String countryInfos;
+	    
+	    if((startAddr = save.indexOf("\n\t" + country.getTag() + "={")) != -1) {
+	    	startAddr += 2;
+	    	endAddr = save.indexOf("subject_focus=", startAddr);
+	    	endAddr = save.indexOf("subject_focus=", endAddr + 1);
+	    	countryInfos = save.substring(startAddr, endAddr);
+	    	endAddr = countryInfos.lastIndexOf("}") + 1;
+	    	countryInfos = countryInfos.substring(0, endAddr);
+	    	country.updataNbProvince(countryInfos);
+	    }		
+	}
+	
+	private HashMap<Country, String> extractDependenciesPlayer(Player player) {
+		int startAddr = 0;
+		int endAddr;
+		String dependencyString, overloadTag, dependencyTag, dependencyType;
+		HashMap<Country, String> dependencies = new HashMap<Country, String>();
 		
+	    while((startAddr = save.indexOf("dependency={", startAddr)) != -1) {
+	    	startAddr =  startAddr + 15;
+	    	endAddr = save.indexOf("}", startAddr) - 1;
+	    	dependencyString = save.substring(startAddr, endAddr);
+	    	
+	    	overloadTag = Util.extractInfo(dependencyString, "first=\"").replace("\"", "");
+	    	if(overloadTag.equals(player.getCountry().getTag())) {
+	    		dependencyTag = Util.extractInfo(dependencyString, "second=\"").replace("\"", "");
+	    		Country dependency = new Country(dependencyTag);
+	    		
+	    		if(dependencyTag.matches("^.[0-9]*$")) {
+	    			updateDependencyName(dependency);
+	    		}
+	    		
+	    		dependencyType = Util.extractInfo(dependencyString, "subject_type=\"").replace("\"", "");
+	    		
+	    		if(dependencyType.equals("colony")) {
+	    			updateDependencyNbProvinces(dependency);
+	    		}
+	    		
+	    		dependencies.put(dependency, dependencyType);
+	    	}
+	    }
+	    
+		return dependencies;
+	}
+	
+	public void extractPlayersInfos() {
 	    nbCountriesHRE = 0;
-	    for(Player p : players) {
+	    
+		for(Player p : players) {
+			extractInfosCountry(p.getCountry());
 	    	if(p.getCountry().isPartHRE()) {
 	    		nbCountriesHRE++;
 	    	}
 		}
-	    
-	    player.updateForceLimit(nbCountriesHRE);
+		
+		for(Player p : players) {
+			p.addDependencies(extractDependenciesPlayer(p));
+			p.updateForceLimit(nbCountriesHRE);
+		}
 	}
 	
 	public ArrayList<Player> getPlayers() {

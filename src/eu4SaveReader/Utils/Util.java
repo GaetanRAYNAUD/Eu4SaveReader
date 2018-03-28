@@ -17,19 +17,19 @@ public final class Util {
 	
 	public static final List<String> institutions = Arrays.asList("Feudalism", "Renaissance", "Colonialism", "Printing Press", "Global Trade", "Manufactories", "Enlightenment");
 	
-    public static final String extractInfo(String countryInfos, String landmark) {
+    public static final String extractInfo(String info, String landmark) {
     	int startAddr, endAddr;
-    	String info;
+    	String infoString;
 
-	    if((startAddr = countryInfos.indexOf(landmark)) != -1) {
+	    if((startAddr = info.indexOf(landmark)) != -1) {
 	    	startAddr += landmark.length();
-	    	endAddr = countryInfos.indexOf("\n", startAddr);
-	    	info = countryInfos.substring(startAddr, endAddr);
-	    	info = info.replace("\n", "");
-	    	info = info.replace("\t", "");
-	    	info = info.replace("\r", "");
+	    	endAddr = info.indexOf("\n", startAddr);
+	    	infoString = info.substring(startAddr, endAddr);
+	    	infoString = infoString.replace("\n", "");
+	    	infoString = infoString.replace("\t", "");
+	    	infoString = infoString.replace("\r", "");
 	    	
-	    	return info;
+	    	return infoString;
 	    }
 	    
 		return null;

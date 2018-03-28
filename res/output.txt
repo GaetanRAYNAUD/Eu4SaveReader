@@ -3,6 +3,7 @@ Assassinblanc : Scandinavia
 	Capital: Stockholm
 	Culture: Swedish
 	Religion: Protestant
+	Is a: Feudal Monarchy
 	Rank: Kingdom
 	Has provinces in: Europe, North America
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
@@ -42,6 +43,7 @@ Assassinblanc : Scandinavia
 	Trade bonus: None
 	Rivals: Venice, Tuscany, Russia
 	Allies: Great Britain, France, Netherlands
+	Dependencies: None
 	Provinces: Stockholm, Östergötland, Kalmar, Bergslagen, Värmland, Lund, Skaraborg, Dalaskogen, Kespukwitk, Hälsingland, Åland, Jämtland, Västerbotten, Slesvig, Vestjylland, Bohuslän, Rovaniemi, Akershus, Lappland, Jokkmokk, Österbotten, Trøndelag, Hålogaland, Opplanda, Stavanger, Gotland, Halland, Åbo, Pirkanmaa, Tavastland, Viborg, Savolax, Neva, Østjylland, Smålenene, Bratsberg, Agdesiden, Kolding, Enare, Kainuu, Finnmark, Blekinge, Romsdal, Nordjylland, Närke, Elfsborg, Dal, Göinge, Tiohärad
 	Advisors: Spymaster, Commandant
 	Ancients country name: Sweden
@@ -50,6 +52,7 @@ Meteo : France
 	Capital: Paris
 	Culture: Francien
 	Religion: Protestant
+	Is a: Noble Republic
 	Rank: Empire
 	Has provinces in: Europe, Africa
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
@@ -89,6 +92,7 @@ Meteo : France
 	Trade bonus: None
 	Rivals: Egypt, Poland, Spain
 	Allies: Scandinavia, Ottomans, Great Britain, Naples, Netherlands, Russia, Morocco
+	Dependencies: None
 	Provinces: Saintonge, Cahors, Caux, Normandie, Armor, Finistère, Morbihan, Nantes, Labourd, Bordeaux, Armagnac, Draguignan, Béarn, Maine, Anjou, Berry, Poitou, Rethel, Vermandois, Paris, Orleanais, Nemours, Champagne, Barrois, Lothringen, Bourbon, Nevers, Bourgogne, Narbonne, Franche-Comté, Bergerac, Limousin, Toulouse, Roussillon, Rouergue, Auvergne, Languedoc, Provence, Avignon, Lyonnais, Vaud, Dauphiné, Savoie, Cambray, Girona, Charolais, Alencon, Artois, Picardie, Ifni
 	Advisors: Diplomat, Army Reformer, Philosopher
 	Ancients country name: 
@@ -97,6 +101,7 @@ UAV-alpha : Poland
 	Capital: Linz
 	Culture: Austrian
 	Religion: Protestant
+	Is a: Administrative Monarchy
 	Rank: Kingdom
 	Has provinces in: Europe
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
@@ -136,6 +141,7 @@ UAV-alpha : Poland
 	Trade bonus: None
 	Rivals: France, Ottomans, Great Britain
 	Allies: Hungary, Prussia, Hanover, Portugal, Spain, Tuscany, Venice
+	Dependencies: None
 	Provinces: Kärnten, Landshut, Krain, München, Bamberg, Istria, Nürnberg, Steiermark, Memmingen, Linz, Oberschwaben, Wien, Württemberg, Graz, Ansbach, Breisgau, Tirol, Brno, Prague, Ingolstadt, Plzen, Augsburg, Salzburg, Straubing, Zürich, Regensburg, Olomouc, St Gallen, Liegnitz, Wallis, Ulm, Graubünden, Eger, Sundgau, Budejovice, Hradecko, Oberpfalz, Bern, Lienz, Görz, Ostmarch, Erz
 	Advisors: Commandant, Treasurer, Naval Reformer
 	Ancients country name: Austria
@@ -144,6 +150,7 @@ warpc : Great Britain
 	Capital: London
 	Culture: English
 	Religion: Reformed
+	Is a: Revolutionary Republic
 	Rank: Empire
 	Has provinces in: Europe, Asia, Africa, North America, South America
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
@@ -159,7 +166,7 @@ warpc : Great Britain
 	Maximum manpower:  198473
 	Actual sailors: 29501
 	Maximum sailors: 75295
-	Land force limit: 155
+	Land force limit: 245
 	Active regular regiments: 117
 	Active mercenaries: 415
 	Professionalism: 55.942%
@@ -183,6 +190,7 @@ warpc : Great Britain
 	Trade bonus: Fish, Fur, Naval Supplies, Copper, Ivory, Tobacco
 	Rivals: Poland, Prussia, Hungary
 	Allies: Scandinavia, France, Naples
+	Dependencies: Newfoundland(Colony), Louisiane britannique(Colony), Pérou britannique(Colony), Columbia britannique(Colony), Treize colonies(Colony)
 	Provinces: Merina, Curitiba, Candelaria, Sjælland, Puerto Deseado, Fyn, Sutherland, Tierra del Fuego, Angoche, Mtetwa, Cork, Sligo, Kildare, Ulster, Somerset, Lübeck, Florida Blanca, Kotte, Graaff-Reinet, Panama, Norfolk, Derbyshire, Nicaragua, Santa Catarina, Campinas, Calais, Sierra Leone, Managua, Veraguas, Orkney, Reykjavik, Akureyri, Tyrone, Pale, Leinster, Limerick, Connaught, Qishn, Benguela, Swellendam, Xhosa, Natal, Matsolo, Quelimane, Menabe, Besalampy, Mozambique, Kilwa, Mzizima, Lindi, Bagamoyo, Tanga, Mombasa, Antankara, Mogadishu, Iboina, Tsimihety, Maroantsetra, Vatomandry, Shetland, Antemoro, Färöarna, Betsileo, Mahafaly, Bornholm, Antanosy, Bara, Lolland, Antsalova, Fiherana, Ibo, Galápagos Islands, Merca, Beledweyne, Gedo, Warsheikh, El Buur, Cornwall, Hampshire, Barawa, Kent, Meregh, London, Borikén, Oxfordshire, St. Thomas, Essex, Gloucestershire, Antigua, Marches, Guadelupe, Glamorganshire, Gwynedd, Lincolnshire, Lancashire, Yorkshire, Northumberland, Cumbria, Lothian, Thatta, Ayrshire, Fife, Aberdeenshire, Inverness, Western Isles, Sao Vicente
 	Advisors: Army Reformer, Master of Mint, Naval Reformer
 	Ancients country name: England
@@ -191,6 +199,7 @@ Shy : Netherlands
 	Capital: Holland
 	Culture: Flemish
 	Religion: Protestant
+	Is a: Noble Republic
 	Rank: Empire
 	Has provinces in: Europe, North America, South America
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
@@ -206,7 +215,7 @@ Shy : Netherlands
 	Maximum manpower:  155394
 	Actual sailors: 16862
 	Maximum sailors: 17937
-	Land force limit: 91
+	Land force limit: 115
 	Active regular regiments: 71
 	Active mercenaries: 168
 	Professionalism: 52.209%
@@ -230,6 +239,7 @@ Shy : Netherlands
 	Trade bonus: None
 	Rivals: Prussia, Portugal, Spain
 	Allies: Scandinavia, France
+	Dependencies: Estonia(March), Lustrie(Colony), Pima(March), Brésil néerlandais(Colony), Estalie(Colony), Louisiane néerlandaise(Colony)
 	Provinces: Uruguay, Banda Oriental, Ghent, Eskikewakik, Namur, East Frisia, Limburg, Antwerpen, Bremen, Berg, Münster, Unamakik, Bergenhus, Epekwitk, Sipeknekatik, Vlaanderen, Hainaut, Hoya, Brabant, Meppen, Liège, Loon, Breda, Kleves, Zeeland, Holland, Bermuda, Utrecht, Montevideo, Gelre, Colonia, Friesland, Dominica, Martinique, St. Lucia, Roanoke, St. Vincent, Chesapeake, Doeg, Oldenburg, Osnabrück, Powhatan
 	Advisors: Master of Mint, Commandant, Diplomat
 	Ancients country name: Brabant
@@ -249,14 +259,4 @@ Shy : Netherlands
 	Religion: Protestant
 	Insitutions: Feudalism: 100.0%, Renaissance: 100.0%, Colonialism: 100.0%, Printing Press: 100.0%, Global Trade: 100.0%, Manufactories: 100.0%, Enlightenment: 100.0%
 	Buildings: Training fields, Grand shipyard, Counting house, Conscription center, Stock exchange, Farm Estate, University, Town hall, Cathedral
-
-
-	Name: Patrik Bagge
-	Id: 48630
-	Type: Spymaster
-	Skill: 1
-	Born in: Skaraborg
-	Birth date: 1 October 1752
-	Culture: Swedish
-	Religion: Protestant
 

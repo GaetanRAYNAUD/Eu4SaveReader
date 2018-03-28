@@ -9,7 +9,9 @@ import java.util.stream.IntStream;
 
 import eu4SaveReader.Utils.Advisors;
 import eu4SaveReader.Utils.Cultures;
+import eu4SaveReader.Utils.Dependencies;
 import eu4SaveReader.Utils.Goods;
+import eu4SaveReader.Utils.Governments;
 import eu4SaveReader.Utils.ProvincesId;
 import eu4SaveReader.Utils.Religions;
 import eu4SaveReader.Utils.Tags;
@@ -22,6 +24,7 @@ public class Country {
     private int dev;
     private double realmDev;
     private int nbProvince;
+    private String govType;
     private int govRank;
     private ArrayList<Boolean> continents = new ArrayList<Boolean>();
     private ArrayList<Boolean> institutions = new ArrayList<Boolean>();
@@ -69,7 +72,7 @@ public class Country {
     private HashMap<Integer, Advisor> advisors = new HashMap<Integer, Advisor>();
     private ArrayList<String> ideas = new ArrayList<String>();
     private ArrayList<String> ancientsTags = new ArrayList<String>();
-    private HashMap<String, String> dependencies = new HashMap<String, String>();
+    private HashMap<Country, String> dependencies = new HashMap<Country, String>();
     
     public Country(String tag) {
 		this.tag = tag;
@@ -301,6 +304,19 @@ public class Country {
     		forceLimit += localForceLimit;
     	}
     	
+    	for(Entry<Country, String> d : dependencies.entrySet()) {
+    		if(d.getValue().equals("vassal")) {
+    			forceLimit += 1;
+    		} else if(d.getValue().equals("march")) {
+    			forceLimit += 2;
+    		} else if(d.getValue().equals("colony")) {
+    			if(d.getKey().getNbProvince() >= 10) {
+    				forceLimit += 5;
+    			}
+    		}
+    	}
+    		
+    	
     	if(isHREEmperor) {
     		forceLimit += 0.5 * nbCountriesHRE;
     	}
@@ -391,10 +407,33 @@ public class Country {
     	return "None";
     }
     
+    private String printDependencies() {
+    	if(dependencies.size() > 0) {
+	    	StringBuilder dependenciesString = new StringBuilder();
+	    	
+	    	for(Entry<Country, String> d : dependencies.entrySet()) {
+	    		if(d.getKey().getTag().matches("^.[0-9]*$")) {
+	    			dependenciesString.append(d.getKey().getName());
+	    		} else {
+	    			dependenciesString.append(Tags.tags.get(d.getKey().getTag()));
+	    		}
+	    		dependenciesString.append("(");
+	    		dependenciesString.append(Dependencies.dependenciesTypes.get(d.getValue()));
+	    		dependenciesString.append(")");
+	    		dependenciesString.append(", ");
+	    	}
+	    	
+	    	return dependenciesString.toString().substring(0, dependenciesString.toString().length() - 2);    		
+    	}
+    	
+    	return "None";
+    }
+    
     public void extractInfos(String countryInfos) {
 	    dev = (int) Double.parseDouble(Util.extractInfo(countryInfos, "raw_development="));
 	    realmDev = Double.parseDouble(Util.extractInfo(countryInfos, "realm_development="));
 	    nbProvince = Integer.parseInt(Util.extractInfo(countryInfos, "num_of_cities="));
+	    govType = Util.extractInfo(countryInfos, "government=\"").replace("\"", "");
 	    govRank = Integer.parseInt(Util.extractInfo(countryInfos, "government_rank="));
 	    continents = extractContinents(countryInfos);
 	    institutions = extractInstitutions(countryInfos);
@@ -410,7 +449,6 @@ public class Country {
 	    maxManpower = Integer.parseInt(Util.extractInfo(countryInfos, "max_manpower=").replace(".", ""));
 	    sailors = (int) Double.parseDouble(Util.extractInfo(countryInfos, "\n\t\tsailors="));
 	    maxSailors = (int) Double.parseDouble(Util.extractInfo(countryInfos, "max_sailors="));
-	    forceLimit = 0; //limite = { base pour chaque pays + [pour chaque province] ( dev de la province * 0.1 + batiments + bonus céréales) * autonomie } * {conseillers + autres modifiers}
 	    losses = extractLosses(countryInfos);
 	    army = Integer.parseInt(Util.extractInfo(countryInfos, "num_of_regulars="));
 	    mercenaries = Integer.parseInt(Util.extractInfo(countryInfos, "num_of_mercenaries="));
@@ -432,6 +470,7 @@ public class Country {
 	    religion = Util.extractInfo(countryInfos, "\n\t\treligion=");
 	    culture = Util.extractInfo(countryInfos, "primary_culture=");
 	    goldenAge = Util.convertStringToDate(Util.extractInfo(countryInfos, "golden_era_date="));
+	    isRevolutionTarget = (govType.equals("revolutionary_empire") || govType.equals("revolutionary_republic"));
 	    tradeBonus = extractTradeBonus(countryInfos);
 	    rivals = extractRivals(countryInfos);
 	    allies = extractAllies(countryInfos);
@@ -445,12 +484,25 @@ public class Country {
 	    isPartHRE = provinces.get(capital).isPartHRE();
     }
     
+    public void addDependencies(HashMap<Country, String> dependencies) {
+    	this.dependencies.putAll(dependencies);
+    }
+    
+    public void updateName(String countryInfos) {
+    	name = Util.extractInfo(countryInfos, "\n\t\tname=\"").replace("\"", "");
+    }
+    
+    public void updataNbProvince(String countryInfos) {
+    	nbProvince = Integer.parseInt(Util.extractInfo(countryInfos, "num_of_cities="));
+    }
+    
     @Override
     public String toString() {
 		return Tags.tags.get(tag)
 		+ "\n\tCapital: " + ProvincesId.provincesId.get(capital)
 		+ "\n\tCulture: " + Cultures.cultures.get(culture)
 		+ "\n\tReligion: " + Religions.religions.get(religion)
+		+ "\n\tIs a: " + Governments.governementTypes.get(govType)
 		+ "\n\tRank: " + Util.govRanks.get(govRank)
 		+ "\n\tHas provinces in: " + printContinents()
 		+ "\n\tInstitutions embraced: " + printInstitutions()
@@ -490,6 +542,7 @@ public class Country {
 		+ "\n\tTrade bonus: " + printTradeBonus()
 		+ "\n\tRivals: " + Util.printCountryList(rivals)
 		+ "\n\tAllies: " + Util.printCountryList(allies)
+		+ "\n\tDependencies: " + printDependencies()
 		+ "\n\tProvinces: " + printProvinces()
 		+ "\n\tAdvisors: " + printAdvisors()
 		+ "\n\tAncients country name: " + Util.printCountryList(ancientsTags)
@@ -904,11 +957,19 @@ public class Country {
 		this.isPartHRE = isPartHRE;
 	}
 	
-	public HashMap<String, String> getDependencies() {
+	public HashMap<Country, String> getDependencies() {
 		return dependencies;
 	}
 
-	public void setDependencies(HashMap<String, String> dependencies) {
+	public void setDependencies(HashMap<Country, String> dependencies) {
 		this.dependencies = dependencies;
+	}
+
+	public String getGovType() {
+		return govType;
+	}
+
+	public void setGovType(String govType) {
+		this.govType = govType;
 	}	
 }

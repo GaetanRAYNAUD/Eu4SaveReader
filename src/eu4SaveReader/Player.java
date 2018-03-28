@@ -1,5 +1,7 @@
 package eu4SaveReader;
 
+import java.util.HashMap;
+
 public class Player {
 
     private String name;
@@ -15,12 +17,8 @@ public class Player {
 		this.name = name;
     }
     
-    public void extractInfos(String playerInfos) {
-    	country.extractInfos(playerInfos);
-    }
-    
-    public void updateProvinceBasedInfos() {
-    	country.updateProvinceBasedInfos();
+    public void addDependencies(HashMap<Country, String> dependencies) {
+    	country.addDependencies(dependencies);
     }
     
     public void updateForceLimit(int nbCountriesHRE) {
