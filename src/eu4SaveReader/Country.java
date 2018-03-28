@@ -292,10 +292,8 @@ public class Country {
     				localForceLimit += 10;
     			} else if(b.getKey() == "regimental_camp") {
     				localForceLimit += 1;
-    				break;
     			} else if(b.getKey() == "conscription_center") {
     				localForceLimit += 2;
-    				break;
     			}
     		}
     		
