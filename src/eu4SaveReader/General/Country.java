@@ -1,4 +1,4 @@
-package eu4SaveReader;
+package eu4SaveReader.General;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -70,9 +70,9 @@ public class Country {
     private ArrayList<String> allies = new ArrayList<String>();
     private HashMap<Integer, Province> provinces = new HashMap<Integer, Province>();
     private HashMap<Integer, Advisor> advisors = new HashMap<Integer, Advisor>();
-    private ArrayList<String> ideas = new ArrayList<String>();
     private ArrayList<String> ancientsTags = new ArrayList<String>();
     private HashMap<Country, String> dependencies = new HashMap<Country, String>();
+    private HashMap<String, Integer> ideas = new HashMap<String, Integer>();
     
     public Country(String tag) {
 		this.tag = tag;
@@ -899,11 +899,11 @@ public class Country {
 		this.advisors = advisors;
 	}
 
-	public ArrayList<String> getIdeas() {
+	public HashMap<String, Integer> getIdeas() {
 		return ideas;
 	}
 
-	public void setIdeas(ArrayList<String> ideas) {
+	public void setIdeas(HashMap<String, Integer> ideas) {
 		this.ideas = ideas;
 	}
 

@@ -1,4 +1,4 @@
-package eu4SaveReader;
+package eu4SaveReader.General;
 
 public class Main {
 	
