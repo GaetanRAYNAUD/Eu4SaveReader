@@ -96,7 +96,7 @@ public class Eu4File {
 	    	endAddr = countryInfos.lastIndexOf("}") + 1;
 	    	countryInfos = countryInfos.substring(0, endAddr);
 	    	country.updataNbProvince(countryInfos);
-	    }		
+	    }
 	}
 	
 	private HashMap<Country, String> extractDependenciesPlayer(Player player) {

@@ -22,6 +22,6 @@ public class Main {
 	    System.out.println(save.getPlayerByTag("GBR"));
 	    System.out.println(save.getPlayerByTag("NED"));
 	    
-	    System.out.println(save.getPlayerByTag("SCA").getCountry().getProvinces().get(save.getPlayerByTag("SCA").getCountry().getCapital()));
+	    //System.out.println(save.getPlayerByTag("SCA").getCountry().getProvinces().get(save.getPlayerByTag("SCA").getCountry().getCapital()));
 	}
 }

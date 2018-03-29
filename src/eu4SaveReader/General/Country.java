@@ -73,6 +73,7 @@ public class Country {
     private ArrayList<String> ancientsTags = new ArrayList<String>();
     private HashMap<Country, String> dependencies = new HashMap<Country, String>();
     private HashMap<String, Integer> ideas = new HashMap<String, Integer>();
+    private ArrayList<Double> factions = new ArrayList<Double>(); 
     
     public Country(String tag) {
 		this.tag = tag;
@@ -182,7 +183,7 @@ public class Country {
 	    if((startAddr = countryInfos.indexOf("\n\t\tallies={")) != -1) {
 	    	startAddr += 15;
 	    	endAddr = countryInfos.indexOf("}", startAddr);
-	    	String alliesString = countryInfos.substring(startAddr, endAddr);    	
+	    	String alliesString = countryInfos.substring(startAddr, endAddr);
 	    	alliesString = alliesString.replace("\n", "");
 	    	alliesString = alliesString.replace("\t", "");
 	    	alliesString = alliesString.replace("\r", "");
@@ -255,7 +256,30 @@ public class Country {
 	    }
 	    
 	    return tradeBonus;
-    }      
+    }
+    
+    private ArrayList<Double> extractFactions(String countryInfos) {
+    	ArrayList<Double> factions = new ArrayList<Double>();
+    	
+    	switch (govType) {
+    		case  "dutch_republic":
+    			factions.add(Double.parseDouble(Util.extractInfo(countryInfos, "statists_vs_orangists=")));
+    			break;
+    		
+    		case "revolutionary_republic":
+    			int startAddr = 0;
+    			int endAddr;
+    			
+    		    while((startAddr = countryInfos.indexOf("faction={", startAddr)) != -1) {
+    		    	startAddr += 9;
+    		    	endAddr = countryInfos.indexOf("}", startAddr);
+    		    	factions.add(Double.parseDouble(Util.extractInfo(countryInfos.substring(startAddr, endAddr), "influence=")));
+    		    }
+    		    break;
+    	}
+	    
+    	return factions;
+    }
     
     private void updateAdvisors() {
     	for(Entry<Integer, Advisor> entryCoun : getAdvisors().entrySet()) {
@@ -314,7 +338,6 @@ public class Country {
     		}
     	}
     		
-    	
     	if(isHREEmperor) {
     		forceLimit += 0.5 * nbCountriesHRE;
     	}
@@ -328,6 +351,28 @@ public class Country {
     			modifiers += 0.1;
     			break;
     		}
+    	}
+
+    	switch (govType) {
+    		case "steppe_horde":
+    			modifiers += 0.1 * govRank;
+    			break;
+    			
+    		case "tribal_federation":
+    			modifiers += 0.1;
+    			break;
+    			
+			case  "dutch_republic":
+	    		if(factions.get(0) > 0) {
+	    			modifiers += 0.25;
+	    		}
+				break;
+			
+			case "revolutionary_republic":
+	    		if(factions.get(2) > factions.get(1) && factions.get(2) > factions.get(0)) {
+	    			//modifiers += 0.2;
+	    		}
+			    break;
     	}
     	
     	if(tradeBonus.contains(1)) {
@@ -475,6 +520,7 @@ public class Country {
 	    provinces = extractProvinces(countryInfos);
 	    advisors = extractAdvisors(countryInfos);
 	    ancientsTags = extractAncientsTags(countryInfos);
+	    factions = extractFactions(countryInfos);
     }
     
     public void updateProvinceBasedInfos() {
