@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 import java.util.stream.IntStream;
 
@@ -12,6 +13,7 @@ import eu4SaveReader.Utils.Cultures;
 import eu4SaveReader.Utils.Dependencies;
 import eu4SaveReader.Utils.Goods;
 import eu4SaveReader.Utils.Governments;
+import eu4SaveReader.Utils.Ideas;
 import eu4SaveReader.Utils.ProvincesId;
 import eu4SaveReader.Utils.Religions;
 import eu4SaveReader.Utils.Tags;
@@ -72,7 +74,7 @@ public class Country {
     private HashMap<Integer, Advisor> advisors = new HashMap<Integer, Advisor>();
     private ArrayList<String> ancientsTags = new ArrayList<String>();
     private HashMap<Country, String> dependencies = new HashMap<Country, String>();
-    private HashMap<String, Integer> ideas = new HashMap<String, Integer>();
+    private LinkedHashMap<String, Integer> ideas = new LinkedHashMap<String, Integer>();
     private ArrayList<Double> factions = new ArrayList<Double>(); 
     
     public Country(String tag) {
@@ -258,6 +260,25 @@ public class Country {
 	    return tradeBonus;
     }
     
+    private LinkedHashMap<String, Integer> extractIdeas(String countryInfos) {
+    	int startAddr, endAddr;
+    	LinkedHashMap<String, Integer> ideas = new LinkedHashMap<String, Integer>();
+    	
+	    if((startAddr = countryInfos.indexOf("active_idea_groups={")) != -1) {
+	    	startAddr += 21;
+	    	endAddr = countryInfos.indexOf("}", startAddr);
+	    	String ideasString = countryInfos.substring(startAddr, endAddr);
+	    	ideasString = ideasString.replace("\t", "");
+	    	ideasString = ideasString.replace("\r", "");
+	    	String[] ideasStringArray = ideasString.split("\n");
+	    	for(String s : ideasStringArray) {
+	    		ideas.put(s.split("=")[0], Integer.parseInt(s.split("=")[1]));
+	    	}
+	    }
+    	
+    	return ideas;
+    }
+    
     private ArrayList<Double> extractFactions(String countryInfos) {
     	ArrayList<Double> factions = new ArrayList<Double>();
     	
@@ -370,7 +391,7 @@ public class Country {
 			
 			case "revolutionary_republic":
 	    		if(factions.get(2) > factions.get(1) && factions.get(2) > factions.get(0)) {
-	    			//modifiers += 0.2;
+	    			modifiers += 0.2;
 	    		}
 			    break;
     	}
@@ -450,6 +471,29 @@ public class Country {
     	return "None";
     }
     
+    private String printIdeas() {
+    	if(ideas.size() > 0) {
+	    	StringBuilder ideasString = new StringBuilder();
+	    	
+	    	for(Entry<String, Integer> i : ideas.entrySet()) {
+	    		if(Character.isUpperCase(i.getKey().charAt(0))) {
+	    			ideasString.append(Tags.tags.get(i.getKey().split("_")[0]) + " ideas");
+	    		} else {
+	    			ideasString.append(Ideas.ideas.get(i.getKey()));
+	    		}
+	    		
+	    		ideasString.append("(");
+	    		ideasString.append(i.getValue());
+	    		ideasString.append(")");	    		
+	    		ideasString.append(", ");
+	    	}
+	    	
+	    	return ideasString.toString().substring(0, ideasString.toString().length() - 2);
+    	}
+    	
+    	return "None";
+    }
+    
     private String printDependencies() {
     	if(dependencies.size() > 0) {
 	    	StringBuilder dependenciesString = new StringBuilder();
@@ -520,6 +564,7 @@ public class Country {
 	    provinces = extractProvinces(countryInfos);
 	    advisors = extractAdvisors(countryInfos);
 	    ancientsTags = extractAncientsTags(countryInfos);
+	    ideas = extractIdeas(countryInfos);
 	    factions = extractFactions(countryInfos);
     }
     
@@ -550,6 +595,7 @@ public class Country {
 		+ "\n\tRank: " + Util.govRanks.get(govRank)
 		+ "\n\tHas provinces in: " + printContinents()
 		+ "\n\tInstitutions embraced: " + printInstitutions()
+		+ "\n\tIdeas: " + printIdeas()
 		+ "\n\tDevelopment: " + dev
 		+ "\n\tRealm development: " + realmDev
 		+ "\n\tNumber of provinces: " + nbProvince
@@ -945,11 +991,11 @@ public class Country {
 		this.advisors = advisors;
 	}
 
-	public HashMap<String, Integer> getIdeas() {
+	public LinkedHashMap<String, Integer> getIdeas() {
 		return ideas;
 	}
 
-	public void setIdeas(HashMap<String, Integer> ideas) {
+	public void setIdeas(LinkedHashMap<String, Integer> ideas) {
 		this.ideas = ideas;
 	}
 
