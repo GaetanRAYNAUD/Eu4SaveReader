@@ -27,12 +27,26 @@ public class Advisor {
 		extractInfos(advisorInfos);
 	}
 	
+	private int extractId(String advisorInfos) {
+    	int startAddr, endAddr;
+    	int id = 0;
+
+	    if((startAddr = advisorInfos.indexOf("id={")) != -1) {
+	    	startAddr = advisorInfos.indexOf("id=", startAddr + 4);
+	    	startAddr += 3;
+	    	endAddr = advisorInfos.indexOf("\n", startAddr);
+	    	id = Integer.parseInt(advisorInfos.substring(startAddr, endAddr));
+	    }
+	    
+	    return id;
+	}
+	
 	private void extractInfos(String advisorInfos) {
-		id = Integer.parseInt(Util.extractInfo(advisorInfos, "\n\t\t\t\t\t\tid="));
+		id = extractId(advisorInfos);
 		name = Util.extractInfo(advisorInfos, "name=").replace("\"", "");
 		type = Util.extractInfo(advisorInfos, "type=");
-		skill = Integer.parseInt(Util.extractInfo(advisorInfos, "skill="));
-		birthProvince = Integer.parseInt(Util.extractInfo(advisorInfos, "location="));
+		skill = Util.extractInfoInt(advisorInfos, "skill=");
+		birthProvince = Util.extractInfoInt(advisorInfos, "location=");
 		culture = Util.extractInfo(advisorInfos, "culture=");
 		religion = Util.extractInfo(advisorInfos, "religion=");
 		birthDate = Util.convertStringToDate(Util.extractInfo(advisorInfos, "date="));

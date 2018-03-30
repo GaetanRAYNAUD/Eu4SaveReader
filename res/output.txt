@@ -48,7 +48,7 @@ Assassinblanc : Sweden
 	Dependencies: None
 	Provinces: Stockholm, Närke, Östergötland, Elfsborg, Kalmar, Bergslagen, Dal, Värmland, Göinge, Lund, Tiohärad, Skaraborg, Dalaskogen, Hälsingland, Åland, Jämtland, Västerbotten, Bohuslän, Rovaniemi, Lappland, Jokkmokk, Österbotten, Gotland, Halland, Pirkanmaa, Åbo, Nyland, Tavastland, Savolax, Stralsund, Greifswald, Wismar, Enare, Kainuu, Blekinge
 	States: Östra Svealand, Skåneland, Östra Götaland, Finland, Västra Götaland, Vorpommern, Västra Svealand, Norrland, Ostrobothnia, Mecklenburg, Trøndelag, Laponia
-	Advisors: None
+	Advisors: Spymaster
 	Ancients country name: None
 
 Meteo : France
@@ -125,7 +125,7 @@ UAV-alpha : Commonwealth
 	Maximum manpower:  34647
 	Actual sailors: 424
 	Maximum sailors: 720
-	Land force limit: 46
+	Land force limit: 49
 	Active regular regiments: 50
 	Active mercenaries: 1
 	Professionalism: 59.854%
@@ -152,7 +152,7 @@ UAV-alpha : Commonwealth
 	Dependencies: None
 	Provinces: Plock, Warszawa, Sieradz, Braslaw, Sandomierz, Lublin, Krakow, Podlasie, Trakai, Samogitia, Vilna, Kovno, Grodno, Wizna, Rowne, Leczyca, Mazyr, Minsk, Brest, Turov, Pinsk, Zhytomyr, Volhynia, Bratslav, Owrucz, Cherkasy, Podolia, Danzig, Poznan, Kalisz
 	States: Mazovia, Wielkopolska, Malopolska, Vilna, Podolia Volhynia, Samogitia, Pripyat, Minsk, Pomerelia, West Dniepr
-	Advisors: None
+	Advisors: Army Organizer
 	Ancients country name: None
 
 warpc : Great Britain
@@ -204,7 +204,7 @@ warpc : Great Britain
 	Dependencies: Kochin(Vassal), Hanover(Personnal union), Venad(Vassal), Koch(Vassal), Carnatic(Vassal), Indes occidentales britanniques(Colony), Newfoundland(Colony), Oudh(Vassal)
 	Provinces: East March, West March, Argyll, Inner Hebrides, Mann, Sutherland, Montgomery, Hull, Scarborough, North Konkan, Carmarthen, Cambridge, North Kanara, Sussex, Coventry, Devon, Malabar, Cork, Dorset, Sligo, Chester, Kildare, Leicester, Ulster, Ormond, Desmond, Tondainadu, Midlands, Donegal, Velanadu, Srikakulam, Lakhnor, Somerset, Konaseema, Kalingandhra, Athabasca, Nihithawak, Danezaa, Patna, Jharkhand, Damin, Bengal Delta, Surguja, Gauda, Dhaka, Silhet, Chittagong, Shetland, Eora, Norfolk, Derby, Mosquito, St. Helena, Belize, Bermuda, Gibraltar, Cornwall, Hampshire, Kent, London, Oxford, Bengkulu, Essex, Gloucester, Shrewsbury, Glamorgan, Orkney, Gwynedd, Lincolnshire, Lancashire, Tyrone, York, Pale, Northumberland, Leinster, Midnapore, Cumbria, Limerick, Sunderbans, Lothian, Connaught, Ayrshire, Perth, Koch Hajo, Aberdeen, Inverness, Bhagalpur, Outer Hebrides, Barind, Nasirabad, Tirhut
 	States: London, West Bengal, Bihar, West Midlands, Andhra, Lowlands, Highlands, East Anglia, Scottish Marches, Wessex, North Bengal, Leinster, East Bengal, Connacht, Ulster, Yorkshire, East Midlands, Munster, Rakhine, Wales, Coromandel, Orissa, Athabasca, Southern Australia, Kanara, Konkan, Guatemala, Kerala, The Isles, Assam, Lampung, Jharkhand, Upper Andalucia, Faroes, Angola, Nicaragua, Greater Antilles
-	Advisors: None
+	Advisors: Treasurer, Statesman, Quartermaster
 	Ancients country name: England
 
 Shy : Netherlands
@@ -256,7 +256,7 @@ Shy : Netherlands
 	Dependencies: None
 	Provinces: Graaff-Reinet, Kendari, Poso, Buru, Ambon, Ceram, Halmahera, Cape Coast, Malacca, Cape, St. Martin, Palu, Swellendam, Sula, Oversticht, Groningen, Breda, Den Haag, Zeeland, Maldives, Amsterdam, Utrecht, Gelre, Friesland, Essequibo, Demerara, Paramaribo, Curacao, Tulangbewang, Blambangan, Kandy, Vanni, Kalapa, Flores, Suriname, West Timor, Kotte, Gayo
 	States: Hadramut, Netherlands, Holland, Frisia, Cape of Good Hope, Timor, Lanka, Ceram, North Sulawesi, Malacca, East Java, South Sulawesi, Leeward Islands, Moluccas, West Java, Lampung, Aceh, Greater Antilles, Suriname, Guyana, West African Coast, Kerala, Spice Islands
-	Advisors: None
+	Advisors: Naval Reformer, Army Reformer, Philosopher
 	Ancients country name: None
 
 Shy : Russia
@@ -308,7 +308,7 @@ Shy : Russia
 	Dependencies: Kurland(Vassal), Kazakh(Vassal), Georgia(Vassal)
 	Provinces: Kamchatka, Penzhina, Kolyma, Omolon, Karalveyem, Verkhoyansk, Suntar Khayata, Gizhiga, Sakha, Okhotsk, Tauisk, Oka, Yakut, Bezhetsk, Maya, Jugjur, Shenkursk, Aldan, Stanovoy, Karelia, Viborg, Mukhtuya, Kirenga, Kexholm, Barguzin, Neva, Ude, Ust-Vym, Ingermanland, Onan Gol, Ösel, East Tunguska, Reval, Irkutsk, Livland, West Tunguska, Riga, Angara, Sayan, Tomsk, Kuznetsk, Turukhan, Ket, Surgut, Narim, Irtesh, Obdorsk, Berezov, Sibir, Tyumen, Kodiak, Rostov, Kurgan, Luki, Solikamsk, Tura, Urkan, Viatka, Udi, Pelym, Simbirsk, Kazan, Vetluga, Wenden, Ula, Toropets, Trubchevsk, Vyazma, Mstislav, Kashin, Zubtsov, Mologa, Mozhaisk, Kolomna, Yuriev, Starodub, Pronsk, Solvychegodsk, Mezen, Onega, Velsk, Vyshny Volochyok, Ustyuzhna, Totma, Sol Galitskaya, Tetyushi, Ar-Chally, Izhkar, Bolgar, Tikhvin, Rzhev, Kostroma, Murom, Ustyug, White Karelia, Kola, Kasimov, Komi, Vitebsk, Latgalia, Pskov, Polotsk, Kiev, Yedisan, Zaporozhia, Crimea, Caffa, Azov, Kuban, Lower Don, Chernigov, Poltava, Kharkov, Mogilev, Smolensk, Tver, Moskva, Kaluga, Bryansk, Kursk, Dorpat, Voronezh, Tula, Ryazan, Tambov, Saratov, Penza, Perm, Nizhny Novgorod, Narva, Vladimir, Yaroslavl, Olonets, Novgorod, Kholm, Beloozero, Soroka, Vologda, Orda, Lower Yik, Ingil, Pereyaslav, Yelets, Bahmut, Theodoro, Mansur, Kyzyl-Yar, Tyn, Azaraba, Etkara, Majar, Kuma, Ukek, Kanadey, Agyidel, Juketau, Veda-Suvar, Alatyr, Ostyaki, Yugan, Agan, Baykha, Uchamin, Chulym, Vah, Barnaul, Nukhtui, Chuna, Seganka, Kharya, Yarmanka, Kagyrgyn, Iglino, Ust-Kut, Kan, Bashgird, Mangazea, Chara, Matrega, Severia, Kholmogory, Suzdal, Galich, Kargopol, Torzhok, Ostrov, Ladoga, Kudymkar, Cherdyn, Ust-Sysolsk, Buzuluk, Chelyaba, Beljamen, Udmurtia, Yedishkul, Astrakhan, Nogay, Yakutat, Sarai, Kenai, Borisoglebsk, Aleut, Manych, Ryn, Samara, Yaik, Bashkortostan, Pegaya Orda
 	States: Moscow, Tver, Ryazan, Astrakhan, Galich, Yarloslavl, Novgorod, Suzdal, Beloozero, Vladimir, Crimea, Bashkiria, South Karelia, Saratov, Oka, Pskov, Buryatia, Azov, Smolensk, Kazan, Livonia, Ural, Perm, Samara, Ishim, Lower Don, Kama, Tambov, Zaporizhia, Lower Yik, Sloboda Ukraine, Estonia, East Dniepr, Volga, Ob, Yedisan, Pomorye, North Karelia, Irkutsk, Tunguska, Yakutia, Arkhangelsk, Vologda, Okhotsk, White Ruthenia, Kara, Yrtesh, Central Siberia, Kolyma, Kamchatka, West Dniepr
-	Advisors: None
+	Advisors: Inquisitor, Spymaster, Grand Captain
 	Ancients country name: Muscovy
 
 AI : Qing
@@ -360,6 +360,6 @@ AI : Qing
 	Dependencies: Nepal(Tributary), Ferghana(Tributary), Kangra(Tributary), U-tsang(Vassal), Bhutan(Tributary), Korea(Vassal), Mori(Tributary)
 	Provinces: Miyoo Gasan, Haiilanboo, Deren, Hinggan, Altai Uriankhai, Birija, Kuru, Furdan, Ningguta, Huncun, Boduna, Yehe, Hetu Ala, Andong, Gaizhou, Ereen, Chahar, Ih Huree, Zasagt, Urzhar, Chuguchak, Ili, Kuqa, Hami, Qakilik, Yarkand, Kochkor, Chuy, Yashilkul, Dege, Rebgong, Garze, Xuanhua, Daming, Wuding, Laizhou, Yanzhou, Xuzhou, Huai'an, Fengyang, Fuyang, Zhenjiang, Ningguo, Yongping, Huizhou, Zhending, Shaoxin, Haizhou, Ningbo, Huangzhou, Jinhua, Fengxiang, Poyang, Tongren, Jianning, Hulan, Tingzhou, Jianzhou, Taining, Ju Ud, Chaochow, Anding, Waichow, Shiukwan, Balikul, Leichow, Turpan, Ngaichow, Qurqara-usu, Limchow, Maralbexi, Ngchow, Yangi Hissar, Liuzhou, Dazhou, Namning, Jiazhou, Pu'er, Luzhou, Dehong, Kalar, Lijiang, Fudali, Bozhou, Ulch, Langzhong, Pijin, Songqu, Buteha, Xiangyang, Bayan Tumen, Jingzhou, Khiagt, Yuanling, Dundgovi, Hengyang, Ulaangom, Runing, Hetao, Shangqiu, Ningwu, Lu'an, Yan'an, Tianshui, Pingliang, Liangzhou, Taozhou, Xining, Mergen, Iman, Sartu, Alchuka, Tsetserleg, Qaraqorum, Ejin, Korla, Govi, Sibsongbanna, Dali, Yunnan, Guangnan, Lingyun, Shiuhing, Kingchow, Canton, Fuzhou, Ganzhou, Changsha, Wuling, Zhenyuan, Guiyang, Umung, Tachienlu, Chengdu, Chongqing, Yichang, Wuchang, Nanchang, Hangzhou, Yangzhou, Anqing, Nanyang, Kaifeng, Hanzhong, Qingzhou, Jinan, Huaiqing, Taiyuan, Pingyang, Hejian, Baoding, Datong, Ningxia, Lanzhou, Khara Narin Ula, Xi'an, Jianchang, Ordos, Hohhot, Chengde, Ningyuan, Gyegu, Tsaidam, Yumen, Zhangye, Alxa, Hotan, Qarqan, Aksu, Bechbaliq, Hoboksar, Urumqi, Tannu Uriankhai, Kherlen, Kobdo, Uliastai, Dornogovi, Setsen, Jirem, Xilin Gol, Hulunbuir, Cicigar, Shenyang, Aigun, Tuwan, Bohori, Girin, Ilan Hala, Sakam, Kashgar, Beijing, Nanjing, Suzhou, Wenzhou, Quanzhou, Ji'an, Luoyang, Hefei, Guilin, Yaran, Karamegdan, Taraz, Almaty
 	States: North Hebei, South Jiangsu, Zhejiang, East Guangdong, Ningguta, Liaoning, Shandong, Hubei, Fujian, Sichuan, Shanxi, South Jilin, Jiangxi, Shaanxi, North Henan, Hunan, East Gansu, Inner Mongolia, South Anhui, Eastern Mongolia, West Guangdong, Yun-Gui Hinterland, South Hebei, South Henan, Yun-Gui Frontier, North Jiangsu, Central Heilongjiang, West Gansu, Jetysuu, Kashgaria, South Ilin Hala
-	Advisors: None
+	Advisors: Quartermaster, Philosopher, Navigator
 	Ancients country name: Qing, Manchu
 

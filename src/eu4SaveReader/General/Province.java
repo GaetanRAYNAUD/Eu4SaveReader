@@ -110,6 +110,14 @@ public class Province {
 		    advisors.put(advisor.getId(), advisor);
 	    }
 	    
+	    while((startAddr = provinceInfos.indexOf("\n\t\t\tadvisor={", startAddr)) != -1) {
+	    	startAddr = startAddr + 16;
+	    	endAddr = provinceInfos.indexOf("}", startAddr);
+	    	Advisor advisor = new Advisor(provinceInfos.substring(startAddr, endAddr));
+		    
+		    advisors.put(advisor.getId(), advisor);
+	    }	    
+	    
     	return advisors;
     }
     

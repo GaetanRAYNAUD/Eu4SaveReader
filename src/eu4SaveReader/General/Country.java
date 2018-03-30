@@ -790,7 +790,7 @@ public class Country {
 	    rivals = extractRivals(countryInfos);
 	    allies = extractAllies(countryInfos);
 	    provinces = extractProvinces(countryInfos);
-	    //advisors = extractAdvisors(countryInfos);
+	    advisors = extractAdvisors(countryInfos);
 	    ancientsTags = extractAncientsTags(countryInfos);
 	    ideas = extractIdeas(countryInfos);
 	    policies = extractPolicies(countryInfos);
