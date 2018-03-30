@@ -8,6 +8,7 @@ Assassinblanc : Scandinavia
 	Has provinces in: Europe, North America
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
 	Ideas: Sweden ideas(7), Defensive(7), Economic(7), Quality(7), Espionage(7), Quantity(7), Religious(7), Administrative(7), Offensive(0)
+	Policies: 5
 	Development: 637
 	Realm development: 574.495
 	Number of provinces: 49
@@ -20,7 +21,7 @@ Assassinblanc : Scandinavia
 	Maximum manpower:  172295
 	Actual sailors: 13848
 	Maximum sailors: 13908
-	Land force limit: 72
+	Land force limit: 108
 	Active regular regiments: 97
 	Active mercenaries: 135
 	Professionalism: 0.851%
@@ -28,7 +29,7 @@ Assassinblanc : Scandinavia
 	Navy tradition: 34.14
 	Losses: 3466162
 	Stability: 3
-	Légitimacy: 96.617
+	Legitimacy: 96.617
 	Average autonomy: 12.377
 	Average unrest: -3.213
 	War exhaustion: 3.04
@@ -58,6 +59,7 @@ Meteo : France
 	Has provinces in: Europe, Africa
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
 	Ideas: France ideas(7), Defensive(7), Economic(7), Quality(7), Trade(7), Quantity(7), Religious(7), Offensive(7), Administrative(1)
+	Policies: 5
 	Development: 1482
 	Realm development: 1355.056
 	Number of provinces: 50
@@ -70,7 +72,7 @@ Meteo : France
 	Maximum manpower:  365578
 	Actual sailors: 12638
 	Maximum sailors: 12668
-	Land force limit: 146
+	Land force limit: 255
 	Active regular regiments: 95
 	Active mercenaries: 210
 	Professionalism: 0.406%
@@ -78,7 +80,7 @@ Meteo : France
 	Navy tradition: 48.147
 	Losses: 14257395
 	Stability: 1
-	Légitimacy: 19.643
+	Legitimacy: 19.643
 	Average autonomy: 9.104
 	Average unrest: -5.205
 	War exhaustion: 2.608
@@ -108,6 +110,7 @@ UAV-alpha : Poland
 	Has provinces in: Europe
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
 	Ideas: Poland ideas(7), Defensive(7), Economic(7), Quality(7), Espionage(7), Quantity(7), Innovative(7), Offensive(7), Administrative(1)
+	Policies: 5
 	Development: 1083
 	Realm development: 997.0
 	Number of provinces: 42
@@ -120,7 +123,7 @@ UAV-alpha : Poland
 	Maximum manpower:  187169
 	Actual sailors: 1386
 	Maximum sailors: 1386
-	Land force limit: 98
+	Land force limit: 172
 	Active regular regiments: 56
 	Active mercenaries: 187
 	Professionalism: 88.309%
@@ -128,7 +131,7 @@ UAV-alpha : Poland
 	Navy tradition: 0.326
 	Losses: 8214852
 	Stability: 2
-	Légitimacy: 78.52
+	Legitimacy: 78.52
 	Average autonomy: 8.333
 	Average unrest: -17.979
 	War exhaustion: 1.157
@@ -158,6 +161,7 @@ warpc : Great Britain
 	Has provinces in: Europe, Asia, Africa, North America, South America
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
 	Ideas: England ideas(7), Innovative(7), Quality(7), Defensive(7), Maritime(7), Quantity(7), Religious(7), Offensive(7), Administrative(4)
+	Policies: 5
 	Development: 1606
 	Realm development: 1604.804
 	Number of provinces: 106
@@ -170,7 +174,7 @@ warpc : Great Britain
 	Maximum manpower:  198473
 	Actual sailors: 29501
 	Maximum sailors: 75295
-	Land force limit: 280
+	Land force limit: 411
 	Active regular regiments: 117
 	Active mercenaries: 415
 	Professionalism: 55.942%
@@ -178,7 +182,7 @@ warpc : Great Britain
 	Navy tradition: 71.596
 	Losses: 10479997
 	Stability: 1
-	Légitimacy: 0.0
+	Legitimacy: 0.0
 	Average autonomy: 0.174
 	Average unrest: -14.543
 	War exhaustion: 1.186
@@ -194,7 +198,7 @@ warpc : Great Britain
 	Trade bonus: Fish, Fur, Naval Supplies, Copper, Ivory, Tobacco
 	Rivals: Poland, Prussia, Hungary
 	Allies: Scandinavia, France, Naples
-	Dependencies: Newfoundland(Colony), Louisiane britannique(Colony), Pérou britannique(Colony), Columbia britannique(Colony), Treize colonies(Colony)
+	Dependencies: Pérou britannique(Colony), Newfoundland(Colony), Treize colonies(Colony), Louisiane britannique(Colony), Columbia britannique(Colony)
 	Provinces: Merina, Curitiba, Candelaria, Sjælland, Puerto Deseado, Fyn, Sutherland, Tierra del Fuego, Angoche, Mtetwa, Cork, Sligo, Kildare, Ulster, Somerset, Lübeck, Florida Blanca, Kotte, Graaff-Reinet, Panama, Norfolk, Derbyshire, Nicaragua, Santa Catarina, Campinas, Calais, Sierra Leone, Managua, Veraguas, Orkney, Reykjavik, Akureyri, Tyrone, Pale, Leinster, Limerick, Connaught, Qishn, Benguela, Swellendam, Xhosa, Natal, Matsolo, Quelimane, Menabe, Besalampy, Mozambique, Kilwa, Mzizima, Lindi, Bagamoyo, Tanga, Mombasa, Antankara, Mogadishu, Iboina, Tsimihety, Maroantsetra, Vatomandry, Shetland, Antemoro, Färöarna, Betsileo, Mahafaly, Bornholm, Antanosy, Bara, Lolland, Antsalova, Fiherana, Ibo, Galápagos Islands, Merca, Beledweyne, Gedo, Warsheikh, El Buur, Cornwall, Hampshire, Barawa, Kent, Meregh, London, Borikén, Oxfordshire, St. Thomas, Essex, Gloucestershire, Antigua, Marches, Guadelupe, Glamorganshire, Gwynedd, Lincolnshire, Lancashire, Yorkshire, Northumberland, Cumbria, Lothian, Thatta, Ayrshire, Fife, Aberdeenshire, Inverness, Western Isles, Sao Vicente
 	Advisors: Army Reformer, Master of Mint, Naval Reformer
 	Ancients country name: England
@@ -208,6 +212,7 @@ Shy : Netherlands
 	Has provinces in: Europe, North America, South America
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
 	Ideas: Netherlands ideas(7), Defensive(7), Economic(7), Quality(7), Quantity(7), Espionage(7), Religious(7), Offensive(7), Administrative(1)
+	Policies: 5
 	Development: 1017
 	Realm development: 871.442
 	Number of provinces: 42
@@ -220,7 +225,7 @@ Shy : Netherlands
 	Maximum manpower:  155394
 	Actual sailors: 16862
 	Maximum sailors: 17937
-	Land force limit: 115
+	Land force limit: 201
 	Active regular regiments: 71
 	Active mercenaries: 168
 	Professionalism: 52.209%
@@ -228,7 +233,7 @@ Shy : Netherlands
 	Navy tradition: 21.925
 	Losses: 7918796
 	Stability: 0
-	Légitimacy: 23.337
+	Legitimacy: 23.337
 	Average autonomy: 16.158
 	Average unrest: -26.097
 	War exhaustion: 4.763
@@ -244,7 +249,7 @@ Shy : Netherlands
 	Trade bonus: None
 	Rivals: Prussia, Portugal, Spain
 	Allies: Scandinavia, France
-	Dependencies: Estonia(March), Lustrie(Colony), Pima(March), Brésil néerlandais(Colony), Estalie(Colony), Louisiane néerlandaise(Colony)
+	Dependencies: Louisiane néerlandaise(Colony), Estonia(March), Estalie(Colony), Lustrie(Colony), Pima(March), Brésil néerlandais(Colony)
 	Provinces: Uruguay, Banda Oriental, Ghent, Eskikewakik, Namur, East Frisia, Limburg, Antwerpen, Bremen, Berg, Münster, Unamakik, Bergenhus, Epekwitk, Sipeknekatik, Vlaanderen, Hainaut, Hoya, Brabant, Meppen, Liège, Loon, Breda, Kleves, Zeeland, Holland, Bermuda, Utrecht, Montevideo, Gelre, Colonia, Friesland, Dominica, Martinique, St. Lucia, Roanoke, St. Vincent, Chesapeake, Doeg, Oldenburg, Osnabrück, Powhatan
 	Advisors: Master of Mint, Commandant, Diplomat
 	Ancients country name: Brabant

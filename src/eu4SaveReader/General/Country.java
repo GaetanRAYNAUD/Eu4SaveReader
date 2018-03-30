@@ -75,6 +75,7 @@ public class Country {
     private ArrayList<String> ancientsTags = new ArrayList<String>();
     private HashMap<Country, String> dependencies = new HashMap<Country, String>();
     private LinkedHashMap<String, Integer> ideas = new LinkedHashMap<String, Integer>();
+    private ArrayList<String> policies = new ArrayList<String>();
     private ArrayList<Double> factions = new ArrayList<Double>(); 
     
     public Country(String tag) {
@@ -279,6 +280,21 @@ public class Country {
     	return ideas;
     }
     
+    private ArrayList<String> extractPolicies(String countryInfos) {
+	    int startAddr = 0;
+	    int endAddr;
+	    ArrayList<String> policies = new ArrayList<String>();
+	    
+	    while((startAddr = countryInfos.indexOf("active_policy={", startAddr)) != -1) {
+	    	startAddr =  countryInfos.indexOf("policy=\"", startAddr) + 8;
+	    	endAddr = countryInfos.indexOf("\n", startAddr);
+	    	
+	    	policies.add(countryInfos.substring(startAddr, endAddr).replace("\"", ""));
+	    }
+	    
+	    return policies;
+    }    
+    
     private ArrayList<Double> extractFactions(String countryInfos) {
     	ArrayList<Double> factions = new ArrayList<Double>();
     	
@@ -404,6 +420,128 @@ public class Country {
     		modifiers += 0.4;
     	}
     	
+    	for(Entry<String, Integer> i : ideas.entrySet()) {
+    		switch (i.getKey()) {
+    			case "RUS_ideas":
+    				if(i.getValue() >= 4) {
+    					modifiers += 0.5;
+    				}
+    				break;
+    				
+    			case "quantity_ideas":
+    				if(i.getValue() == 7) {
+    					modifiers += 0.5;
+    				}
+    				break;
+    				
+    			case "SCO_ideas":
+    				modifiers += 0.33;
+    				break;
+    				
+    			case "MOS_ideas":
+    			case "TUR_ideas":
+    				if(i.getValue() == 7) {
+    					modifiers += 0.33;
+    				}
+    				break;
+    				
+    			case "CHI_ideas":
+    			case "daimyo_ideas":
+    			case "NPL_ideas":
+    			case "STK_ideas":
+    				modifiers += 0.25;
+    				break;
+    				
+    			case "RUM_ideas":
+    			case "SUK_ideas":
+    			case "WLS_ideas":
+    			case "PRM_ideas":
+    				if(i.getValue() == 7) {
+    					modifiers += 0.25;
+    				}
+    				break;    				
+    				
+    			case "HES_ideas":
+    				if(i.getValue() >= 6) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "MOL_ideas":
+    				if(i.getValue() >= 3) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "RYA_ideas":
+    				if(i.getValue() >= 1) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "TPR_ideas":
+    				if(i.getValue() >= 4) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "ARW_ideas":
+    			case "IMG_ideas":
+    			case "INC_ideas":
+    			case "MAZ_ideas":
+    			case "SHN_ideas":
+    			case "TKI_ideas":
+    			case "TVE_ideas":
+    				modifiers += 0.2;
+    				break;
+    				
+    			case "BAL_ideas":
+    			case "LXA_ideas":
+    			case "laotian_ideas":
+    			case "somali_ideas":
+    				if(i.getValue() == 7) {
+    					modifiers += 0.25;
+    				}
+    				break; 
+    				
+    			case "offensive_ideas":
+    				if(i.getValue() >= 6) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "ALB_ideas":
+    				if(i.getValue() >= 1) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "AKT_ideas":
+    				if(i.getValue() >= 3) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "HSK_ideas":
+    				if(i.getValue() >= 4) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "MRI_ideas":
+    			case "MNS_ideas":
+    				if(i.getValue() >= 2) {
+    					modifiers += 0.25;
+    				}
+    				break;
+    				
+    			case "ROM_ideas":
+    				if(i.getValue() >= 4) {
+    					modifiers += 0.15;
+    				}
+    				break;
+    		}
+    	}
     	
     	this.forceLimit = (int) (forceLimit * modifiers); 
     }
@@ -565,6 +703,7 @@ public class Country {
 	    advisors = extractAdvisors(countryInfos);
 	    ancientsTags = extractAncientsTags(countryInfos);
 	    ideas = extractIdeas(countryInfos);
+	    policies = extractPolicies(countryInfos);
 	    factions = extractFactions(countryInfos);
     }
     
@@ -596,6 +735,7 @@ public class Country {
 		+ "\n\tHas provinces in: " + printContinents()
 		+ "\n\tInstitutions embraced: " + printInstitutions()
 		+ "\n\tIdeas: " + printIdeas()
+		+ "\n\tPolicies: " + policies.size()
 		+ "\n\tDevelopment: " + dev
 		+ "\n\tRealm development: " + realmDev
 		+ "\n\tNumber of provinces: " + nbProvince
@@ -616,7 +756,7 @@ public class Country {
 		+ "\n\tNavy tradition: " + navyTradition
 		+ "\n\tLosses: " + losses
 		+ "\n\tStability: " + stability
-		+ "\n\tLégitimacy: " + legitimacy
+		+ "\n\tLegitimacy: " + legitimacy
 		+ "\n\tAverage autonomy: " + averageAutonomy
 		+ "\n\tAverage unrest: " + averageUnrest
 		+ "\n\tWar exhaustion: " + warExhaustion
