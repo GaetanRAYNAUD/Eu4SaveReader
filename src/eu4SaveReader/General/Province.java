@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+import eu4SaveReader.Utils.Areas;
 import eu4SaveReader.Utils.Buildings;
 import eu4SaveReader.Utils.Cultures;
 import eu4SaveReader.Utils.Estates;
@@ -153,14 +154,19 @@ public class Province {
     	institutions = extractInstitutions(provinceInfos);
     	buildings = extractBuildings(provinceInfos);
     	advisors = extractAdvisors(provinceInfos);
-    	
+    }
+    
+    public void updateAutonomy(ArrayList<String> states) {
     	if(estate == 1 && autonomy == 0) {
     		autonomy = 25;
     	} else if(estate == 3 && autonomy < 25) {
     		autonomy = 25;
     	}
+    	
+    	if(!states.contains(Areas.provinceArea.get(id)) && autonomy < 75) {
+    		autonomy = 75;
+    	}
     }
-    
     @Override
     public String toString() {
 		return "\n\tName: " + name

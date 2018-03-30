@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 import java.util.stream.IntStream;
 
 import eu4SaveReader.Utils.Advisors;
+import eu4SaveReader.Utils.Areas;
 import eu4SaveReader.Utils.Cultures;
 import eu4SaveReader.Utils.Dependencies;
 import eu4SaveReader.Utils.Goods;
@@ -78,6 +79,7 @@ public class Country {
     private LinkedHashMap<String, Integer> ideas = new LinkedHashMap<String, Integer>();
     private ArrayList<String> policies = new ArrayList<String>();
     private ArrayList<Double> factions = new ArrayList<Double>();
+    private ArrayList<String> states = new ArrayList<String>();
     
     public Country(String tag) {
 		this.tag = tag;
@@ -280,7 +282,7 @@ public class Country {
 	    }
 	    
 	    return policies;
-    }    
+    }
     
     private ArrayList<Double> extractFactions(String countryInfos) {
     	ArrayList<Double> factions = new ArrayList<Double>();
@@ -305,6 +307,21 @@ public class Country {
     	return factions;
     }
     
+    private ArrayList<String> extractStates(String countryInfos) {
+	    int startAddr = 0;
+	    int endAddr;
+	    ArrayList<String> states = new ArrayList<String>();
+	    
+	    while((startAddr = countryInfos.indexOf("\tstate={", startAddr)) != -1) {
+	    	startAddr =  countryInfos.indexOf("area=\"", startAddr) + 6;
+	    	endAddr = countryInfos.indexOf("\"", startAddr);
+	    	
+	    	states.add(countryInfos.substring(startAddr, endAddr));
+	    }
+	    
+	    return states;
+    }      
+    
     private void updateAdvisors() {
     	for(Entry<Integer, Advisor> entryCoun : getAdvisors().entrySet()) {
     		provLoop:
@@ -322,7 +339,6 @@ public class Country {
     public void updateForceLimit(int nbCountriesHRE) {
     	double forceLimit = 0;
     	double modifiers = 1;
-    	//limite = { base pour chaque pays + [pour chaque province] ( dev de la province * 0.1 + batiments + bonus céréales) * autonomie } * {conseillers + autres modifiers}
     	
     	forceLimit += 6;
     	
@@ -336,11 +352,11 @@ public class Country {
     		}
     		
     		for(Entry<String, String> b : p.getBuildings().entrySet()) {
-    			if(b.getKey() == "native_fortified_house") {
+    			if(b.getKey().equals("native_fortified_house")) {
     				localForceLimit += 10;
-    			} else if(b.getKey() == "regimental_camp") {
+    			} else if(b.getKey().equals("regimental_camp")) {
     				localForceLimit += 1;
-    			} else if(b.getKey() == "conscription_center") {
+    			} else if(b.getKey().equals("conscription_center")) {
     				localForceLimit += 2;
     			}
     		}
@@ -352,8 +368,8 @@ public class Country {
     		forceLimit += localForceLimit;
     	}
     	
+    	int bonus = 0;
     	for(Entry<Country, String> d : dependencies.entrySet()) {
-    		int bonus = 0;
     		if(d.getValue().equals("vassal")) {
     			bonus += 1;		
     		} else if(d.getValue().equals("march")) {
@@ -363,47 +379,47 @@ public class Country {
     				bonus += 5;
     			}
     		}
+    	}
+    	
+    	forceLimit += bonus;
     		
-			for(Entry<String, Integer> i : ideas.entrySet()) {
-	    		switch (i.getKey()) {
-	    			case "influence_ideas":
-	    			case "ASK_ideas":
-	    				if(i.getValue() == 7) {
-    	    				bonus += bonus;
-	    				}
-	    				break;
-	    				
-	    			case "BOS_ideas":
-	    				if(i.getValue() >= 5) {
-	    					bonus += bonus;
-	    				}
-	    				break;
-	    		}
-			}
-			
-	    	for(String p : policies) {
-	    		switch (p) {
-	    			case "autonomous_estates":
-	    			case "vassal_obligations_act":
-	    			case "unified_army_command":
-	    					bonus += bonus;
-	    				break;
-	    		}
-	    	}
-	    	
-	    	forceLimit += bonus;
+		for(Entry<String, Integer> i : ideas.entrySet()) {
+    		switch (i.getKey()) {
+    			case "influence_ideas":
+    			case "ASK_ideas":
+    				if(i.getValue() == 7) {
+    					forceLimit += bonus;
+    				}
+    				break;
+    				
+    			case "BOS_ideas":
+    				if(i.getValue() >= 5) {
+    					forceLimit += bonus;
+    				}
+    				break;
+    		}
+		}
+		
+    	for(String p : policies) {
+    		switch (p) {
+    			case "autonomous_estates":
+    			case "vassal_obligations_act":
+    			case "unified_army_command":
+    				forceLimit += bonus;
+    				break;
+    		}
     	}
     		
     	if(isHREEmperor) {
     		forceLimit += 0.5 * nbCountriesHRE;
     	}
     	
-    	if(tag == "JMN") {
+    	if(tag.equals("JMN")) {
     		forceLimit += 100;
     	}
     	
     	for(Entry<Integer, Advisor> entry : advisors.entrySet()) {
-    		if(entry.getValue().getType() == "army_organiser") {
+    		if(entry.getValue().getType().equals("army_organiser")) {
     			modifiers += 0.1;
     			break;
     		}
@@ -713,6 +729,21 @@ public class Country {
     	return "None";
     }
     
+    private String printStates( ) {
+    	if(states.size() > 0) {
+	    	StringBuilder statesString = new StringBuilder();
+	    	
+	    	for(String s : states) {
+	    		statesString.append(Areas.areas.get(s));
+	    		statesString.append(", ");
+	    	}
+	    	
+	    	return statesString.toString().substring(0, statesString.toString().length() - 2);
+    	}
+    	
+    	return "None";
+    }
+    
     public void extractInfos(String countryInfos) {
 	    dev = Util.extractInfoDouble(countryInfos, "raw_development=").intValue();
 	    realmDev = Util.extractInfoDouble(countryInfos, "realm_development=");
@@ -764,12 +795,18 @@ public class Country {
 	    ideas = extractIdeas(countryInfos);
 	    policies = extractPolicies(countryInfos);
 	    factions = extractFactions(countryInfos);
+	    states = extractStates(countryInfos);
     }
     
     public void updateProvinceBasedInfos() {
         updateAdvisors();
 	    isPartHRE = provinces.get(capital).isPartHRE();
 	    provinces.get(capital).setAutonomy(0);
+	    
+	    for(Province p : provinces.values()) {
+	    	p.updateAutonomy(states);
+	    }
+	    
     }
     
     public void addDependencies(HashMap<Country, String> dependencies) {
@@ -834,6 +871,7 @@ public class Country {
 		+ "\n\tAllies: " + Util.printCountryList(allies)
 		+ "\n\tDependencies: " + printDependencies()
 		+ "\n\tProvinces: " + printProvinces()
+		+ "\n\tStates: " + printStates()
 		+ "\n\tAdvisors: " + printAdvisors()
 		+ "\n\tAncients country name: " + Util.printCountryList(ancientsTags)
 		+ "\n";
@@ -1261,5 +1299,13 @@ public class Country {
 
 	public void setGovType(String govType) {
 		this.govType = govType;
+	}
+
+	public ArrayList<String> getStates() {
+		return states;
+	}
+
+	public void setStates(ArrayList<String> states) {
+		this.states = states;
 	}	
 }
