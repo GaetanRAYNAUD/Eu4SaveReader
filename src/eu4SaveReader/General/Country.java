@@ -77,7 +77,7 @@ public class Country {
     private HashMap<Country, String> dependencies = new HashMap<Country, String>();
     private LinkedHashMap<String, Integer> ideas = new LinkedHashMap<String, Integer>();
     private ArrayList<String> policies = new ArrayList<String>();
-    private ArrayList<Double> factions = new ArrayList<Double>(); 
+    private ArrayList<Double> factions = new ArrayList<Double>();
     
     public Country(String tag) {
 		this.tag = tag;
