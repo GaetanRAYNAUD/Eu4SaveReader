@@ -61,6 +61,9 @@ public class Eu4File {
 		    startAddr = save.indexOf("\n-" + p.getId() + "={") + 5;
 		    if(startAddr != -1) {
 		    	endAddr = save.indexOf("}\n-", startAddr);
+		    	if(endAddr == -1) {
+		    		endAddr = save.indexOf("countries={", startAddr);
+		    	}
 		    	provinceInfos = save.substring(startAddr, endAddr);
 			    p.extractInfos(provinceInfos);
 		    }

@@ -361,8 +361,8 @@ public class Country {
     			}
     		}
     		
-    		if(p.getEstate() != 2) {
-    			localForceLimit *= 1 - (p.getAutonomy() / 100);
+    		if(p.getEstate() != 2 && p.getEstate() != 4 && p.getEstate() != 5) {
+    			localForceLimit *= (1 - (p.getAutonomy() / 100));
     		}
     		
     		forceLimit += localForceLimit;
@@ -790,7 +790,7 @@ public class Country {
 	    rivals = extractRivals(countryInfos);
 	    allies = extractAllies(countryInfos);
 	    provinces = extractProvinces(countryInfos);
-	    advisors = extractAdvisors(countryInfos);
+	    //advisors = extractAdvisors(countryInfos);
 	    ancientsTags = extractAncientsTags(countryInfos);
 	    ideas = extractIdeas(countryInfos);
 	    policies = extractPolicies(countryInfos);

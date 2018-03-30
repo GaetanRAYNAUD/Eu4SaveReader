@@ -157,9 +157,7 @@ public class Province {
     }
     
     public void updateAutonomy(ArrayList<String> states) {
-    	if(estate == 1 && autonomy == 0) {
-    		autonomy = 25;
-    	} else if(estate == 3 && autonomy < 25) {
+    	if(estate != 0 && autonomy < 25) {
     		autonomy = 25;
     	}
     	
