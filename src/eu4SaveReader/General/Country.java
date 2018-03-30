@@ -1,5 +1,6 @@
 package eu4SaveReader.General;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.GregorianCalendar;
@@ -37,7 +38,7 @@ public class Country {
     private double inflation;
     private int debt;
     private int mercantilism;
-    private double professionalism;
+    private BigDecimal professionalism;
     private double armyTradition;
     private double navyTradition;
     private int manpower;
@@ -53,7 +54,7 @@ public class Country {
     private double averageAutonomy;
     private double averageUnrest;
     private double warExhaustion;
-    private double religiousUnity;
+    private BigDecimal religiousUnity;
     private double prestige;
     private int powerProjection;
     private int splendor;
@@ -757,7 +758,7 @@ public class Country {
 	    inflation = Util.extractInfoDouble(countryInfos, "inflation=");
 	    debt = extractDebt(countryInfos);
 	    mercantilism = Util.extractInfoDouble(countryInfos, "mercantilism=").intValue();
-	    professionalism = 100 * Util.extractInfoDouble(countryInfos, "army_professionalism=");
+	    professionalism = new BigDecimal(Util.extractInfo(countryInfos, "army_professionalism=")).multiply(new BigDecimal("100")).setScale(3);
 	    armyTradition = Util.extractInfoDouble(countryInfos, "army_tradition=");
 	    navyTradition = Util.extractInfoDouble(countryInfos, "navy_tradition=");
 	    manpower = Integer.parseInt(Util.extractInfo(countryInfos, "\n\t\tmanpower=").replace(".", ""));
@@ -781,7 +782,7 @@ public class Country {
 	    averageAutonomy = Util.extractInfoDouble(countryInfos, "average_autonomy=");
 	    averageUnrest = Util.extractInfoDouble(countryInfos, "average_unrest=");
 	    warExhaustion = Util.extractInfoDouble(countryInfos, "war_exhaustion=");
-	    religiousUnity = 100 * Util.extractInfoDouble(countryInfos, "religious_unity=");
+	    religiousUnity = new BigDecimal(Util.extractInfo(countryInfos, "religious_unity=")).multiply(new BigDecimal("100")).setScale(1);
 	    religion = Util.extractInfo(countryInfos, "\n\t\treligion=");
 	    culture = Util.extractInfo(countryInfos, "primary_culture=");
 	    goldenAge = Util.convertStringToDate(Util.extractInfo(countryInfos, "golden_era_date="));
@@ -941,7 +942,7 @@ public class Country {
 		return prestige;
 	}
     
-	public double getProfessionalism() {
+	public BigDecimal getProfessionalism() {
 		return professionalism;
 	}    
     
@@ -1025,7 +1026,7 @@ public class Country {
 		this.prestige = prestige;
 	}
     
-    public void setProfessionalism(double professionalism) {
+    public void setProfessionalism(BigDecimal professionalism) {
 		this.professionalism = professionalism;
 	}
     
@@ -1213,11 +1214,11 @@ public class Country {
 		this.navyTradition = navyTradition;
 	}
 
-	public double getReligiousUnity() {
+	public BigDecimal getReligiousUnity() {
 		return religiousUnity;
 	}
 
-	public void setReligiousUnity(double religiousUnity) {
+	public void setReligiousUnity(BigDecimal religiousUnity) {
 		this.religiousUnity = religiousUnity;
 	}
 
