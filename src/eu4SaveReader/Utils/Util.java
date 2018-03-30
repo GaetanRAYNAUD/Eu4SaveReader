@@ -35,9 +35,33 @@ public final class Util {
 		return null;
     }
     
+    public static final Double extractInfoDouble(String info, String landmark) {
+		try {
+			return Double.parseDouble(extractInfo(info, landmark));
+		} catch(NumberFormatException e) {
+			return 0.;
+		} catch(NullPointerException e) {
+			return 0.;
+		}
+    }
+    
+    public static final int extractInfoInt(String info, String landmark) {
+    	try {
+    		return Integer.parseInt(extractInfo(info, landmark));
+    	} catch(NumberFormatException e) {
+    		return 0;
+    	} catch(NullPointerException e) {
+    		return 0;
+    	}
+    }
+    
 	public static final GregorianCalendar convertStringToDate(String dateString) {
-		String[] date = dateString.split("\\.");
-		return new GregorianCalendar(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+		if(dateString != null) {
+			String[] date = dateString.split("\\.");
+			return new GregorianCalendar(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+		}
+		
+		return new GregorianCalendar(0, 0, 0);
 	}
 	
     public static final String printCountryList(ArrayList<String> list) {
@@ -52,10 +76,14 @@ public final class Util {
 	    	return listString.toString().substring(0, listString.toString().length() - 2);
     	}
     	
-    	return "";
+    	return "None";
     }
     
     public static final String printDate(GregorianCalendar date) {
+    	if(date.equals(new GregorianCalendar(0, 0, 0))) {
+    		return "";
+    	}
+    	
     	return date.get(GregorianCalendar.DAY_OF_MONTH) + " " + Util.mouth.get(date.get(GregorianCalendar.MONTH)) + " " + date.get(GregorianCalendar.YEAR);
     }
     

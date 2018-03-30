@@ -14,6 +14,7 @@ import eu4SaveReader.Utils.Dependencies;
 import eu4SaveReader.Utils.Goods;
 import eu4SaveReader.Utils.Governments;
 import eu4SaveReader.Utils.Ideas;
+import eu4SaveReader.Utils.Policies;
 import eu4SaveReader.Utils.ProvincesId;
 import eu4SaveReader.Utils.Religions;
 import eu4SaveReader.Utils.Tags;
@@ -81,21 +82,7 @@ public class Country {
     public Country(String tag) {
 		this.tag = tag;
 	}
-    
-    private double extractInflation(String countryInfos) {
-    	double inflation;
-    	
-		try {
-			inflation = Double.parseDouble(Util.extractInfo(countryInfos, "inflation="));
-		} catch(NumberFormatException e) {
-			inflation = 0;
-		} catch(NullPointerException e) {
-			inflation = 0;
-		}
-		
-    	return inflation;
-    }
-    
+
     private ArrayList<Boolean> extractContinents(String countryInfos) {
     	int startAddr, endAddr;
     	ArrayList<Boolean> continents = new ArrayList<Boolean>();
@@ -143,7 +130,7 @@ public class Country {
 	    }
 	    
 	    return debt;
-    }
+    }  
     
     private int extractLosses(String countryInfos) {
     	int startAddr, endAddr;
@@ -343,7 +330,7 @@ public class Country {
     		Province p = entryProv.getValue();
     		
     		double localForceLimit = 0;
-    		localForceLimit += (p.getBaseManpower() + p.getBaseProd() + p.getBaseManpower()) * 0.1;
+    		localForceLimit += (p.getBaseTax() + p.getBaseProd() + p.getBaseManpower()) * 0.1;
     		if(p.getGood() == "grain") {
     			localForceLimit += 0.5;
     		}
@@ -364,15 +351,45 @@ public class Country {
     	}
     	
     	for(Entry<Country, String> d : dependencies.entrySet()) {
+    		int bonus = 0;
     		if(d.getValue().equals("vassal")) {
-    			forceLimit += 1;
+    			bonus += 1;		
     		} else if(d.getValue().equals("march")) {
-    			forceLimit += 2;
+    			bonus += 2;
     		} else if(d.getValue().equals("colony")) {
     			if(d.getKey().getNbProvince() >= 10) {
-    				forceLimit += 5;
+    				bonus += 5;
     			}
     		}
+    		
+			for(Entry<String, Integer> i : ideas.entrySet()) {
+	    		switch (i.getKey()) {
+	    			case "influence_ideas":
+	    			case "ASK_ideas":
+	    				if(i.getValue() == 7) {
+    	    				bonus += bonus;
+	    				}
+	    				break;
+	    				
+	    			case "BOS_ideas":
+	    				if(i.getValue() >= 5) {
+	    					bonus += bonus;
+	    				}
+	    				break;
+	    		}
+			}
+			
+	    	for(String p : policies) {
+	    		switch (p) {
+	    			case "autonomous_estates":
+	    			case "vassal_obligations_act":
+	    			case "unified_army_command":
+	    					bonus += bonus;
+	    				break;
+	    		}
+	    	}
+	    	
+	    	forceLimit += bonus;
     	}
     		
     	if(isHREEmperor) {
@@ -506,32 +523,32 @@ public class Country {
     				
     			case "offensive_ideas":
     				if(i.getValue() >= 6) {
-    					modifiers += 0.25;
+    					modifiers += 0.20;
     				}
     				break;
     				
     			case "ALB_ideas":
     				if(i.getValue() >= 1) {
-    					modifiers += 0.25;
+    					modifiers += 0.2;
     				}
     				break;
     				
     			case "AKT_ideas":
     				if(i.getValue() >= 3) {
-    					modifiers += 0.25;
+    					modifiers += 0.2;
     				}
     				break;
     				
     			case "HSK_ideas":
     				if(i.getValue() >= 4) {
-    					modifiers += 0.25;
+    					modifiers += 0.2;
     				}
     				break;
     				
     			case "MRI_ideas":
     			case "MNS_ideas":
     				if(i.getValue() >= 2) {
-    					modifiers += 0.25;
+    					modifiers += 0.2;
     				}
     				break;
     				
@@ -543,10 +560,23 @@ public class Country {
     		}
     	}
     	
+    	for(String p : policies) {
+    		switch (p) {
+    			case "pen_rely_on_sword_act":
+    			case "agricultural_cultivations":
+    			case "colonial_garrisons":
+    					modifiers += 0.1;
+    				break;
+    		}
+    	}
+    	
     	this.forceLimit = (int) (forceLimit * modifiers); 
     }
     
     private String printContinents() {
+    	if(!continents.contains(true)) {
+    		return "None";
+    	}    	
     	StringBuilder continentsString = new StringBuilder();
     	
     	for(int i = 0; i < continents.size(); i ++) {
@@ -560,6 +590,10 @@ public class Country {
     }
     
     private String printInstitutions() {
+    	if(!institutions.contains(true)) {
+    		return "None";
+    	}
+    	
     	StringBuilder institutionsString = new StringBuilder();
     	
     	for(int i = 0; i < institutions.size(); i ++) {
@@ -573,25 +607,33 @@ public class Country {
     }
     
     private String printProvinces() {
-    	StringBuilder provincesString = new StringBuilder();
-    	
-    	for(Entry<Integer, Province> entryProv : provinces.entrySet()) {    		
-    		provincesString.append(ProvincesId.provincesId.get(entryProv.getKey()));
-    		provincesString.append(", ");
+    	if(provinces.size() > 0) {
+	    	StringBuilder provincesString = new StringBuilder();
+	    	
+	    	for(Entry<Integer, Province> entryProv : provinces.entrySet()) {    		
+	    		provincesString.append(ProvincesId.provincesId.get(entryProv.getKey()));
+	    		provincesString.append(", ");
+	    	}
+	    	
+	    	return provincesString.toString().substring(0, provincesString.toString().length() - 2);
     	}
     	
-    	return provincesString.toString().substring(0, provincesString.toString().length() - 2);    	
+    	return "None";
     }
     
     private String printAdvisors() {
-    	StringBuilder advisorsString = new StringBuilder();
-    	
-    	for(Entry<Integer, Advisor> entry : advisors.entrySet()) {
-    		advisorsString.append(Advisors.advisorsType.get(entry.getValue().getType()));
-    		advisorsString.append(", ");
+    	if(advisors.size() > 0) {
+	    	StringBuilder advisorsString = new StringBuilder();
+	    	
+	    	for(Entry<Integer, Advisor> entry : advisors.entrySet()) {
+	    		advisorsString.append(Advisors.advisorsType.get(entry.getValue().getType()));
+	    		advisorsString.append(", ");
+	    	}
+	    	
+	    	return advisorsString.toString().substring(0, advisorsString.toString().length() - 2);
     	}
     	
-    	return advisorsString.toString().substring(0, advisorsString.toString().length() - 2);      	
+    	return "None";
     }
     
     private String printTradeBonus() {
@@ -632,6 +674,21 @@ public class Country {
     	return "None";
     }
     
+    private String printPolicies() {
+    	if(policies.size() > 0) {
+	    	StringBuilder policiesString = new StringBuilder();
+	    	
+	    	for(String p : policies) {
+	    		policiesString.append(Policies.policies.get(p));    		
+	    		policiesString.append(", ");
+	    	}
+	    	
+	    	return policiesString.toString().substring(0, policiesString.toString().length() - 2);
+    	}
+    	
+    	return "None";
+    }    
+    
     private String printDependencies() {
     	if(dependencies.size() > 0) {
 	    	StringBuilder dependenciesString = new StringBuilder();
@@ -655,43 +712,43 @@ public class Country {
     }
     
     public void extractInfos(String countryInfos) {
-	    dev = (int) Double.parseDouble(Util.extractInfo(countryInfos, "raw_development="));
-	    realmDev = Double.parseDouble(Util.extractInfo(countryInfos, "realm_development="));
-	    nbProvince = Integer.parseInt(Util.extractInfo(countryInfos, "num_of_cities="));
+	    dev = Util.extractInfoDouble(countryInfos, "raw_development=").intValue();
+	    realmDev = Util.extractInfoDouble(countryInfos, "realm_development=");
+	    nbProvince = Util.extractInfoInt(countryInfos, "num_of_cities=");
 	    govType = Util.extractInfo(countryInfos, "government=\"").replace("\"", "");
-	    govRank = Integer.parseInt(Util.extractInfo(countryInfos, "government_rank="));
+	    govRank = Util.extractInfoInt(countryInfos, "government_rank=");
 	    continents = extractContinents(countryInfos);
 	    institutions = extractInstitutions(countryInfos);
-	    cash = Double.parseDouble(Util.extractInfo(countryInfos, "treasury="));
-	    income = Double.parseDouble(Util.extractInfo(countryInfos, "estimated_monthly_income="));
-	    inflation = extractInflation(countryInfos);
+	    cash = Util.extractInfoDouble(countryInfos, "treasury=");
+	    income = Util.extractInfoDouble(countryInfos, "estimated_monthly_income=");
+	    inflation = Util.extractInfoDouble(countryInfos, "inflation=");
 	    debt = extractDebt(countryInfos);
-	    mercantilism = (int) Double.parseDouble(Util.extractInfo(countryInfos, "mercantilism="));
-	    professionalism = 100 * Double.parseDouble(Util.extractInfo(countryInfos, "army_professionalism="));
-	    armyTradition = Double.parseDouble(Util.extractInfo(countryInfos, "army_tradition="));
-	    navyTradition = Double.parseDouble(Util.extractInfo(countryInfos, "navy_tradition="));
+	    mercantilism = Util.extractInfoDouble(countryInfos, "mercantilism=").intValue();
+	    professionalism = 100 * Util.extractInfoDouble(countryInfos, "army_professionalism=");
+	    armyTradition = Util.extractInfoDouble(countryInfos, "army_tradition=");
+	    navyTradition = Util.extractInfoDouble(countryInfos, "navy_tradition=");
 	    manpower = Integer.parseInt(Util.extractInfo(countryInfos, "\n\t\tmanpower=").replace(".", ""));
 	    maxManpower = Integer.parseInt(Util.extractInfo(countryInfos, "max_manpower=").replace(".", ""));
-	    sailors = (int) Double.parseDouble(Util.extractInfo(countryInfos, "\n\t\tsailors="));
-	    maxSailors = (int) Double.parseDouble(Util.extractInfo(countryInfos, "max_sailors="));
+	    sailors = Util.extractInfoDouble(countryInfos, "\n\t\tsailors=").intValue();
+	    maxSailors = Util.extractInfoDouble(countryInfos, "max_sailors=").intValue();
 	    losses = extractLosses(countryInfos);
-	    army = Integer.parseInt(Util.extractInfo(countryInfos, "num_of_regulars="));
-	    mercenaries = Integer.parseInt(Util.extractInfo(countryInfos, "num_of_mercenaries="));
-	    stability = (int) Double.parseDouble(Util.extractInfo(countryInfos, "\tstability="));
-	    legitimacy = Double.parseDouble(Util.extractInfo(countryInfos, "legitimacy="));
-	    prestige = Double.parseDouble(Util.extractInfo(countryInfos, "prestige="));
-	    powerProjection = (int) Double.parseDouble(Util.extractInfo(countryInfos, "current_power_projection="));
-	    splendor = (int) Double.parseDouble(Util.extractInfo(countryInfos, "splendor="));
-	    score = Double.parseDouble(Util.extractInfo(countryInfos, "\n\t\tscore="));
-	    absolutism = Double.parseDouble(Util.extractInfo(countryInfos, "\tabsolutism="));
-	    admTech = Integer.parseInt(Util.extractInfo(countryInfos, "adm_tech="));
-	    dipTech = Integer.parseInt(Util.extractInfo(countryInfos, "dip_tech="));
-	    milTech = Integer.parseInt(Util.extractInfo(countryInfos, "mil_tech="));
-	    capital = Integer.parseInt(Util.extractInfo(countryInfos, "\n\t\tcapital="));
-	    averageAutonomy = Double.parseDouble(Util.extractInfo(countryInfos, "average_autonomy="));
-	    averageUnrest = Double.parseDouble(Util.extractInfo(countryInfos, "average_unrest="));
-	    warExhaustion = Double.parseDouble(Util.extractInfo(countryInfos, "war_exhaustion="));
-	    religiousUnity = 100 * Double.parseDouble(Util.extractInfo(countryInfos, "religious_unity="));
+	    army = Util.extractInfoInt(countryInfos, "num_of_regulars=");
+	    mercenaries = Util.extractInfoInt(countryInfos, "num_of_mercenaries=");
+	    stability = Util.extractInfoDouble(countryInfos, "\tstability=").intValue();
+	    legitimacy = Util.extractInfoDouble(countryInfos, "legitimacy=");
+	    prestige = Util.extractInfoDouble(countryInfos, "prestige=");
+	    powerProjection = Util.extractInfoDouble(countryInfos, "current_power_projection=").intValue();
+	    splendor = Util.extractInfoDouble(countryInfos, "splendor=").intValue();
+	    score = Util.extractInfoDouble(countryInfos, "\n\t\tscore=");
+	    absolutism = Util.extractInfoDouble(countryInfos, "\tabsolutism=");
+	    admTech = Util.extractInfoInt(countryInfos, "adm_tech=");
+	    dipTech = Util.extractInfoInt(countryInfos, "dip_tech=");
+	    milTech = Util.extractInfoInt(countryInfos, "mil_tech=");
+	    capital = Util.extractInfoInt(countryInfos, "\n\t\tcapital=");
+	    averageAutonomy = Util.extractInfoDouble(countryInfos, "average_autonomy=");
+	    averageUnrest = Util.extractInfoDouble(countryInfos, "average_unrest=");
+	    warExhaustion = Util.extractInfoDouble(countryInfos, "war_exhaustion=");
+	    religiousUnity = 100 * Util.extractInfoDouble(countryInfos, "religious_unity=");
 	    religion = Util.extractInfo(countryInfos, "\n\t\treligion=");
 	    culture = Util.extractInfo(countryInfos, "primary_culture=");
 	    goldenAge = Util.convertStringToDate(Util.extractInfo(countryInfos, "golden_era_date="));
@@ -721,7 +778,7 @@ public class Country {
     }
     
     public void updataNbProvince(String countryInfos) {
-    	nbProvince = Integer.parseInt(Util.extractInfo(countryInfos, "num_of_cities="));
+    	nbProvince = Util.extractInfoInt(countryInfos, "num_of_cities=");
     }
     
     @Override
@@ -735,7 +792,7 @@ public class Country {
 		+ "\n\tHas provinces in: " + printContinents()
 		+ "\n\tInstitutions embraced: " + printInstitutions()
 		+ "\n\tIdeas: " + printIdeas()
-		+ "\n\tPolicies: " + policies.size()
+		+ "\n\tPolicies: " + printPolicies()
 		+ "\n\tDevelopment: " + dev
 		+ "\n\tRealm development: " + realmDev
 		+ "\n\tNumber of provinces: " + nbProvince

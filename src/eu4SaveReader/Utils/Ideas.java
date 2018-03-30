@@ -28,5 +28,4 @@ public final class Ideas {
 		ideas.put("spy_ideas", "Espionage");
 		ideas.put("trade_ideas", "Trade");
 	}
-
 }
