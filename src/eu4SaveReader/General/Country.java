@@ -331,7 +331,7 @@ public class Country {
     		
     		double localForceLimit = 0;
     		localForceLimit += (p.getBaseTax() + p.getBaseProd() + p.getBaseManpower()) * 0.1;
-    		if(p.getGood() == "grain") {
+    		if(p.getGood().equals("grain")) {
     			localForceLimit += 0.5;
     		}
     		
@@ -345,7 +345,9 @@ public class Country {
     			}
     		}
     		
-    		localForceLimit *= (100 - p.getAutonomy()) / 100;
+    		if(p.getEstate() != 2) {
+    			localForceLimit *= 1 - (p.getAutonomy() / 100);
+    		}
     		
     		forceLimit += localForceLimit;
     	}
@@ -462,7 +464,7 @@ public class Country {
     				}
     				break;
     				
-    			case "CHI_ideas":
+    			case "CHICK_ideas":
     			case "daimyo_ideas":
     			case "NPL_ideas":
     			case "STK_ideas":
@@ -517,13 +519,13 @@ public class Country {
     			case "laotian_ideas":
     			case "somali_ideas":
     				if(i.getValue() == 7) {
-    					modifiers += 0.25;
+    					modifiers += 0.2;
     				}
     				break; 
     				
     			case "offensive_ideas":
     				if(i.getValue() >= 6) {
-    					modifiers += 0.20;
+    					modifiers += 0.2;
     				}
     				break;
     				
@@ -767,6 +769,7 @@ public class Country {
     public void updateProvinceBasedInfos() {
         updateAdvisors();
 	    isPartHRE = provinces.get(capital).isPartHRE();
+	    provinces.get(capital).setAutonomy(0);
     }
     
     public void addDependencies(HashMap<Country, String> dependencies) {

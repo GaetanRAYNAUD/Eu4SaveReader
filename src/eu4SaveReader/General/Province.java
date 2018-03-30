@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 
 import eu4SaveReader.Utils.Buildings;
 import eu4SaveReader.Utils.Cultures;
+import eu4SaveReader.Utils.Estates;
 import eu4SaveReader.Utils.Goods;
 import eu4SaveReader.Utils.ProvincesId;
 import eu4SaveReader.Utils.Religions;
@@ -22,6 +23,7 @@ public class Province {
     private int baseProd;
     private int baseManpower;
     private double autonomy;
+    private int estate;
     private String good;
     private String religion;
     private String culture;
@@ -34,19 +36,17 @@ public class Province {
     	this.id = id;
     	name = ProvincesId.provincesId.get(id);
     }
-
-    private double extractAutonomy(String provinceInfos) {
-    	double autonomy;
+    
+    private boolean extractPartHRE(String provinceInfos) {
+    	boolean partHRE;
     	
-		try {
-			autonomy = Double.parseDouble(Util.extractInfo(provinceInfos, "local_autonomy="));
-		} catch(NumberFormatException e) {
-			autonomy = 0;
-		} catch(NullPointerException e) {
-			autonomy = 0;
-		}
-		
-    	return autonomy;
+    	try {
+    		partHRE = Util.extractInfo(provinceInfos, "\n\t\thre=").equalsIgnoreCase("yes");
+    	} catch (NullPointerException e) {
+    		partHRE = false;
+    	}
+    	
+    	return partHRE;
     }
     
     private ArrayList<Double> extractInstitutions(String provinceInfos) {
@@ -112,7 +112,7 @@ public class Province {
     	return advisors;
     }
     
-    private String printInstitutions() {
+    private String printInstitutions() {   	
     	StringBuilder institutionsString = new StringBuilder();
     	
     	for(int i = 0; i < institutions.size(); i ++) {
@@ -125,6 +125,9 @@ public class Province {
     }
     
     private String printBuildings() {
+    	if(buildings.isEmpty()) {
+    		return "None";
+    	}
     	StringBuilder buildingsString = new StringBuilder();
     	
     	for(Entry<String, String> b : buildings.entrySet()) {
@@ -138,17 +141,24 @@ public class Province {
     public void extractInfos(String provinceInfos) {
     	owner = Util.extractInfo(provinceInfos, "owner=").replace("\"", "");
     	controller = Util.extractInfo(provinceInfos, "controller=").replace("\"", "");
-    	baseTax = (int) Double.parseDouble(Util.extractInfo(provinceInfos, "base_tax="));
-    	baseProd = (int) Double.parseDouble(Util.extractInfo(provinceInfos, "base_production="));
-    	baseManpower = (int) Double.parseDouble(Util.extractInfo(provinceInfos, "base_manpower="));
-    	autonomy = extractAutonomy(provinceInfos);
-    	isPartHRE = Util.extractInfo(provinceInfos, "hre=").equalsIgnoreCase("yes");
+    	baseTax = Util.extractInfoDouble(provinceInfos, "base_tax=").intValue();
+    	baseProd = Util.extractInfoDouble(provinceInfos, "base_production=").intValue();
+    	baseManpower = Util.extractInfoDouble(provinceInfos, "base_manpower=").intValue();
+    	autonomy = Util.extractInfoDouble(provinceInfos, "local_autonomy=");
+    	estate = Util.extractInfoInt(provinceInfos, "estate=");
+    	isPartHRE = extractPartHRE(provinceInfos);
     	good = Util.extractInfo(provinceInfos, "trade_goods=");
 	    religion = Util.extractInfo(provinceInfos, "\n\t\treligion=");
 	    culture = Util.extractInfo(provinceInfos, "\n\t\tculture=");
     	institutions = extractInstitutions(provinceInfos);
     	buildings = extractBuildings(provinceInfos);
     	advisors = extractAdvisors(provinceInfos);
+    	
+    	if(estate == 1 && autonomy == 0) {
+    		autonomy = 25;
+    	} else if(estate == 3 && autonomy < 25) {
+    		autonomy = 25;
+    	}
     }
     
     @Override
@@ -161,6 +171,7 @@ public class Province {
 		+ "\n\tBase production: " + baseProd
 		+ "\n\tBase manpower: " + baseManpower
 		+ "\n\tLocal autonomy: " + autonomy
+		+ "\n\tEstate: " + Estates.estates.get(estate)
 		+ "\n\tIs part of HRE: " + Util.printBoolean(isPartHRE)
 		+ "\n\tProduced good: " + Goods.goodsNames.get(good)
 		+ "\n\tCulture: " + Cultures.cultures.get(culture)
@@ -288,5 +299,13 @@ public class Province {
 
 	public void setController(String controller) {
 		this.controller = controller;
+	}
+
+	public int getEstate() {
+		return estate;
+	}
+
+	public void setEstate(int estate) {
+		this.estate = estate;
 	};	
 }
