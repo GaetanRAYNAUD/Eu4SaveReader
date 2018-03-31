@@ -27,7 +27,7 @@ public class Player {
     
     @Override
     public String toString() {
-		return name + " : " + country.toString();
+		return name + " : " + country.toString() + "\n";
     }
     
     public Country getCountry() {
