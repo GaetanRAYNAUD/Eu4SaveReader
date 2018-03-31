@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -58,7 +59,7 @@ public class Excel {
             
             Cell nbSessionCell = workbook.getSheetAt(1).getRow(1).getCell(3);
             
-            if(nbSessionCell.getCellTypeEnum() == CellType.FORMULA && nbSessionCell != null) {
+            if(nbSessionCell != null) {
             	nbSession = (int) nbSessionCell.getNumericCellValue();
             }
             
@@ -87,6 +88,26 @@ public class Excel {
 	        Row infosRow = generalInfoSheet.getRow(numSessionFirstRow);
 	        Cell endDateCell = infosRow.getCell(5);
 	        endDateCell.setCellValue(Util.printDate(save.getCurrentDate()));
+	        
+	        for(Player p : save.getPlayers()) {
+	        	Row tagsRow = generalInfoSheet.getRow(2);
+	        	Iterator<Cell> tagsIterator = tagsRow.cellIterator();
+	        	
+	        	while(tagsIterator.hasNext() && !tagsIterator.next().getStringCellValue().equals(p.getCountry().getTag())) {
+	        		
+	        	}
+	        	
+	        	int playerColumn = tagsIterator.next().getAddress().getColumn() - 1;
+	        	
+	        	generalInfoSheet.getRow(numSessionFirstRow + 1).getCell(playerColumn).setCellValue(p.getCountry().getDev());
+	        	generalInfoSheet.getRow(numSessionFirstRow + 2).getCell(playerColumn).setCellValue(p.getCountry().getIncome());
+	        	generalInfoSheet.getRow(numSessionFirstRow + 3).getCell(playerColumn).setCellValue(p.getCountry().getMaxManpower());
+	        	generalInfoSheet.getRow(numSessionFirstRow + 4).getCell(playerColumn).setCellValue(p.getCountry().getForceLimit());
+	        	generalInfoSheet.getRow(numSessionFirstRow + 5).getCell(playerColumn).setCellValue(p.getCountry().getNbProvince());
+	        	generalInfoSheet.getRow(numSessionFirstRow + 6).getCell(playerColumn).setCellValue(p.getCountry().getLosses());
+	        	generalInfoSheet.getRow(numSessionFirstRow + 7).getCell(playerColumn).setCellValue(p.getCountry().getDebt());
+	        	generalInfoSheet.getRow(numSessionFirstRow + 8).getCell(playerColumn).setCellValue(p.getCountry().getProfessionalism().divide(new BigDecimal(100)).doubleValue());
+	        }
 	        
 	        excelFile.close();
 			

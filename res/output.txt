@@ -55,6 +55,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Austria Proper, Silesia, Erzgebirge, Tirol, Inner Austria, Carniola, Upper Swabia, Upper Bavaria, Lower Swabia, Lower Bavaria, Bohemia, Switzerland, Romandie, Franconia, Upper Rhineland
 	Advisors: Commandant, Treasurer, Naval Reformer
 	Ancients country name: Austria
+
 , Meteo : France
 	Capital: Paris
 	Culture: Francien
@@ -106,6 +107,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Seine, Languedoc, Guyenne, Massif Central, Loire, Savoy, Gascony, Picardy, Vasconia, Normandy, Provence, Brittany, Lorraine, Wallonia, Burgundy, Catalonia, Southern Morocco, Romandie
 	Advisors: Diplomat, Army Reformer, Philosopher
 	Ancients country name: None
+
 , Morgenstar : Russia
 	Capital: Vladimir
 	Culture: Muscovite
@@ -131,7 +133,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 517
 	Active regular regiments: 97
 	Active mercenaries: 204
-	Professionalism: 49.026%
+	Professionalism: 0.000%
 	Army tradition: 100.0
 	Navy tradition: 10.38
 	Losses: 6272282
@@ -157,6 +159,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Moscow, Galich, Suzdal, Vladimir, Yarloslavl, Ryazan, South Karelia, Bashkiria, Novgorod, Perm, Kama, Kazan, Arkhangelsk, Volga, Sloboda Ukraine, Oka, Tver, Pskov, North Karelia, Beloozero, Saratov, Samara, Ishim, Pomorye, Vologda, Tambov, Ural, Kara, Central Siberia, Ob, Tunguska, Yakutia, Irkutsk, Kolyma, Sakha, Nogai, Lower Yik, Okhotsk, Kazakhstan, Magadan, Yrtesh, Laponia, Kamchatka, null, Balchash, Uliastai, Buryatia, Outer Mongolia
 	Advisors: Natural Scientist, Army Reformer, Diplomat
 	Ancients country name: Muscovy
+
 , Assassin Blanc : Scandinavia
 	Capital: Stockholm
 	Culture: Swedish
@@ -208,6 +211,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Östra Svealand, Finland, Norrland, Västra Svealand, Östra Götaland, Västra Götaland, Ostrobothnia, Laponia, Skåneland, Vestlandet, Østlandet, Trøndelag, South Karelia, North Jutland, Schleswig-Holstein, Lower Acadia
 	Advisors: Spymaster, Commandant
 	Ancients country name: Sweden
+
 , Pietrobu : Tuscany
 	Capital: Milan
 	Culture: Lombard
@@ -259,6 +263,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Lombardy, Piedmont, Emilia-Romagna, Tuscany, Liguria, Switzerland, Western Mediterranean Islands, Lazio-Campania, Central Italy
 	Advisors: Trader, Theologian, Commandant
 	Ancients country name: Milan
+
 , Shy : Netherlands
 	Capital: Amsterdam
 	Culture: Flemish
@@ -284,7 +289,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 328
 	Active regular regiments: 71
 	Active mercenaries: 168
-	Professionalism: 52.209%
+	Professionalism: 0.000%
 	Army tradition: 100.0
 	Navy tradition: 21.925
 	Losses: 7918796
@@ -310,6 +315,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Brabant, Liege, North Rhine, Frisia, Weser, Westphalia, Wallonia, Windward Islands, Netherlands, Flanders, Virginia, Braunschweig, North Carolina, Vestlandet, Banda Oriental, Greater Antilles, Lower Acadia
 	Advisors: Master of Mint, Commandant, Diplomat
 	Ancients country name: Brabant
+
 , Aikiko : Egypt
 	Capital: Cairo
 	Culture: Egyptian
@@ -361,6 +367,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Bahari, Syria, Aleppo, Delta, Said, Vostani, Cyrenaica, Transjordan, Red Sea Hills, Tabuk, Mecca, Damot, Tihama al-Yemen, Central Ethiopia, Medina, Tigray, Kaffa, Lower Yemen, Ifat, Upper Nubia, Aussa, Kurdufan, Sennar, Lower Nubia, Ogaden, Hadiya, Red Sea Coast, Asir, Somaliland, Shewa, Majeerteen, Dongola, al-Qasim, Syrian Desert, al-Wahat, Hadramut, Mahra, Dhofar, An Nafud
 	Advisors: Theologian, Trader, Commandant
 	Ancients country name: Mamluks
+
 , Geronimo : Bharat
 	Capital: Vijayanagar
 	Culture: Kannada
@@ -412,6 +419,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Rayalaseema, Madura, Coromandel, Carnatic, Kanara, Konkan, Mysore, Maidan, Kerala, Lanka, Andhra, Telingana, Maharashtra, Desh, Indian Ocean Islands, Garjat, Tapti, Malwa, Gujarat, Mewar, Sindh, Marwar, Minangkabau, Saurashtra
 	Advisors: Spymaster, Master of Mint, Commandant
 	Ancients country name: Vijayanagar
+
 , Navy_74 : Venice
 	Capital: Venezia
 	Culture: Venetian
@@ -437,7 +445,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 178
 	Active regular regiments: 70
 	Active mercenaries: 41
-	Professionalism: 48.505%
+	Professionalism: 0.000%
 	Army tradition: 43.739
 	Navy tradition: 75.55
 	Losses: 2708712
@@ -463,6 +471,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Venetia, East Adriatic, Morea, Aegean Archipelago, Emilia-Romagna, Central Italy, Çukurova, Azov, Crimea, Tirol, Yedisan
 	Advisors: Commandant, Theologian, Statesman
 	Ancients country name: None
+
 , Shingacook : Prussia
 	Capital: Berlin
 	Culture: Saxon
@@ -514,6 +523,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Mittelmark, Northern Saxony, Vorpommern, Neumark, South Saxony, Mecklenburg, Hinterpommern, Thuringia, Schleswig-Holstein, West Prussia, Pomerelia, Wielkopolska, Silesia, Mazovia, Lower Saxony, East Prussia
 	Advisors: Philosopher, Commandant
 	Ancients country name: Brandenburg
+
 , Darmius : Ottomans
 	Capital: Constantinople
 	Culture: Turkish
@@ -539,7 +549,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 545
 	Active regular regiments: 111
 	Active mercenaries: 260
-	Professionalism: 100.000%
+	Professionalism: 0.000%
 	Army tradition: 97.618
 	Navy tradition: 12.16
 	Losses: 10501774
@@ -565,6 +575,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Thrace, Bulgaria, Rum, Aydin, Hüdavendigar, Macedonia, Germiyan, Ankara, Northern Greece, Karadeniz, Dulkadir, Morea, Erzurum, Karaman, Aleppo, Kartli-Kakheti, Imereti, Samtskhe, Çukurova, Kurdistan, Crimea, Al Jazira, Circassia, Aegean Archipelago, Astrakhan, Iraq Arabi
 	Advisors: Master of Mint, Diplomat, Commandant
 	Ancients country name: None
+
 , Poseidon : Hungary
 	Capital: Pest
 	Culture: Hungarian
@@ -616,6 +627,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Transdanubia, Slovakia, Alföld, Croatia, Northern Transylvania, Southern Transylvania, East Adriatic, Serbia, Wallachia, Moldavia, Malopolska, Bosnia, Rascia, Red Ruthenia, Mazovia, Bulgaria
 	Advisors: Spymaster, Theologian, Commandant
 	Ancients country name: None
+
 , AudeJavel : Morocco
 	Capital: Oran
 	Culture: Moroccan
@@ -641,7 +653,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 164
 	Active regular regiments: 22
 	Active mercenaries: 83
-	Professionalism: 33.057%
+	Professionalism: 0.000%
 	Army tradition: 93.913
 	Navy tradition: 47.557
 	Losses: 2510004
@@ -667,6 +679,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Central Morocco, Sus, Gharb, Southern Morocco, North Morocco, Tafilalt, Algiers, Kabylia, Tunisia, High Plains, Ouled Nail, Western Sahara, Baghena, North Sahara, Manding, Niger Bend, Kong, Windward Islands, Massina, Guyana, Greater Antilles, Jenne
 	Advisors: Diplomat, Quartermaster, Treasurer
 	Ancients country name: None
+
 , Skarn : Naples
 	Capital: Lucania
 	Culture: Neapolitan
@@ -718,6 +731,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Lazio-Campania, Apulia, Calabria, Sicily, Western Mediterranean Islands, Djerba, Tripolitania, Fezzan
 	Advisors: Natural Scientist, Army Reformer, Trader
 	Ancients country name: None
+
 , Ner : Portugal
 	Capital: Lisboa
 	Culture: Portuguese
@@ -769,6 +783,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Alentejo, Beiras, Macaronesia, North Morocco, South Atlantic Islands, Newfoundland, Greenland, Mahra, Jubba, Ajuuraan
 	Advisors: Quartermaster, Theologian, Naval Reformer
 	Ancients country name: None
+
 , Ormace : Spain
 	Capital: Madrid
 	Culture: Castilian
@@ -820,6 +835,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Toledo, Lower Andalucia, Castille, Leon, Asturias, Macaronesia, Vasconia, Upper Andalucia, Valencia, Catalonia, Aragon, Leeward Islands, Gulf of Guinea, Kongolese Coast, Lucayan Archipelago, Florida, East Florida, Cote Nord, West African Coast, Benin, Sao Tome, Angola
 	Advisors: Commandant, Treasurer, Statesman
 	Ancients country name: Castile
+
 , Warpc : Great Britain
 	Capital: London
 	Culture: English
@@ -845,7 +861,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 716
 	Active regular regiments: 117
 	Active mercenaries: 415
-	Professionalism: 55.942%
+	Professionalism: 0.000%
 	Army tradition: 100.0
 	Navy tradition: 71.596
 	Losses: 10479997
@@ -871,6 +887,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: East Anglia, Northumbria, Mercia, Wessex, Wales, Flanders, Eastern Ireland, Denmark, Highlands, Faroes, Leeward Islands, Lowlands, Western Ireland, Mozambique, Central Swahili Coast, Sakalava, Mogadishu, Greater Antilles, Natal, Betsimasaraka, Sao Paulo, Sindh, Iceland, Patagonia, Southern Madagascar, Madagascar Highlands, Cape of Good Hope, Panama, Nicaragua, Rio Grande do Sul, Chimor, Bahiá Blanca, Mahra, Mecklenburg, Ajuuraan
 	Advisors: Army Reformer, Master of Mint, Naval Reformer
 	Ancients country name: England
+
 , Sharqu : Hanover
 	Capital: Hanover
 	Culture: Rhenish
@@ -922,6 +939,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: North Rhine, Westphalia, Lower Rhineland, Braunschweig, Upper Rhineland, Lower Saxony, Liege, Palatinate, Hesse, Lorraine, Franconia, Weser
 	Advisors: Trader, Commandant, Inquisitor
 	Ancients country name: Cologne
+
 , Ivoaleks : Timurids
 	Capital: Samarkand
 	Culture: Uzbek
@@ -947,7 +965,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 384
 	Active regular regiments: 47
 	Active mercenaries: 223
-	Professionalism: 33.054%
+	Professionalism: 0.000%
 	Army tradition: 87.663
 	Navy tradition: 0.0
 	Losses: 7916961
@@ -973,6 +991,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Transoxiana, Khiva, Ferghana, Merv, Khuttalan, Central Altishahr, Mashhad, Kashgaria, Herat, Tabarestan, Iraq-e-Ajam, Transcaspia, Jetysuu, Arys, Birjand, Syr Darya, Kazakhstan, Kyzylkum, Balkh, Nogai, Balchash, Kabulistan, Isfahan, Lahore, Multan, Kashmir, Sirhind
 	Advisors: Commandant, Spymaster, Theologian
 	Ancients country name: Transoxiana
+
 , Robindesoibs : Lithuania
 	Capital: Vilna
 	Culture: Lithuanian
@@ -998,7 +1017,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 132
 	Active regular regiments: 72
 	Active mercenaries: 0
-	Professionalism: 15.140%
+	Professionalism: 0.000%
 	Army tradition: 68.84
 	Navy tradition: 23.146
 	Losses: 4158069
@@ -1024,6 +1043,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Vilna, Samogitia, Smolensk, Pripyat, Podolia Volhynia, Minsk, Mazovia, East Dniepr, Estonia, Zaporizhia, Lower Don, Yedisan, Crimea, Azov, Sloboda Ukraine, West Dniepr, Pskov, Curonia, East Prussia, Livonia, White Ruthenia, South Karelia
 	Advisors: Master Recruiter
 	Ancients country name: None
+
 , Vso : Jaunpur
 	Capital: Jaunpur
 	Culture: Avadhi
@@ -1049,7 +1069,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	Land force limit: 370
 	Active regular regiments: 52
 	Active mercenaries: 97
-	Professionalism: 57.272%
+	Professionalism: 0.000%
 	Army tradition: 84.696
 	Navy tradition: 6.923
 	Losses: 6388217
@@ -1075,6 +1095,7 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Purvanchal, Oudh, Central Doab, Bihar, Lower Doab, Upper Doab, Jaipur, Gondwana, North Bengal, East Bengal, Rakhine, West Bengal, Himalayan Hills, Jharkhand, Garjat, Orissa, Lower Burma, Upper Burma, Nepal, Central Thailand, Aceh, Naga Hills, Assam, Ü, Kachin, Tsang, Kham, Yun-Gui Frontier, Amdo, West Gansu, Karenni, Shan Hills, Indian Ocean Islands, Chuannan, Chuanbei
 	Advisors: Statesman, Inquisitor, Army Reformer
 	Ancients country name: None
+
 , Nalox : Persia
 	Capital: Isfahan
 	Culture: null
@@ -1126,4 +1147,5 @@ Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllF
 	States: Tabriz, Iraq Arabi, Armenia, Shahrizor, Basra, Luristan, Azerbaijan, Iraq-e-Ajam, Bahrain, Khuzestan, Isfahan, Gulf Coast, Mogostan, Kerman, Tabarestan, Farsistan, Shirvan, Pirate Coast, Makran, Dagestan, Muscat, Ghor, Sistan, Oman, al-Yamamah, Kalat, Dhofar, Birjand, Al Jazira
 	Advisors: Army Reformer, Theologian, Trader
 	Ancients country name: Qara Qoyunlu
+
 ]
