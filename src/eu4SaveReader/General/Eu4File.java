@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
@@ -13,7 +14,7 @@ public class Eu4File {
 	
 	private String save;
 	private ArrayList<Player> players = new ArrayList<Player>();
-	private String currentDate;
+	private GregorianCalendar currentDate;
 	private int nbCountriesHRE;
 	
 	public Eu4File(String savePath) {
@@ -35,9 +36,9 @@ public class Eu4File {
 	    startAddr = save.indexOf("date=") + 5;
 	    if(startAddr != -1) {
 	    	endAddr = save.indexOf("\n", startAddr);
-	    	currentDate = save.substring(startAddr, endAddr);
+	    	currentDate = Util.convertStringToDate(save.substring(startAddr, endAddr));
 	    } else {
-	    	currentDate = "1444.11.11";
+	    	currentDate = new GregorianCalendar(1444, 11, 11);
 	    }    
 	}
 	
@@ -151,8 +152,11 @@ public class Eu4File {
 		}
 	}
 	
-	public ArrayList<Player> getPlayers() {
-		return players;	
+	@Override
+	public String toString() {
+		return "Date : " + currentDate
+		+ "\n" + players.toString();
+	    
 	}
 	
 	public Player getPlayerByTag(String tag) {
@@ -168,11 +172,19 @@ public class Eu4File {
 		players.add(newPlayer);
 	}
 	
+	public void addPlayers(ArrayList<Player> players) {
+		this.players.addAll(players);
+	}
+	
+	public ArrayList<Player> getPlayers() {
+		return players;	
+	}
+	
 	public String getSave() {
 		return save;
 	}
 	
-	public String getCurrentDate() {
+	public GregorianCalendar getCurrentDate() {
 		return currentDate;
 	}
 }

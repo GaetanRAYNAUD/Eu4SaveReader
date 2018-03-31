@@ -1,365 +1,1129 @@
-Date : 1793.1.2
-Assassinblanc : Sweden
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.poi.openxml4j.util.ZipSecureFile$1 (file:/D:/Programmes/Eclipse/workspace/Eu4SaveReader/lib/poi-3.17/poi-ooxml-3.17.jar) to field java.io.FilterInputStream.in
+WARNING: Please consider reporting this to the maintainers of org.apache.poi.openxml4j.util.ZipSecureFile$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Date : java.util.GregorianCalendar[time=-6068480400000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Paris",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=184,lastRule=java.util.SimpleTimeZone[id=Europe/Paris,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=1777,MONTH=8,WEEK_OF_YEAR=37,WEEK_OF_MONTH=2,DAY_OF_MONTH=12,DAY_OF_YEAR=255,DAY_OF_WEEK=6,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=0,MILLISECOND=0,ZONE_OFFSET=3600000,DST_OFFSET=0]
+[UAV-alpha : Poland
+	Capital: Linz
+	Culture: Austrian
+	Religion: Protestant
+	Is a: Administrative Monarchy
+	Rank: Kingdom
+	Has provinces in: Europe
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Poland ideas(7), Defensive(7), Economic(7), Quality(7), Espionage(7), Quantity(7), Innovative(7), Offensive(7), Administrative(1)
+	Policies: Mercenary Registration Act, Modern Firearm Techniques, Weapon Quality Standards, Horse Artillery, Agricultural Cultivation
+	Development: 1083
+	Realm development: 997.0
+	Number of provinces: 42
+	Treasury: 398.872
+	Income: 244.366
+	Inflation: 7.529
+	Debt: 10570
+	Mercantilism: 25%
+	Actual manpower:  57652
+	Maximum manpower:  187169
+	Actual sailors: 1386
+	Maximum sailors: 1386
+	Land force limit: 346
+	Active regular regiments: 56
+	Active mercenaries: 187
+	Professionalism: 88.309%
+	Army tradition: 93.447
+	Navy tradition: 0.326
+	Losses: 8214852
+	Stability: 2
+	Legitimacy: 78.52
+	Average autonomy: 8.333
+	Average unrest: -17.979
+	War exhaustion: 1.157
+	Religious unity: 100.0%
+	Prestige: 100.0
+	Power projection: 24
+	Splendor: 583
+	Score: 996.702
+	Absolutism: 75.24
+	Tech: 29, 29, 29
+	Golden age started: 20 December 1611
+	Is part HRE: Yes
+	Trade bonus: None
+	Rivals: France, Ottomans, Great Britain
+	Allies: Hungary, Prussia, Hanover, Portugal, Spain, Tuscany, Venice
+	Dependencies: None
+	Provinces: Kärnten, Landshut, Krain, München, Bamberg, Istria, Nürnberg, Steiermark, Memmingen, Linz, Oberschwaben, Wien, Württemberg, Graz, Ansbach, Breisgau, Tirol, Brno, Prague, Ingolstadt, Plzen, Augsburg, Salzburg, Straubing, Zürich, Regensburg, Olomouc, St Gallen, Liegnitz, Wallis, Ulm, Graubünden, Eger, Sundgau, Budejovice, Hradecko, Oberpfalz, Bern, Lienz, Görz, Ostmarch, Erz
+	States: Austria Proper, Silesia, Erzgebirge, Tirol, Inner Austria, Carniola, Upper Swabia, Upper Bavaria, Lower Swabia, Lower Bavaria, Bohemia, Switzerland, Romandie, Franconia, Upper Rhineland
+	Advisors: Commandant, Treasurer, Naval Reformer
+	Ancients country name: Austria
+, Meteo : France
+	Capital: Paris
+	Culture: Francien
+	Religion: Protestant
+	Is a: Noble Republic
+	Rank: Empire
+	Has provinces in: Europe, Africa
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: France ideas(7), Defensive(7), Economic(7), Quality(7), Trade(7), Quantity(7), Religious(7), Offensive(7), Administrative(1)
+	Policies: Agricultural Cultivation, Weapon Quality Standards, Military Zeal Act, Field priests and Soldier's prayer books, Horse Artillery
+	Development: 1482
+	Realm development: 1355.056
+	Number of provinces: 50
+	Treasury: 979.492
+	Income: 329.052
+	Inflation: 3.207
+	Debt: 9334
+	Mercantilism: 19%
+	Actual manpower:  24637
+	Maximum manpower:  365578
+	Actual sailors: 12638
+	Maximum sailors: 12668
+	Land force limit: 384
+	Active regular regiments: 95
+	Active mercenaries: 210
+	Professionalism: 0.406%
+	Army tradition: 100.0
+	Navy tradition: 48.147
+	Losses: 14257395
+	Stability: 1
+	Legitimacy: 19.643
+	Average autonomy: 9.104
+	Average unrest: -5.205
+	War exhaustion: 2.608
+	Religious unity: 100.0%
+	Prestige: 75.865
+	Power projection: 36
+	Splendor: 179
+	Score: 7007.161
+	Absolutism: 28.43
+	Tech: 29, 29, 29
+	Golden age started: 24 August 1478
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Egypt, Poland, Spain
+	Allies: Scandinavia, Ottomans, Great Britain, Naples, Netherlands, Russia, Morocco
+	Dependencies: None
+	Provinces: Saintonge, Quercy, Caux, Caen, Armor, Finistère, Vannetais, Nantais, Labourd, Aquitaine, Armagnac, Forcalquier, Béarn, Maine, Anjou, Berry, Haut-Poitou, Rethel, Valois, Paris, Orleanais, Nemours, Reims, Barrois, Lothringen, Bourbonnais, Nivernais, Dijonnais, Narbonne, Franche-Comté, Périgord, Limousin, Toulouse, Roussillon, Rouergue, Auvergne, Montpellier, Provence, Avignon, Lyonnais, Vaud, Dauphiné, Savoie, Cambray, Girona, Charolais, Alençon, Artois, Picardie, Ifni
+	States: Seine, Languedoc, Guyenne, Massif Central, Loire, Savoy, Gascony, Picardy, Vasconia, Normandy, Provence, Brittany, Lorraine, Wallonia, Burgundy, Catalonia, Southern Morocco, Romandie
+	Advisors: Diplomat, Army Reformer, Philosopher
+	Ancients country name: None
+, Morgenstar : Russia
+	Capital: Vladimir
+	Culture: Muscovite
+	Religion: Orthodox
+	Is a: Tsardom
+	Rank: Empire
+	Has provinces in: Europe, Asia
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Russia ideas(7), Defensive(7), Economic(7), Trade(7), Quality(7), Offensive(7), Administrative(7), Quantity(5), Religious(1)
+	Policies: Statute of Monopolies, Armed Neutrality Act, Anti-Smuggling Act, Weapon Quality Standards, Horse Artillery
+	Development: 1530
+	Realm development: 1345.75
+	Number of provinces: 167
+	Treasury: 1093.289
+	Income: 371.838
+	Inflation: 0.459
+	Debt: 2054
+	Mercantilism: 20%
+	Actual manpower:  12312
+	Maximum manpower:  415145
+	Actual sailors: 414
+	Maximum sailors: 1843
+	Land force limit: 517
+	Active regular regiments: 97
+	Active mercenaries: 204
+	Professionalism: 49.026%
+	Army tradition: 100.0
+	Navy tradition: 10.38
+	Losses: 6272282
+	Stability: 3
+	Legitimacy: 100.0
+	Average autonomy: 9.88
+	Average unrest: -10.96
+	War exhaustion: 3.264
+	Religious unity: 100.0%
+	Prestige: 100.0
+	Power projection: 45
+	Splendor: 427
+	Score: 5258.098
+	Absolutism: 63.666
+	Tech: 29, 28, 29
+	Golden age started: 22 May 1480
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Persia, Scandinavia, Ming
+	Allies: France
+	Dependencies: None
+	Provinces: Kamchatka, Penzhina, Kolyma, Omolon, Karalveyem, Verkhoyansk, Suntar Khayata, Gizhiga, Sakha, Okhotsk, Oka, Tauisk, Bezhetsk, Yakut, Maya, Jugjur, Shenkursk, Aldan, Karelia, Stanovoy, Mukhtuya, Kirenga, Kexholm, Barguzin, Ust-Vym, Ude, Onan Gol, East Tunguska, Irkutsk, West Tunguska, Tver, Angara, Moskva, Sayan, Kaluga, Tomsk, Kuznetsk, Voronezh, Turukhan, Tula, Ket, Ryazan, Surgut, Tambov, Narim, Saratov, Shekty, Irtesh, Penza, Obdorsk, Perm, Berezov, Tortkara, Nizhny Novgorod, Sibir, Shegendyk, Vladimir, Rostov, Tyumen, Luki, Yaroslavl, Kurgan, Solikamsk, Olonets, Aksary, Novgorod, Tura, Viatka, Kholm, Baganaly, Udi, Pelym, Beloozero, Tobykty, Simbirsk, Soroka, Vologda, Kazan, Vetluga, Orda, Utva, Lower Yik, Lower Ishim, Yelets, Etkara, Ukek, Kanadey, Agyidel, Juketau, Veda-Suvar, Alatyr, Ostyaki, Yugan, Khiagt, Agan, Baykha, Uchamin, Chulym, Vah, Barnaul, Nukhtui, Chuna, Seganka, Kharya, Yarmanka, Kagyrgyn, Iglino, Ust-Kut, Kan, Bashgird, Mangazea, Tsetserleg, Chara, Qaraqorum, Toropets, Kashin, Zubtsov, Mologa, Mozhaisk, Kolomna, Yuriev, Starodub, Pronsk, Solvychegodsk, Mezen, Onega, Kholmogory, Velsk, Suzdal, Vyshny Volochyok, Galich, Ustyuzhna, Totma, Kargopol, Sol Galitskaya, Torzhok, Tetyushi, Ar-Chally, Ladoga, Kudymkar, Izhkar, Cherdyn, Bolgar, Ust-Sysolsk, Buzuluk, Chelyaba, Udmurtia, Tikhvin, Kherlen, Ryn, Bayuly, Alimuly, Rzhev, Zhetyru, Kostroma, Samara, Murom, Yaik, Ustyug, Bashkortostan, Argyn, Kerey, Pegaya Orda, White Karelia, Kola, Kasimov, Komi
+	States: Moscow, Galich, Suzdal, Vladimir, Yarloslavl, Ryazan, South Karelia, Bashkiria, Novgorod, Perm, Kama, Kazan, Arkhangelsk, Volga, Sloboda Ukraine, Oka, Tver, Pskov, North Karelia, Beloozero, Saratov, Samara, Ishim, Pomorye, Vologda, Tambov, Ural, Kara, Central Siberia, Ob, Tunguska, Yakutia, Irkutsk, Kolyma, Sakha, Nogai, Lower Yik, Okhotsk, Kazakhstan, Magadan, Yrtesh, Laponia, Kamchatka, null, Balchash, Uliastai, Buryatia, Outer Mongolia
+	Advisors: Natural Scientist, Army Reformer, Diplomat
+	Ancients country name: Muscovy
+, Assassin Blanc : Scandinavia
 	Capital: Stockholm
 	Culture: Swedish
 	Religion: Protestant
 	Is a: Feudal Monarchy
 	Rank: Kingdom
-	Has provinces in: Europe
+	Has provinces in: Europe, North America
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
-	Ideas: Sweden ideas(7), Administrative(7), Offensive(7), Maritime(7), Quality(7), Innovative(7), Defensive(7), Trade(4)
-	Policies: None
-	Development: 210
-	Realm development: 177.976
-	Number of provinces: 35
-	Treasury: 99.021
-	Income: 20.813
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  17256
-	Maximum manpower:  29113
-	Actual sailors: 2196
-	Maximum sailors: 5821
-	Land force limit: 33
-	Active regular regiments: 31
-	Active mercenaries: 0
-	Professionalism: 79.999%
-	Army tradition: 9.911
-	Navy tradition: 5.414
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 15.297
-	Average unrest: 0.6
-	War exhaustion: 0.0
+	Ideas: Sweden ideas(7), Defensive(7), Economic(7), Quality(7), Espionage(7), Quantity(7), Religious(7), Administrative(7), Offensive(0)
+	Policies: Military Zeal Act, Field priests and Soldier's prayer books, Weapon Quality Standards, Mercenary Registration Act, Agricultural Cultivation
+	Development: 637
+	Realm development: 574.495
+	Number of provinces: 49
+	Treasury: 465.195
+	Income: 189.137
+	Inflation: 0.264
+	Debt: 1335
+	Mercantilism: 29%
+	Actual manpower:  153544
+	Maximum manpower:  172295
+	Actual sailors: 13848
+	Maximum sailors: 13908
+	Land force limit: 183
+	Active regular regiments: 97
+	Active mercenaries: 135
+	Professionalism: 0.851%
+	Army tradition: 99.846
+	Navy tradition: 34.14
+	Losses: 3466162
+	Stability: 3
+	Legitimacy: 96.617
+	Average autonomy: 12.377
+	Average unrest: -3.213
+	War exhaustion: 3.04
 	Religious unity: 100.0%
-	Prestige: 4.257
-	Power projection: 3
-	Splendor: 6
-	Score: 2.929
-	Absolutism: 0.996
-	Tech: 28, 28, 28
-	Golden age started: 
+	Prestige: -56.636
+	Power projection: 28
+	Splendor: 9
+	Score: 36.458
+	Absolutism: 94.296
+	Tech: 29, 29, 28
+	Golden age started: 18 May 1708
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Denmark, Prussia, Venice
-	Allies: Oldenburg
+	Rivals: Venice, Tuscany, Russia
+	Allies: Great Britain, France, Netherlands
 	Dependencies: None
-	Provinces: Stockholm, Närke, Östergötland, Elfsborg, Kalmar, Bergslagen, Dal, Värmland, Göinge, Lund, Tiohärad, Skaraborg, Dalaskogen, Hälsingland, Åland, Jämtland, Västerbotten, Bohuslän, Rovaniemi, Lappland, Jokkmokk, Österbotten, Gotland, Halland, Pirkanmaa, Åbo, Nyland, Tavastland, Savolax, Stralsund, Greifswald, Wismar, Enare, Kainuu, Blekinge
-	States: Östra Svealand, Skåneland, Östra Götaland, Finland, Västra Götaland, Vorpommern, Västra Svealand, Norrland, Ostrobothnia, Mecklenburg, Trøndelag, Laponia
-	Advisors: Spymaster
+	Provinces: Stockholm, Östergötland, Kalmar, Bergslagen, Värmland, Lund, Skaraborg, Dalaskogen, Kespukwitk, Hälsingland, Åland, Jämtland, Västerbotten, Slesvig, Vestjylland, Bohuslän, Rovaniemi, Akershus, Lappland, Jokkmokk, Österbotten, Trøndelag, Hålogaland, Opplanda, Stavanger, Gotland, Halland, Åbo, Pirkanmaa, Tavastland, Viborg, Savolax, Neva, Østjylland, Smålenene, Bratsberg, Agdesiden, Kolding, Enare, Kainuu, Finnmark, Blekinge, Romsdal, Nordjylland, Närke, Elfsborg, Dal, Göinge, Tiohärad
+	States: Östra Svealand, Finland, Norrland, Västra Svealand, Östra Götaland, Västra Götaland, Ostrobothnia, Laponia, Skåneland, Vestlandet, Østlandet, Trøndelag, South Karelia, North Jutland, Schleswig-Holstein, Lower Acadia
+	Advisors: Spymaster, Commandant
+	Ancients country name: Sweden
+, Pietrobu : Tuscany
+	Capital: Milan
+	Culture: Lombard
+	Religion: Reformed
+	Is a: Constitutional Monarchy
+	Rank: Kingdom
+	Has provinces in: Europe
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Tuscany ideas(7), Defensive(7), Economic(7), Quality(7), Espionage(7), Quantity(7), Religious(7), Offensive(5)
+	Policies: Weapon Quality Standards, Military Zeal Act, Field priests and Soldier's prayer books
+	Development: 968
+	Realm development: 883.31
+	Number of provinces: 22
+	Treasury: 3158.928
+	Income: 179.408
+	Inflation: 0.0
+	Debt: 0
+	Mercantilism: 36%
+	Actual manpower:  37086
+	Maximum manpower:  164806
+	Actual sailors: 12136
+	Maximum sailors: 10916
+	Land force limit: 203
+	Active regular regiments: 87
+	Active mercenaries: 95
+	Professionalism: 4.160%
+	Army tradition: 100.0
+	Navy tradition: 9.223
+	Losses: 5558452
+	Stability: 2
+	Legitimacy: 100.0
+	Average autonomy: 9.032
+	Average unrest: -16.395
+	War exhaustion: 5.855
+	Religious unity: 100.0%
+	Prestige: 0.0
+	Power projection: 44
+	Splendor: 665
+	Score: 152.273
+	Absolutism: 8.23
+	Tech: 28, 28, 28
+	Golden age started: 17 February 1468
+	Is part HRE: Yes
+	Trade bonus: None
+	Rivals: Naples, Morocco, Scandinavia
+	Allies: Poland, Hanover
+	Dependencies: None
+	Provinces: Umbria, Arezzo, Novara, Lucca, Genoa, Montferrat, Cremona, Nice, Waldstätte, Piedmont, Milan, Parma, Brescia, Mantua, Albenga, Cuneo, Pisa, Firenze, Siena, Roma, Abruzzi, Corsica
+	States: Lombardy, Piedmont, Emilia-Romagna, Tuscany, Liguria, Switzerland, Western Mediterranean Islands, Lazio-Campania, Central Italy
+	Advisors: Trader, Theologian, Commandant
+	Ancients country name: Milan
+, Shy : Netherlands
+	Capital: Amsterdam
+	Culture: Flemish
+	Religion: Protestant
+	Is a: Noble Republic
+	Rank: Empire
+	Has provinces in: Europe, North America, South America
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Netherlands ideas(7), Defensive(7), Economic(7), Quality(7), Quantity(7), Espionage(7), Religious(7), Offensive(7), Administrative(1)
+	Policies: Mercenary Registration Act, Field priests and Soldier's prayer books, Military Zeal Act, Weapon Quality Standards, Horse Artillery
+	Development: 1017
+	Realm development: 871.442
+	Number of provinces: 42
+	Treasury: 16388.463
+	Income: 424.961
+	Inflation: 0.0
+	Debt: 0
+	Mercantilism: 25%
+	Actual manpower:  4626
+	Maximum manpower:  155394
+	Actual sailors: 16862
+	Maximum sailors: 17937
+	Land force limit: 328
+	Active regular regiments: 71
+	Active mercenaries: 168
+	Professionalism: 52.209%
+	Army tradition: 100.0
+	Navy tradition: 21.925
+	Losses: 7918796
+	Stability: 0
+	Legitimacy: 23.337
+	Average autonomy: 16.158
+	Average unrest: -26.097
+	War exhaustion: 4.763
+	Religious unity: 100.0%
+	Prestige: 100.0
+	Power projection: 61
+	Splendor: 321
+	Score: 3134.72
+	Absolutism: 29.0
+	Tech: 29, 29, 29
+	Golden age started: 6 October 1530
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Prussia, Portugal, Spain
+	Allies: Scandinavia, France
+	Dependencies: Lustrie(Colony), Pima(March), Brésil néerlandais(Colony), Estalie(Colony), Louisiane néerlandaise(Colony), Estonia(March)
+	Provinces: Uruguay, Banda Oriental, Ghent, Eskikewakik, Namur, East Frisia, Upper Guelders, Antwerpen, Bremen, Berg, Münster, Unamakik, Bergenhus, Epekwitk, Sipeknekatik, Vlaanderen, Hainaut, Hoya, Brussels, Meppen, Liège, Loon, Breda, Kleves, Zeeland, Amsterdam, Bermuda, Utrecht, Montevideo, Gelre, Colonia, Friesland, Dominica, Martinique, St. Lucia, Roanoke, St. Vincent, Chesapeake, Doeg, Oldenburg, Osnabrück, Powhatan
+	States: Brabant, Liege, North Rhine, Frisia, Weser, Westphalia, Wallonia, Windward Islands, Netherlands, Flanders, Virginia, Braunschweig, North Carolina, Vestlandet, Banda Oriental, Greater Antilles, Lower Acadia
+	Advisors: Master of Mint, Commandant, Diplomat
+	Ancients country name: Brabant
+, Aikiko : Egypt
+	Capital: Cairo
+	Culture: Egyptian
+	Religion: Sunni
+	Is a: Constitutional Monarchy
+	Rank: Empire
+	Has provinces in: Asia, Africa
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Mamluks ideas(7), Defensive(7), Economic(7), Quantity(7), Trade(7), Offensive(7), Religious(7), Quality(2)
+	Policies: Production Quota Act, Anti-Smuggling Act, Statute of Monopolies, Field priests and Soldier's prayer books, Horse Artillery
+	Development: 1244
+	Realm development: 1075.75
+	Number of provinces: 130
+	Treasury: 628.111
+	Income: 319.632
+	Inflation: 5.534
+	Debt: 17859
+	Mercantilism: 22%
+	Actual manpower:  4356
+	Maximum manpower:  199446
+	Actual sailors: 14986
+	Maximum sailors: 14375
+	Land force limit: 459
+	Active regular regiments: 42
+	Active mercenaries: 107
+	Professionalism: 2.402%
+	Army tradition: 72.623
+	Navy tradition: 12.832
+	Losses: 10261552
+	Stability: 1
+	Legitimacy: 35.02
+	Average autonomy: 11.923
+	Average unrest: -28.906
+	War exhaustion: 1.213
+	Religious unity: 70.6%
+	Prestige: 30.288
+	Power projection: 20
+	Splendor: 1527
+	Score: 6696.764
+	Absolutism: 15.25
+	Tech: 28, 27, 28
+	Golden age started: 5 March 1501
+	Is part HRE: No
+	Trade bonus: Slaves, Coffee, Incense
+	Rivals: Persia, Spain, Hungary
+	Allies: None
+	Dependencies: Rassids(March), Janjiro(March), Ennarea(March)
+	Provinces: Antioch, Suez, Al Gharbia, Minya, Bahiriya, Manfalut, Ras Gharib, Queseer, Wadi Halfa, Sahra an Nübyah, Halaib, Tarrana, Bardiyah, Maan, Al Ula, Yanbu, Ma'din Sulaym, Jeddah, Turubah, Buraydah, Hafar, Kathiri, Beihan, Jazan, Hama, Janjiro, Sidon, Darnah, Alexandria, Fayyum, Qus, Cairo, Rosetta, Damietta, Sinai, Tarabulus, Al Karak, Ajlun, Damascus, Tabuk, Medina, Mecca, Bishah, Mokha, Aden, Mukalla, Najran, Al-Arid, Jabal Shammar, Dhofar, Tadmor, Aqabah, Al Wajh, Azraq, Suwayda, Al Jawf, Al-Kariatan, Sudayr, Taif, Qunfudhah, Qardho, Zabid, Degehabur, Berbera, Dawaro, Harer, Shihr, Zeila, Al Ghaydah, Shewa, Wollo, Tajura, Tegali, Al Qadarif, Fazughli, Bayuda, Welayta, Kaffa, El Obeid, Gezira, Gojjam, Gambela, Gonder, Hadiya, Homs, Butana, Arsi, Beja, Damot, Aksum, Asosa, Ausa, Dongola, Assab, Berber, Massawa, Mendefera, Aswan, Enderta, Suakin, Angot, Kharga, Lasta, Qasr Ibrim, Agew, Semien, Dembiya, Mora, Werder, Sharqiya, Buhaira, Atfih, Isna, Hobyo, Girga, Galkayo, Bosaso, Farafreh, Hamasien, Hafun, Las Khorey, Sanaag, Ankober, Garoowe, Togdheer, Hargeisa, Shendy, Soba, Sennar, Kosti
+	States: Bahari, Syria, Aleppo, Delta, Said, Vostani, Cyrenaica, Transjordan, Red Sea Hills, Tabuk, Mecca, Damot, Tihama al-Yemen, Central Ethiopia, Medina, Tigray, Kaffa, Lower Yemen, Ifat, Upper Nubia, Aussa, Kurdufan, Sennar, Lower Nubia, Ogaden, Hadiya, Red Sea Coast, Asir, Somaliland, Shewa, Majeerteen, Dongola, al-Qasim, Syrian Desert, al-Wahat, Hadramut, Mahra, Dhofar, An Nafud
+	Advisors: Theologian, Trader, Commandant
+	Ancients country name: Mamluks
+, Geronimo : Bharat
+	Capital: Vijayanagar
+	Culture: Kannada
+	Religion: Hindu
+	Is a: Administrative Monarchy
+	Rank: Empire
+	Has provinces in: Asia, Africa
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Vijayanagar ideas(7), Quality(7), Innovative(7), Defensive(7), Trade(7), Administrative(7), Quantity(7), Economic(7), Offensive(0)
+	Policies: Statute of Monopolies, Cloth Quality Edict, Importation Act, Modern Firearm Techniques, Weapon Quality Standards
+	Development: 1088
+	Realm development: 976.75
+	Number of provinces: 72
+	Treasury: 12096.632
+	Income: 332.03
+	Inflation: 0.0
+	Debt: 0
+	Mercantilism: 17%
+	Actual manpower:  0
+	Maximum manpower:  125512
+	Actual sailors: 8948
+	Maximum sailors: 12574
+	Land force limit: 326
+	Active regular regiments: 81
+	Active mercenaries: 236
+	Professionalism: 6.937%
+	Army tradition: 77.786
+	Navy tradition: 10.811
+	Losses: 5011839
+	Stability: 3
+	Legitimacy: 92.253
+	Average autonomy: 12.152
+	Average unrest: -8.487
+	War exhaustion: 0.897
+	Religious unity: 93.3%
+	Prestige: 87.678
+	Power projection: 30
+	Splendor: 1365
+	Score: 1317.723
+	Absolutism: 74.74
+	Tech: 29, 27, 29
+	Golden age started: 11 December 1509
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Persia, Timurids, Ming
+	Allies: Jaunpur
+	Dependencies:  (March), Venad(March), Jaffna(March)
+	Provinces: Garjat, Jangladesh, Jaisalmer, Chanda, Marwar, Girnar, Bhavnagar, Baroda, Patan, Chittor, Rewakantha, Bhilsa, Kathiawar, Mewar, Mandu, Khandesh, Hadoti, North Konkan, South Konkan, Nagaur, North Kanara, Gorwar, Raichur Doab, Mysore, Malabar, Kochin, Madurai, Bhakkar, Kongu, Desh, Tondainadu, Gingee, Coromandel, Bidar, Vijayanagar, Rayalaseema, Golconda, Velanadu, Ahmadnagar, Srikakulam, Marathwada, East Berar, Kosta, Bastar, West Berar, Konaseema, Tiruchirappalli, Kalingandhra, Ajmer, Umarkot, Chaul, Kurnool, Mandsaur, Kandy, Tirunelveli, Bijapur, Hollhavai, Maldives, Chanderi, Tanjore, Arcot, Mahur, South Kanara, Morasanadu, Malenadu, Savanur, Pune, Gulbarga, Baglana, Warangal, Sehwan, Pagarruyung
+	States: Rayalaseema, Madura, Coromandel, Carnatic, Kanara, Konkan, Mysore, Maidan, Kerala, Lanka, Andhra, Telingana, Maharashtra, Desh, Indian Ocean Islands, Garjat, Tapti, Malwa, Gujarat, Mewar, Sindh, Marwar, Minangkabau, Saurashtra
+	Advisors: Spymaster, Master of Mint, Commandant
+	Ancients country name: Vijayanagar
+, Navy_74 : Venice
+	Capital: Venezia
+	Culture: Venetian
+	Religion: Reformed
+	Is a: Merchant Republic
+	Rank: Kingdom
+	Has provinces in: Europe
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Venice ideas(7), Quality(7), Economic(7), Maritime(7), Trade(7), Plutocratic(7), Quantity(7), Offensive(7), Humanist(0)
+	Policies: Anti-Smuggling Act
+	Development: 624
+	Realm development: 646.532
+	Number of provinces: 22
+	Treasury: 22489.311
+	Income: 301.325
+	Inflation: 6.277
+	Debt: 0
+	Mercantilism: 25%
+	Actual manpower:  25522
+	Maximum manpower:  81719
+	Actual sailors: 31841
+	Maximum sailors: 33463
+	Land force limit: 178
+	Active regular regiments: 70
+	Active mercenaries: 41
+	Professionalism: 48.505%
+	Army tradition: 43.739
+	Navy tradition: 75.55
+	Losses: 2708712
+	Stability: 2
+	Legitimacy: 0.0
+	Average autonomy: 7.879
+	Average unrest: -11.936
+	War exhaustion: 0.0
+	Religious unity: 100.0%
+	Prestige: 27.911
+	Power projection: 51
+	Splendor: 545
+	Score: 5156.388
+	Absolutism: 16.5
+	Tech: 29, 28, 29
+	Golden age started: 
+	Is part HRE: Yes
+	Trade bonus: Glass
+	Rivals: Naples, Morocco, Scandinavia
+	Allies: Hungary, Poland
+	Dependencies: Albania(Vassal)
+	Provinces: Rhodes, Cyprus, Urbino, Crete, Naxos, Dalmatia, Ragusa, Modena, Verona, Treviso, Trent, Corfu, Friuli, Venezia, Ferrara, Romagna, Ancona, Yedisan, Euboea, Caffa, Azov, Malta
+	States: Venetia, East Adriatic, Morea, Aegean Archipelago, Emilia-Romagna, Central Italy, Çukurova, Azov, Crimea, Tirol, Yedisan
+	Advisors: Commandant, Theologian, Statesman
 	Ancients country name: None
-
-Meteo : France
-	Capital: Paris
-	Culture: Francien
+, Shingacook : Prussia
+	Capital: Berlin
+	Culture: Saxon
+	Religion: Protestant
+	Is a: Prussian Monarchy
+	Rank: Kingdom
+	Has provinces in: Europe
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Prussia ideas(7), Defensive(7), Economic(7), Offensive(7), Quality(7), Innovative(7), Trade(7), Quantity(6), Religious(0)
+	Policies: Weapon Quality Standards, Modern Firearm Techniques, Horse Artillery, Cloth Quality Edict, Statute of Monopolies
+	Development: 1006
+	Realm development: 934.27
+	Number of provinces: 38
+	Treasury: 906.132
+	Income: 237.207
+	Inflation: 0.0
+	Debt: 0
+	Mercantilism: 23%
+	Actual manpower:  194949
+	Maximum manpower:  221028
+	Actual sailors: 8693
+	Maximum sailors: 8275
+	Land force limit: 213
+	Active regular regiments: 111
+	Active mercenaries: 119
+	Professionalism: 1.852%
+	Army tradition: 100.0
+	Navy tradition: 2.477
+	Losses: 5500868
+	Stability: 2
+	Legitimacy: 33.683
+	Average autonomy: 8.617
+	Average unrest: 0.705
+	War exhaustion: 6.537
+	Religious unity: 100.0%
+	Prestige: 74.659
+	Power projection: 34
+	Splendor: 89
+	Score: 293.896
+	Absolutism: 83.96
+	Tech: 29, 29, 29
+	Golden age started: 6 January 1511
+	Is part HRE: Yes
+	Trade bonus: None
+	Rivals: Netherlands, Great Britain, Lithuania
+	Allies: Poland
+	Dependencies: Anhalt(March), Pomerania(March), Dithmarschen(March), Mecklenburg(March)
+	Provinces: Plock, Sieradz, Stettin, Chelmno, Ratibor, Breslau, Notec, Leczyca, Altmark, Vogtland, Glogau, Sternberg, Potsdam, Niederlausitz, Memel, Königsberg, Warmia, Danzig, Hamburg, Stralsund, Holstein, Uckermark, Neumark, Marienburg, Berlin, Greifswald, Ruppin, Stolp, Wismar, Magdeburg, Tuchola, Wittenberg, Oberlausitz, Dresden, Leipzig, Poznan, Thüringen, Kalisz
+	States: Mittelmark, Northern Saxony, Vorpommern, Neumark, South Saxony, Mecklenburg, Hinterpommern, Thuringia, Schleswig-Holstein, West Prussia, Pomerelia, Wielkopolska, Silesia, Mazovia, Lower Saxony, East Prussia
+	Advisors: Philosopher, Commandant
+	Ancients country name: Brandenburg
+, Darmius : Ottomans
+	Capital: Constantinople
+	Culture: Turkish
+	Religion: Sunni
+	Is a: Ottoman Government
+	Rank: Empire
+	Has provinces in: Europe, Asia
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Ottomans ideas(7), Defensive(7), Economic(7), Quality(7), Trade(7), Quantity(7), Religious(7), Offensive(7), Innovative(1)
+	Policies: Statute of Monopolies
+	Development: 1615
+	Realm development: 1321.7
+	Number of provinces: 81
+	Treasury: 505.934
+	Income: 398.055
+	Inflation: 6.652
+	Debt: 17694
+	Mercantilism: 28%
+	Actual manpower:  0
+	Maximum manpower:  221335
+	Actual sailors: 21726
+	Maximum sailors: 21907
+	Land force limit: 545
+	Active regular regiments: 111
+	Active mercenaries: 260
+	Professionalism: 100.000%
+	Army tradition: 97.618
+	Navy tradition: 12.16
+	Losses: 10501774
+	Stability: 0
+	Legitimacy: 74.81
+	Average autonomy: 20.161
+	Average unrest: -82.082
+	War exhaustion: 0.693
+	Religious unity: 96.4%
+	Prestige: 99.43
+	Power projection: 45
+	Splendor: 279
+	Score: 10582.175
+	Absolutism: 82.28
+	Tech: 29, 29, 29
+	Golden age started: 3 January 1483
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Hungary, Persia, Venice
+	Allies: France
+	Dependencies: Aq Qoyunlu(March), Hisn Kayfa(March), Armenia(March)
+	Provinces: Canik, Erzincan, Mush, Urfa, Sinjar, Rahba, Matrega, Epirus, Morea, Athens, Thessaly, Adyghe, Macedonia, Guria, Edirne, Kabardia, Tarnovo, Haditha, Constantinople, Ar Raqqa, Alania, Kakheti, Kars, Silistria, Imereti, Tbilisi, Chios, Amasya, Hamid, Skopje, Kocaeli, Hüdavendigar, Kastoria, Sugla, Plovdiv, Mentese, Abkhazia, Kütahya, Konya, Karaman, Mardin, Kastamonu, Ankara, Adana, Sinop, Bitlis, Sivas, Trebizond, Ayntab, Erzurum, Marash, Kartli, Odishi, Circassia, Oltu, Astrakhan, Sarai, Aksaray, Denizli, Manych, Aydin, Divrigi, Karahisar, Sultanönü, Kangiri, Kirshehir, Tokat, Burgas, Sofia, Achaea, Majar, Kuma, Karasi, Saruhan, Aleppo, Tekke, Bolu, Bozok, Kayseri, Içel, Malatya
+	States: Thrace, Bulgaria, Rum, Aydin, Hüdavendigar, Macedonia, Germiyan, Ankara, Northern Greece, Karadeniz, Dulkadir, Morea, Erzurum, Karaman, Aleppo, Kartli-Kakheti, Imereti, Samtskhe, Çukurova, Kurdistan, Crimea, Al Jazira, Circassia, Aegean Archipelago, Astrakhan, Iraq Arabi
+	Advisors: Master of Mint, Diplomat, Commandant
+	Ancients country name: None
+, Poseidon : Hungary
+	Capital: Pest
+	Culture: Hungarian
+	Religion: Orthodox
+	Is a: Administrative Monarchy
+	Rank: Empire
+	Has provinces in: Europe
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Hungary ideas(7), Defensive(7), Economic(7), Quality(7), Espionage(7), Quantity(7), Innovative(7), Offensive(5)
+	Policies: Mercenary Registration Act, Agricultural Cultivation, Superior Fortifications, Weapon Quality Standards, Modern Firearm Techniques
+	Development: 1357
+	Realm development: 1208.564
+	Number of provinces: 55
+	Treasury: 262.625
+	Income: 215.458
+	Inflation: 10.662
+	Debt: 42132
+	Mercantilism: 14%
+	Actual manpower:  5949
+	Maximum manpower:  248905
+	Actual sailors: 1519
+	Maximum sailors: 1472
+	Land force limit: 379
+	Active regular regiments: 99
+	Active mercenaries: 245
+	Professionalism: 1.901%
+	Army tradition: 100.0
+	Navy tradition: 2.037
+	Losses: 9575472
+	Stability: -1
+	Legitimacy: 80.644
+	Average autonomy: 13.078
+	Average unrest: -35.9
+	War exhaustion: 3.152
+	Religious unity: 100.0%
+	Prestige: 98.046
+	Power projection: 29
+	Splendor: 207
+	Score: 1788.036
+	Absolutism: 76.589
+	Tech: 28, 28, 29
+	Golden age started: 27 April 1674
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Lithuania, Ottomans, France
+	Allies: Poland, Hanover, Venice
+	Dependencies: None
+	Provinces: Warszawa, Zagreb, Sandomierz, Lublin, Halicz, Krakow, Sopron, Zeta, Hum, Trencin, Bosnia, Moldavia, Smederevo, Belgrade, Tarnow, Fejér, Nowy Sacz, Lwow, Belz, Varasd, Pest, Hont, Békés, Temes, Bihar, Szolnok, Maros, Bacs, Hunyad, Turda, Maramaros, Királyföld, Oltenia, Szabolcs, Tîrgoviste, Zemplén, Lika, Torontál, Raska, Donji Kraji, Spiš, Travunia, Buzau, Nis, Visoki, Vidin, Somogy, Syrmia, Branicevo, Bessarabia, Bender, Kosovo, Slavonia, Pozsony, Peremyshl
+	States: Transdanubia, Slovakia, Alföld, Croatia, Northern Transylvania, Southern Transylvania, East Adriatic, Serbia, Wallachia, Moldavia, Malopolska, Bosnia, Rascia, Red Ruthenia, Mazovia, Bulgaria
+	Advisors: Spymaster, Theologian, Commandant
+	Ancients country name: None
+, AudeJavel : Morocco
+	Capital: Oran
+	Culture: Moroccan
+	Religion: Sunni
+	Is a: Administrative Monarchy
+	Rank: Kingdom
+	Has provinces in: Africa, North America
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: null(7), Quality(7), Economic(7), Defensive(7), Offensive(7), Religious(7), Maritime(7), Naval(3)
+	Policies: Weapon Quality Standards, Military Zeal Act, Horse Artillery
+	Development: 841
+	Realm development: 1060.04
+	Number of provinces: 71
+	Treasury: 493.381
+	Income: 163.278
+	Inflation: 6.507
+	Debt: 5103
+	Mercantilism: 27%
+	Actual manpower:  14303
+	Maximum manpower:  54714
+	Actual sailors: 17838
+	Maximum sailors: 17946
+	Land force limit: 164
+	Active regular regiments: 22
+	Active mercenaries: 83
+	Professionalism: 33.057%
+	Army tradition: 93.913
+	Navy tradition: 47.557
+	Losses: 2510004
+	Stability: 0
+	Legitimacy: 98.926
+	Average autonomy: 16.731
+	Average unrest: -4.397
+	War exhaustion: 8.414
+	Religious unity: 100.0%
+	Prestige: 31.623
+	Power projection: 25
+	Splendor: 521
+	Score: 724.492
+	Absolutism: 5.738
+	Tech: 27, 25, 29
+	Golden age started: 25 January 1774
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Venice, Tuscany, Prussia
+	Allies: France, Naples
+	Dependencies: Air(Vassal), Plata marocaine(Colony), Djerid(Vassal), Mali(Vassal), Allah Mérique(Colony)
+	Provinces: Ghadames, Kef, Bizerte, Touggourt, Mzab, Hodna, Titteri, Saoura, Dahra, Ouarsenis, Kasdir, Ouarzazate, Oujda, Draa, Meknes, Tadla, Dukkala, Haha, Ouargla, Sousse, Kantor, Termes, Wagadu, Baghena, Hodh, Do, Sibiridugu, Bendugu, Lobi, Gwiriko, Melilla, Tlemcen, Oran, Mitidja, Kabylia, Sah, Constantine, Mema, Tunis, Kala, Gharb, Agadir, Karabara, Fez, Ceuta, Marrakech, Hombori, Abda, Tafilalt, Annaba, Sus, Figuig, Futa Jallon, Laghouat, Biskra, Gafsa, Bambuk, Bure, Bagoe, Segu, Kong, Tuat, Jamaica, Taudeni, Azawad, Tadmekka, Massina, Timbuktu, Gao, Barbados, Trinidad
+	States: Central Morocco, Sus, Gharb, Southern Morocco, North Morocco, Tafilalt, Algiers, Kabylia, Tunisia, High Plains, Ouled Nail, Western Sahara, Baghena, North Sahara, Manding, Niger Bend, Kong, Windward Islands, Massina, Guyana, Greater Antilles, Jenne
+	Advisors: Diplomat, Quartermaster, Treasurer
+	Ancients country name: None
+, Skarn : Naples
+	Capital: Lucania
+	Culture: Neapolitan
+	Religion: Protestant
+	Is a: Constitutional Monarchy
+	Rank: Duchy
+	Has provinces in: Europe, Africa
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Naples ideas(7), Defensive(7), Economic(7), Quantity(7), Trade(7), Quality(7), Maritime(7), Espionage(2), Administrative(0)
+	Policies: Armed Neutrality Act, Cloth Quality Edict, Statute of Monopolies, Agricultural Cultivation, Weapon Quality Standards
+	Development: 616
+	Realm development: 571.704
+	Number of provinces: 21
+	Treasury: -260.304
+	Income: 260.147
+	Inflation: 3.343
+	Debt: 4306
+	Mercantilism: 55%
+	Actual manpower:  56530
+	Maximum manpower:  132532
+	Actual sailors: 17517
+	Maximum sailors: 26216
+	Land force limit: 165
+	Active regular regiments: 85
+	Active mercenaries: 88
+	Professionalism: 58.789%
+	Army tradition: 65.43
+	Navy tradition: 40.226
+	Losses: 5219392
+	Stability: 0
+	Legitimacy: 29.36
+	Average autonomy: 7.847
+	Average unrest: -74.535
+	War exhaustion: 6.26
+	Religious unity: 100.0%
+	Prestige: 0.0
+	Power projection: 0
+	Splendor: 227
+	Score: 1689.02
+	Absolutism: 7.598
+	Tech: 29, 29, 29
+	Golden age started: 14 February 1468
+	Is part HRE: Yes
+	Trade bonus: None
+	Rivals: Venice, Tuscany
+	Allies: Great Britain, France, Morocco
+	Dependencies: None
+	Provinces: Tataouine, Tripoli, Syracuse, Salerno, Cosenza, Capitanata, Cagliari, Djerba, Bari, Lucania, Fezzan, Jufra, Thubaqt, Zuwarah, Sfax, Napoli, Salento, Calabria, Messina, Palermo, Sassari
+	States: Lazio-Campania, Apulia, Calabria, Sicily, Western Mediterranean Islands, Djerba, Tripolitania, Fezzan
+	Advisors: Natural Scientist, Army Reformer, Trader
+	Ancients country name: None
+, Ner : Portugal
+	Capital: Lisboa
+	Culture: Portuguese
+	Religion: Protestant
+	Is a: Constitutional Monarchy
+	Rank: Kingdom
+	Has provinces in: Europe, Asia, Africa, North America, South America
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Portugal ideas(7), Quality(7), Maritime(7), Naval(7), Trade(7), Quantity(7), Religious(7), Economic(7)
+	Policies: Production Quota Act, Organized Marines Act, Chaplains of the Fleet, Zealous Captains
+	Development: 732
+	Realm development: 686.478
+	Number of provinces: 58
+	Treasury: 2256.249
+	Income: 159.399
+	Inflation: 9.347
+	Debt: 0
+	Mercantilism: 45%
+	Actual manpower:  41305
+	Maximum manpower:  52378
+	Actual sailors: 21898
+	Maximum sailors: 19914
+	Land force limit: 173
+	Active regular regiments: 40
+	Active mercenaries: 119
+	Professionalism: 1.990%
+	Army tradition: 19.979
+	Navy tradition: 43.915
+	Losses: 5543325
+	Stability: 2
+	Legitimacy: 16.491
+	Average autonomy: 9.722
+	Average unrest: -41.122
+	War exhaustion: 5.848
+	Religious unity: 100.0%
+	Prestige: -4.124
+	Power projection: 46
+	Splendor: 741
+	Score: 7409.486
+	Absolutism: 0.768
+	Tech: 29, 29, 29
+	Golden age started: 1 February 1491
+	Is part HRE: No
+	Trade bonus: Coffee, Sugar, Cocoa
+	Rivals: Morocco, Naples, Ming
+	Allies: Poland, Spain
+	Dependencies: Mexique portugais(Colony), Florida(Colony), Cuba(Colony), Brésil portugais(Colony), Colombie portugaise(Colony), Rio da Prata(Colony), Californie(Colony), Cusco(March), Pérou portugais(Colony), Muisca(Vassal), Nouveau-Portugal(Colony)
+	Provinces: Navanagar, Surat, Ahmadabad, Placentia, Ezorongondo, Lesser Namaqualand, Roggeveld, Cape, Great Karoo, Inhambane, Sofala, Highveld, Senqu, Zanzibar, Malindi, Lamu, Comoros, Évora, Coimbra, Siine, Griqualand, Beafada, Karou, Falklands, Cape Verde, St. Helena, Socotra, Mahe, Tangiers, Mauritius, Île Bourbon, Eiriksfjord, Vestbygden, Cape Coast, Beothuk, Taqamkuk, Kismayo, Trarza, Afgooye, Cayor, Bardera, Gabu, Grain Coast, Lisboa, Beira, Beja, Algarve, Ivory Coast, Porto, Bragança, null, Pate, Goa, The Azores, Madeira, Gold Coast, Kutch, Benin
+	States: Alentejo, Beiras, Macaronesia, North Morocco, South Atlantic Islands, Newfoundland, Greenland, Mahra, Jubba, Ajuuraan
+	Advisors: Quartermaster, Theologian, Naval Reformer
+	Ancients country name: None
+, Ormace : Spain
+	Capital: Madrid
+	Culture: Castilian
 	Religion: Catholic
+	Is a: Constitutional Monarchy
+	Rank: Kingdom
+	Has provinces in: Europe, Asia, Africa, North America
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Spain ideas(7), Defensive(7), Quality(7), Economic(7), Espionage(7), Quantity(7), Religious(7), Offensive(7), Innovative(2)
+	Policies: Mercenary Registration Act, Weapon Quality Standards, Military Zeal Act, Field priests and Soldier's prayer books, Agricultural Cultivation
+	Development: 1187
+	Realm development: 1088.0
+	Number of provinces: 66
+	Treasury: 29406.448
+	Income: 231.502
+	Inflation: 0.027
+	Debt: 0
+	Mercantilism: 20%
+	Actual manpower:  6241
+	Maximum manpower:  203995
+	Actual sailors: 19704
+	Maximum sailors: 11852
+	Land force limit: 456
+	Active regular regiments: 63
+	Active mercenaries: 200
+	Professionalism: 0.955%
+	Army tradition: 99.49
+	Navy tradition: 30.441
+	Losses: 11669127
+	Stability: 2
+	Legitimacy: 100.0
+	Average autonomy: 9.469
+	Average unrest: -14.905
+	War exhaustion: 2.781
+	Religious unity: 97.2%
+	Prestige: 57.793
+	Power projection: 73
+	Splendor: 61
+	Score: 6946.814
+	Absolutism: 4.0
+	Tech: 29, 29, 29
+	Golden age started: 13 December 1499
+	Is part HRE: No
+	Trade bonus: Cocoa
+	Rivals: France, Great Britain, Egypt
+	Allies: Poland, Portugal
+	Dependencies: Nueva Esperanza(Colony), Buffalia(Colony), Pérou castillan(Colony), Plata espagnole(Colony), Nouvelle-Grenade(Colony), Brésil espagnol(Colony)
+	Provinces: Calabar, Cameroon, Gabon, Loango, Luanda, Mbamba, Mingan, Manicouagan, Anticosti, Sao Tome, Ais, Timucua, Urgell, Tarragona, Rioja, Teruel, Jaffa, Cuenca, La Mancha, Soria, Fernando Po, The Baleares, Galicia, Asturias, León, Vizcaya, Cantabria, Burgos, Navarra, Extremadura, Pirineo, Jaén, Cadiz, Barcelona, Zaragoza, Alicante, Castilla La Vieja, Arguin, Salamanca, Madrid, St. Martin, Badajoz, Toledo, València, Murcia, Almería, Granada, Sevilla, Córdoba, Gibraltar, Bahamas, Turks Islands, Innu, Calusa, Mayaimi, Gaza, The Canarias, Mayumba, St. Kitts, Ngoyo, Soyo, Ijebu, Whydah, Warri, Jerusalem, Bonny
+	States: Toledo, Lower Andalucia, Castille, Leon, Asturias, Macaronesia, Vasconia, Upper Andalucia, Valencia, Catalonia, Aragon, Leeward Islands, Gulf of Guinea, Kongolese Coast, Lucayan Archipelago, Florida, East Florida, Cote Nord, West African Coast, Benin, Sao Tome, Angola
+	Advisors: Commandant, Treasurer, Statesman
+	Ancients country name: Castile
+, Warpc : Great Britain
+	Capital: London
+	Culture: English
+	Religion: Reformed
 	Is a: Revolutionary Republic
 	Rank: Empire
 	Has provinces in: Europe, Asia, Africa, North America, South America
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
-	Ideas: France ideas(7), Economic(7), Offensive(7), Exploration(7), Defensive(7), Administrative(7), Maritime(7), Quality(4)
-	Policies: None
-	Development: 1018
-	Realm development: 938.44
-	Number of provinces: 71
-	Treasury: 709.858
-	Income: 85.508
-	Inflation: 0.0
+	Ideas: England ideas(7), Innovative(7), Quality(7), Defensive(7), Maritime(7), Quantity(7), Religious(7), Offensive(7), Administrative(4)
+	Policies: Field priests and Soldier's prayer books, Military Zeal Act, New Naval Tactics, Organized Marines Act, Chaplains of the Fleet
+	Development: 1606
+	Realm development: 1604.804
+	Number of provinces: 106
+	Treasury: 3804.699
+	Income: 568.891
+	Inflation: 0.057
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  26181
-	Maximum manpower:  83365
-	Actual sailors: 7251
-	Maximum sailors: 14352
-	Land force limit: 190
-	Active regular regiments: 153
-	Active mercenaries: 0
-	Professionalism: 90.005%
-	Army tradition: 15.326
-	Navy tradition: 10.537
-	Losses: 5353
-	Stability: 0
+	Mercantilism: 25%
+	Actual manpower:  125050
+	Maximum manpower:  198473
+	Actual sailors: 29501
+	Maximum sailors: 75295
+	Land force limit: 716
+	Active regular regiments: 117
+	Active mercenaries: 415
+	Professionalism: 55.942%
+	Army tradition: 100.0
+	Navy tradition: 71.596
+	Losses: 10479997
+	Stability: 1
 	Legitimacy: 0.0
-	Average autonomy: 7.739
-	Average unrest: -7.896
-	War exhaustion: 0.0
-	Religious unity: 97.0%
-	Prestige: -20.612
-	Power projection: 20
-	Splendor: 18
-	Score: 65.925
-	Absolutism: 0.0
-	Tech: 28, 28, 28
-	Golden age started: 
+	Average autonomy: 0.174
+	Average unrest: -14.543
+	War exhaustion: 1.186
+	Religious unity: 100.0%
+	Prestige: 100.0
+	Power projection: 61
+	Splendor: 1539
+	Score: 11816.907
+	Absolutism: 27.4
+	Tech: 29, 29, 29
+	Golden age started: 1 September 1582
 	Is part HRE: No
-	Trade bonus: None
-	Rivals: Austria
-	Allies: United States
-	Dependencies: None
-	Provinces: Saintonge, Quercy, Coromandel, Rennais, Cotentin, Bas-Poitou, Angoumois, Chartres, Touraine, Troyes, Vivarais, Caux, Caen, Auxerrois, Armor, Finistère, Vannetais, Nantais, Labourd, Aquitaine, Armagnac, Forcalquier, Béarn, Maine, Anjou, Berry, Haut-Poitou, Rethel, Valois, Paris, Orleanais, Nemours, Reims, Barrois, Metz, Lothringen, Bourbonnais, Nivernais, Dijonnais, Narbonne, Franche-Comté, Périgord, Limousin, Toulouse, Roussillon, Rouergue, Auvergne, Montpellier, Provence, Avignon, Lyonnais, Elsass, Dauphiné, Mahe, Hollhavai, Mauritius, Île Bourbon, Cambray, Charolais, Calais, Alençon, Artois, Sundgau, Picardie, Corsica, Les Cayes, Tortuga, Cayenne, Guadelupe, Martinique, St. Lucia
-	States: Île-de-France, Loire, Burgundy, Picardy, Champagne, Brittany, Poitou, Languedoc, Lorraine, Normandy, Gascony, Provence, Upper Rhineland, Massif Central, Savoy, Guyenne, Mascarenes, Coromandel, Windward Islands, Catalonia, Hispaniola, Leeward Islands, Vasconia, Western Mediterranean Islands, Indian Ocean Islands, Suriname
-	Advisors: None
-	Ancients country name: None
-
-UAV-alpha : Commonwealth
-	Capital: Warszawa
-	Culture: Polish
-	Religion: Catholic
-	Is a: Elective Monarchy
+	Trade bonus: Fish, Fur, Naval Supplies, Copper, Ivory, Tobacco
+	Rivals: Poland, Prussia, Hungary
+	Allies: Scandinavia, France, Naples
+	Dependencies: Newfoundland(Colony), Columbia britannique(Colony), Pérou britannique(Colony), Treize colonies(Colony), Louisiane britannique(Colony)
+	Provinces: Merina, Curitiba, Candelaria, Sjælland, Puerto Deseado, Fyn, Sutherland, Tierra del Fuego, Angoche, Mtetwa, Cork, Sligo, Kildare, Ulster, Somerset, Lübeck, Florida Blanca, Kotte, Graaff-Reinet, Panama, Norfolk, Derby, Nicaragua, Santa Catarina, Campinas, Calais, Sierra Leone, Managua, Veraguas, Orkney, Reykjavik, Akureyri, Tyrone, Pale, Leinster, Limerick, Connaught, Qishn, Benguela, Swellendam, Xhosa, Natal, Matsolo, Quelimane, Menabe, Besalampy, Mozambique, Kilwa, Mzizima, Lindi, Bagamoyo, Tanga, Mombasa, Antankara, Mogadishu, Iboina, Tsimihety, Maroantsetra, Vatomandry, Shetland, Antemoro, Färöarna, Betsileo, Mahafaly, Bornholm, Antanosy, Bara, Lolland, Antsalova, Fiherana, Ibo, Galápagos Islands, Merca, Beledweyne, Gedo, Warsheikh, El Buur, Cornwall, Hampshire, Barawa, Kent, Meregh, London, Borikén, Oxford, St. Thomas, Essex, Gloucester, Antigua, Shrewsbury, Guadelupe, Glamorgan, Gwynedd, Lincolnshire, Lancashire, York, Northumberland, Cumbria, Lothian, Thatta, Ayrshire, Perth, Aberdeen, Inverness, Outer Hebrides, Sao Vicente
+	States: East Anglia, Northumbria, Mercia, Wessex, Wales, Flanders, Eastern Ireland, Denmark, Highlands, Faroes, Leeward Islands, Lowlands, Western Ireland, Mozambique, Central Swahili Coast, Sakalava, Mogadishu, Greater Antilles, Natal, Betsimasaraka, Sao Paulo, Sindh, Iceland, Patagonia, Southern Madagascar, Madagascar Highlands, Cape of Good Hope, Panama, Nicaragua, Rio Grande do Sul, Chimor, Bahiá Blanca, Mahra, Mecklenburg, Ajuuraan
+	Advisors: Army Reformer, Master of Mint, Naval Reformer
+	Ancients country name: England
+, Sharqu : Hanover
+	Capital: Hanover
+	Culture: Rhenish
+	Religion: Protestant
+	Is a: Noble Republic
 	Rank: Kingdom
 	Has provinces in: Europe
 	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
-	Ideas: Poland ideas(7), Diplomatic(7), Humanist(7), Trade(7), Offensive(7), Administrative(7), Defensive(7), Aristocratic(0)
-	Policies: None
-	Development: 311
-	Realm development: 262.635
-	Number of provinces: 30
-	Treasury: 231.756
-	Income: 25.999
+	Ideas: Hanover ideas(7), Economic(7), Defensive(7), Quality(7), Espionage(7), Offensive(7), Innovative(7), Quantity(7)
+	Policies: Deserter Act, Modern Firearm Techniques, Horse Artillery, Weapon Quality Standards, Superior Fortifications
+	Development: 804
+	Realm development: 697.25
+	Number of provinces: 23
+	Treasury: 3771.06
+	Income: 166.321
 	Inflation: 0.0
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  14510
-	Maximum manpower:  34647
-	Actual sailors: 424
-	Maximum sailors: 720
-	Land force limit: 49
-	Active regular regiments: 50
-	Active mercenaries: 1
-	Professionalism: 59.854%
-	Army tradition: 13.736
-	Navy tradition: 0.0
-	Losses: 11274
+	Mercantilism: 24%
+	Actual manpower:  88483
+	Maximum manpower:  141129
+	Actual sailors: 1125
+	Maximum sailors: 1125
+	Land force limit: 214
+	Active regular regiments: 69
+	Active mercenaries: 104
+	Professionalism: 86.362%
+	Army tradition: 98.704
+	Navy tradition: 0.403
+	Losses: 2473243
 	Stability: 0
 	Legitimacy: 100.0
-	Average autonomy: 16.894
-	Average unrest: -5.076
-	War exhaustion: 0.543
+	Average autonomy: 14.13
+	Average unrest: -6.454
+	War exhaustion: 1.198
 	Religious unity: 100.0%
-	Prestige: 7.592
-	Power projection: 0
-	Splendor: 6
-	Score: 3.663
-	Absolutism: 0.0
-	Tech: 26, 26, 26
-	Golden age started: 
-	Is part HRE: No
+	Prestige: 0.0
+	Power projection: 24
+	Splendor: 91
+	Score: 171.0
+	Absolutism: 40.0
+	Tech: 29, 29, 29
+	Golden age started: 3 February 1536
+	Is part HRE: Yes
 	Trade bonus: None
-	Rivals: None
-	Allies: Cologne
+	Rivals: Scandinavia, Netherlands, France
+	Allies: Hungary, Poland, Tuscany
 	Dependencies: None
-	Provinces: Plock, Warszawa, Sieradz, Braslaw, Sandomierz, Lublin, Krakow, Podlasie, Trakai, Samogitia, Vilna, Kovno, Grodno, Wizna, Rowne, Leczyca, Mazyr, Minsk, Brest, Turov, Pinsk, Zhytomyr, Volhynia, Bratslav, Owrucz, Cherkasy, Podolia, Danzig, Poznan, Kalisz
-	States: Mazovia, Wielkopolska, Malopolska, Vilna, Podolia Volhynia, Samogitia, Pripyat, Minsk, Pomerelia, West Dniepr
-	Advisors: Army Organizer
-	Ancients country name: None
-
-warpc : Great Britain
-	Capital: London
-	Culture: English
-	Religion: Protestant
-	Is a: English Monarchy
-	Rank: Kingdom
-	Has provinces in: Europe, Asia, Africa, North America, Oceania
-	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
-	Ideas: Great Britain ideas(7), Administrative(7), Exploration(7), Quality(7), Maritime(7), Economic(7), Expansion(7), Trade(4)
-	Policies: None
-	Development: 776
-	Realm development: 805.925
-	Number of provinces: 91
-	Treasury: 146.285
-	Income: 119.801
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  14163
-	Maximum manpower:  45390
-	Actual sailors: 8913
-	Maximum sailors: 24016
-	Land force limit: 88
-	Active regular regiments: 65
-	Active mercenaries: 0
-	Professionalism: 60.129%
-	Army tradition: 13.299
-	Navy tradition: 7.935
-	Losses: 0
-	Stability: -1
-	Legitimacy: 100.0
-	Average autonomy: 8.665
-	Average unrest: 2.369
-	War exhaustion: 0.0
-	Religious unity: 27.9%
-	Prestige: 10.849
-	Power projection: 34
-	Splendor: 30
-	Score: 42.118
-	Absolutism: 0.0
-	Tech: 28, 28, 28
-	Golden age started: 
-	Is part HRE: No
-	Trade bonus: None
-	Rivals: Austria, France, Ottomans
-	Allies: Hesse, Netherlands
-	Dependencies: Hanover(Personnal union), Koch(Vassal), Oudh(Vassal), Venad(Vassal), Carnatic(Vassal), Kochin(Vassal), Indes occidentales britanniques(Colony), Newfoundland(Colony)
-	Provinces: East March, West March, Argyll, Inner Hebrides, Mann, Sutherland, Montgomery, Hull, Scarborough, North Konkan, Carmarthen, Cambridge, North Kanara, Sussex, Coventry, Devon, Malabar, Cork, Dorset, Sligo, Chester, Kildare, Leicester, Ulster, Ormond, Desmond, Tondainadu, Midlands, Donegal, Velanadu, Srikakulam, Lakhnor, Somerset, Konaseema, Kalingandhra, Athabasca, Nihithawak, Danezaa, Patna, Jharkhand, Damin, Bengal Delta, Surguja, Gauda, Dhaka, Silhet, Chittagong, Shetland, Eora, Norfolk, Derby, Mosquito, St. Helena, Belize, Bermuda, Gibraltar, Cornwall, Hampshire, Kent, London, Oxford, Bengkulu, Essex, Gloucester, Shrewsbury, Glamorgan, Orkney, Gwynedd, Lincolnshire, Lancashire, Tyrone, York, Pale, Northumberland, Leinster, Midnapore, Cumbria, Limerick, Sunderbans, Lothian, Connaught, Ayrshire, Perth, Koch Hajo, Aberdeen, Inverness, Bhagalpur, Outer Hebrides, Barind, Nasirabad, Tirhut
-	States: London, West Bengal, Bihar, West Midlands, Andhra, Lowlands, Highlands, East Anglia, Scottish Marches, Wessex, North Bengal, Leinster, East Bengal, Connacht, Ulster, Yorkshire, East Midlands, Munster, Rakhine, Wales, Coromandel, Orissa, Athabasca, Southern Australia, Kanara, Konkan, Guatemala, Kerala, The Isles, Assam, Lampung, Jharkhand, Upper Andalucia, Faroes, Angola, Nicaragua, Greater Antilles
-	Advisors: Treasurer, Statesman, Quartermaster
-	Ancients country name: England
-
-Shy : Netherlands
-	Capital: Amsterdam
-	Culture: Dutch
-	Religion: Reformed
+	Provinces: Koblenz, Pfalz, Lauenburg, Kassel, Baden, Elsass, Heidelberg, Mainz, Würzburg, Trier, Hessen, Westfalen, Nassau, Frankfurt, Köln, Lüneburg, Aachen, Stade, Brunswick, Paderborn, Metz, Hanover, Luxemburg
+	States: North Rhine, Westphalia, Lower Rhineland, Braunschweig, Upper Rhineland, Lower Saxony, Liege, Palatinate, Hesse, Lorraine, Franconia, Weser
+	Advisors: Trader, Commandant, Inquisitor
+	Ancients country name: Cologne
+, Ivoaleks : Timurids
+	Capital: Samarkand
+	Culture: Uzbek
+	Religion: Sunni
 	Is a: Administrative Monarchy
-	Rank: Kingdom
-	Has provinces in: Europe, Asia, Africa, North America, South America
-	Institutions embraced: Renaissance, Colonialism, Printing Press
-	Ideas: Netherlands ideas(7), Administrative(7), Defensive(7), Innovative(7), Quality(7), Trade(7), Economic(7), Exploration(4)
-	Policies: None
-	Development: 414
-	Realm development: 369.76
-	Number of provinces: 38
-	Treasury: 131.206
-	Income: 54.438
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  8679
-	Maximum manpower:  24497
-	Actual sailors: 4077
-	Maximum sailors: 13820
-	Land force limit: 44
-	Active regular regiments: 33
-	Active mercenaries: 0
-	Professionalism: 60.062%
-	Army tradition: 9.851
-	Navy tradition: 0.033
-	Losses: 0
-	Stability: -1
-	Legitimacy: 100.0
-	Average autonomy: 13.278
-	Average unrest: 5.312
-	War exhaustion: 0.0
-	Religious unity: 65.7%
-	Prestige: 4.54
-	Power projection: 3
-	Splendor: 10
-	Score: 18.312
-	Absolutism: 0.0
-	Tech: 28, 28, 28
-	Golden age started: 
-	Is part HRE: No
-	Trade bonus: None
-	Rivals: Liege, Mysore, Taungu
-	Allies: Great Britain, Prussia
-	Dependencies: None
-	Provinces: Graaff-Reinet, Kendari, Poso, Buru, Ambon, Ceram, Halmahera, Cape Coast, Malacca, Cape, St. Martin, Palu, Swellendam, Sula, Oversticht, Groningen, Breda, Den Haag, Zeeland, Maldives, Amsterdam, Utrecht, Gelre, Friesland, Essequibo, Demerara, Paramaribo, Curacao, Tulangbewang, Blambangan, Kandy, Vanni, Kalapa, Flores, Suriname, West Timor, Kotte, Gayo
-	States: Hadramut, Netherlands, Holland, Frisia, Cape of Good Hope, Timor, Lanka, Ceram, North Sulawesi, Malacca, East Java, South Sulawesi, Leeward Islands, Moluccas, West Java, Lampung, Aceh, Greater Antilles, Suriname, Guyana, West African Coast, Kerala, Spice Islands
-	Advisors: Naval Reformer, Army Reformer, Philosopher
-	Ancients country name: None
-
-Shy : Russia
-	Capital: Neva
-	Culture: Muscovite
-	Religion: Orthodox
-	Is a: Tsardom
-	Rank: Empire
-	Has provinces in: Europe, Asia, North America
-	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
-	Ideas: Russia ideas(7), Expansion(7), Religious(7), Defensive(7), Trade(7), Offensive(7), Maritime(7), Economic(4)
-	Policies: None
-	Development: 1585
-	Realm development: 1439.883
-	Number of provinces: 208
-	Treasury: 1108.01
-	Income: 136.127
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  47287
-	Maximum manpower:  165711
-	Actual sailors: 2688
-	Maximum sailors: 6866
-	Land force limit: 276
-	Active regular regiments: 276
-	Active mercenaries: 0
-	Professionalism: 63.007%
-	Army tradition: 29.426
-	Navy tradition: 9.952
-	Losses: 14659
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 19.392
-	Average unrest: -13.414
-	War exhaustion: 0.156
-	Religious unity: 86.4%
-	Prestige: -12.476
-	Power projection: 30
-	Splendor: 30
-	Score: 52.008
-	Absolutism: 0.048
-	Tech: 28, 28, 28
-	Golden age started: 
-	Is part HRE: No
-	Trade bonus: Fur, Iron
-	Rivals: None
-	Allies: None
-	Dependencies: Georgia(Vassal), Kurland(Vassal), Kazakh(Vassal)
-	Provinces: Kamchatka, Penzhina, Kolyma, Omolon, Karalveyem, Verkhoyansk, Suntar Khayata, Gizhiga, Sakha, Okhotsk, Tauisk, Oka, Yakut, Bezhetsk, Maya, Jugjur, Shenkursk, Aldan, Stanovoy, Karelia, Viborg, Mukhtuya, Kirenga, Kexholm, Barguzin, Neva, Ude, Ust-Vym, Ingermanland, Onan Gol, Ösel, East Tunguska, Reval, Irkutsk, Livland, West Tunguska, Riga, Angara, Sayan, Tomsk, Kuznetsk, Turukhan, Ket, Surgut, Narim, Irtesh, Obdorsk, Berezov, Sibir, Tyumen, Kodiak, Rostov, Kurgan, Luki, Solikamsk, Tura, Urkan, Viatka, Udi, Pelym, Simbirsk, Kazan, Vetluga, Wenden, Ula, Toropets, Trubchevsk, Vyazma, Mstislav, Kashin, Zubtsov, Mologa, Mozhaisk, Kolomna, Yuriev, Starodub, Pronsk, Solvychegodsk, Mezen, Onega, Velsk, Vyshny Volochyok, Ustyuzhna, Totma, Sol Galitskaya, Tetyushi, Ar-Chally, Izhkar, Bolgar, Tikhvin, Rzhev, Kostroma, Murom, Ustyug, White Karelia, Kola, Kasimov, Komi, Vitebsk, Latgalia, Pskov, Polotsk, Kiev, Yedisan, Zaporozhia, Crimea, Caffa, Azov, Kuban, Lower Don, Chernigov, Poltava, Kharkov, Mogilev, Smolensk, Tver, Moskva, Kaluga, Bryansk, Kursk, Dorpat, Voronezh, Tula, Ryazan, Tambov, Saratov, Penza, Perm, Nizhny Novgorod, Narva, Vladimir, Yaroslavl, Olonets, Novgorod, Kholm, Beloozero, Soroka, Vologda, Orda, Lower Yik, Ingil, Pereyaslav, Yelets, Bahmut, Theodoro, Mansur, Kyzyl-Yar, Tyn, Azaraba, Etkara, Majar, Kuma, Ukek, Kanadey, Agyidel, Juketau, Veda-Suvar, Alatyr, Ostyaki, Yugan, Agan, Baykha, Uchamin, Chulym, Vah, Barnaul, Nukhtui, Chuna, Seganka, Kharya, Yarmanka, Kagyrgyn, Iglino, Ust-Kut, Kan, Bashgird, Mangazea, Chara, Matrega, Severia, Kholmogory, Suzdal, Galich, Kargopol, Torzhok, Ostrov, Ladoga, Kudymkar, Cherdyn, Ust-Sysolsk, Buzuluk, Chelyaba, Beljamen, Udmurtia, Yedishkul, Astrakhan, Nogay, Yakutat, Sarai, Kenai, Borisoglebsk, Aleut, Manych, Ryn, Samara, Yaik, Bashkortostan, Pegaya Orda
-	States: Moscow, Tver, Ryazan, Astrakhan, Galich, Yarloslavl, Novgorod, Suzdal, Beloozero, Vladimir, Crimea, Bashkiria, South Karelia, Saratov, Oka, Pskov, Buryatia, Azov, Smolensk, Kazan, Livonia, Ural, Perm, Samara, Ishim, Lower Don, Kama, Tambov, Zaporizhia, Lower Yik, Sloboda Ukraine, Estonia, East Dniepr, Volga, Ob, Yedisan, Pomorye, North Karelia, Irkutsk, Tunguska, Yakutia, Arkhangelsk, Vologda, Okhotsk, White Ruthenia, Kara, Yrtesh, Central Siberia, Kolyma, Kamchatka, West Dniepr
-	Advisors: Inquisitor, Spymaster, Grand Captain
-	Ancients country name: Muscovy
-
-AI : Qing
-	Capital: Beijing
-	Culture: Manchu
-	Religion: Confucian
-	Is a: Celestial Empire
 	Rank: Empire
 	Has provinces in: Asia
-	Institutions embraced: Renaissance, Colonialism, Printing Press, Manufactories
-	Ideas: Manchu ideas(7), Trade(7), Economic(7), Defensive(7), Expansion(7), Humanist(7), Quantity(2)
-	Policies: None
-	Development: 1678
-	Realm development: 1368.446
-	Number of provinces: 203
-	Treasury: 186.953
-	Income: 116.278
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Timurids ideas(7), Quality(7), Economic(7), Defensive(7), Espionage(7), Quantity(7), Religious(7), Offensive(5), Humanist(1)
+	Policies: Agricultural Cultivation, Weapon Quality Standards, Field priests and Soldier's prayer books, Military Zeal Act, Mercenary Registration Act
+	Development: 1197
+	Realm development: 1031.5
+	Number of provinces: 82
+	Treasury: 400.135
+	Income: 256.27
+	Inflation: 4.167
+	Debt: 27699
+	Mercantilism: 23%
+	Actual manpower:  2737
+	Maximum manpower:  199354
+	Actual sailors: 0
+	Maximum sailors: 0
+	Land force limit: 384
+	Active regular regiments: 47
+	Active mercenaries: 223
+	Professionalism: 33.054%
+	Army tradition: 87.663
+	Navy tradition: 0.0
+	Losses: 7916961
+	Stability: 2
+	Legitimacy: 100.0
+	Average autonomy: 17.378
+	Average unrest: -16.733
+	War exhaustion: 4.458
+	Religious unity: 82.7%
+	Prestige: 44.375
+	Power projection: 34
+	Splendor: 315
+	Score: 537.417
+	Absolutism: 4.916
+	Tech: 29, 28, 29
+	Golden age started: 17 January 1485
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Jaunpur, Bharat, Ottomans
+	Allies: Persia
+	Dependencies: Kazakh(March), Kashmir(March)
+	Provinces: Bhattiana, Baltistan, Ladakh, Doaba, Sialkot, Margalla, Sind Sagar, Derajat, Golestan, Cholistan, Semnan, Amol, Qumis, Kizil-Su, Mashhad, Konjikala, Ardakan, Khujand, Kulob, Alty-Kuduk, Sozak, Syghnak, Jalalabad, Kunduz, Shymkent, Maymana, Kopet Dag, Urgench, Karakum, Altyn, Mangyshlak, Qaraqalpak, Khiva, Dzhaman-Kuduk, Bukhara, Gurganj, Ustyurt, Sabzevar, Atakent, Charjuy, Bojnord, Talas, Merv, Herat, Gazni, Karamegdan, Kungirot, Balkh, Roh, Kabul, Badakhshan, Qarshi, Samarkand, Kyzylkum, Aksu, Turkestan, Tashkent, Kuqa, Kokand, Taraz, Uzkend, Yarkand, Kochkor, Almaty, Chuy, Yashilkul, Nogay, Kypshak, Nadym, Kashgar, Ghuriyan, Sarakhs, Nishapur, Tabas, Tun, Maralbexi, Sari, Termez, Kish, Multan, Lahore, Sirhind
+	States: Transoxiana, Khiva, Ferghana, Merv, Khuttalan, Central Altishahr, Mashhad, Kashgaria, Herat, Tabarestan, Iraq-e-Ajam, Transcaspia, Jetysuu, Arys, Birjand, Syr Darya, Kazakhstan, Kyzylkum, Balkh, Nogai, Balchash, Kabulistan, Isfahan, Lahore, Multan, Kashmir, Sirhind
+	Advisors: Commandant, Spymaster, Theologian
+	Ancients country name: Transoxiana
+, Robindesoibs : Lithuania
+	Capital: Vilna
+	Culture: Lithuanian
+	Religion: Protestant
+	Is a: Administrative Monarchy
+	Rank: Kingdom
+	Has provinces in: Europe
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Lithuania ideas(7), Defensive(7), Economic(7), Quality(7), Trade(7), Offensive(7), Administrative(7), Quantity(3), Diplomatic(1)
+	Policies: Statute of Monopolies, Weapon Quality Standards
+	Development: 825
+	Realm development: 690.193
+	Number of provinces: 64
+	Treasury: 98.141
+	Income: 92.625
+	Inflation: 7.091
+	Debt: 10134
+	Mercantilism: 11%
+	Actual manpower:  56989
+	Maximum manpower:  118140
+	Actual sailors: 4237
+	Maximum sailors: 4245
+	Land force limit: 132
+	Active regular regiments: 72
+	Active mercenaries: 0
+	Professionalism: 15.140%
+	Army tradition: 68.84
+	Navy tradition: 23.146
+	Losses: 4158069
+	Stability: 1
+	Legitimacy: 47.359
+	Average autonomy: 18.988
+	Average unrest: -72.489
+	War exhaustion: 0.0
+	Religious unity: 99.0%
+	Prestige: 0.0
+	Power projection: 20
+	Splendor: 705
+	Score: 547.211
+	Absolutism: 38.003
+	Tech: 29, 28, 28
+	Golden age started: 2 March 1555
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Venice, Prussia, Scandinavia
+	Allies: None
+	Dependencies: Finland(March)
+	Provinces: Braslaw, Vitebsk, Podlasie, Trakai, Osterode, Samogitia, Mitau, Vilna, Kovno, Grodno, Latgalia, Wenden, Rowne, Ula, Pskov, Wizna, Mazyr, Polotsk, Minsk, Trubchevsk, Brest, Turov, Vyazma, Pinsk, Mstislav, Zhytomyr, Volhynia, Bratslav, Owrucz, Cherkasy, Kiev, Severia, Podolia, Zaporozhia, Crimea, Kuban, Lower Don, Chernigov, Poltava, Ingermanland, Kharkov, Mogilev, Reval, Smolensk, Livland, Riga, Goldingen, Ostrov, Bryansk, Kursk, Dorpat, Narva, Beljamen, Yedishkul, Borisoglebsk, Ingil, Pereyaslav, Bahmut, Theodoro, Mansur, Kyzyl-Yar, Tyn, Azaraba, Ortelsburg
+	States: Vilna, Samogitia, Smolensk, Pripyat, Podolia Volhynia, Minsk, Mazovia, East Dniepr, Estonia, Zaporizhia, Lower Don, Yedisan, Crimea, Azov, Sloboda Ukraine, West Dniepr, Pskov, Curonia, East Prussia, Livonia, White Ruthenia, South Karelia
+	Advisors: Master Recruiter
+	Ancients country name: None
+, Vso : Jaunpur
+	Capital: Jaunpur
+	Culture: Avadhi
+	Religion: Sunni
+	Is a: Despotic Monarchy
+	Rank: Empire
+	Has provinces in: Asia
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Jaunpur ideas(7), Defensive(7), Economic(7), Quality(7), Trade(7), Quantity(7), Innovative(7), Religious(6)
+	Policies: Weapon Quality Standards, Modern Firearm Techniques, Garrison System
+	Development: 1496
+	Realm development: 1222.176
+	Number of provinces: 99
+	Treasury: 32663.15
+	Income: 354.299
 	Inflation: 0.0
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  46148
-	Maximum manpower:  108201
-	Actual sailors: 2918
-	Maximum sailors: 11395
-	Land force limit: 145
-	Active regular regiments: 103
-	Active mercenaries: 0
-	Professionalism: 60.004%
-	Army tradition: 15.149
-	Navy tradition: 6.766
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 35.585
-	Average unrest: -1.95
-	War exhaustion: 0.0
-	Religious unity: 82.7%
-	Prestige: 30.151
-	Power projection: 19
-	Splendor: 22
-	Score: 26.368
-	Absolutism: 5.05
-	Tech: 23, 23, 23
-	Golden age started: 
+	Mercantilism: 27%
+	Actual manpower:  6639
+	Maximum manpower:  191301
+	Actual sailors: 4754
+	Maximum sailors: 5554
+	Land force limit: 370
+	Active regular regiments: 52
+	Active mercenaries: 97
+	Professionalism: 57.272%
+	Army tradition: 84.696
+	Navy tradition: 6.923
+	Losses: 6388217
+	Stability: 2
+	Legitimacy: 98.753
+	Average autonomy: 19.65
+	Average unrest: -5.915
+	War exhaustion: 1.702
+	Religious unity: 85.5%
+	Prestige: 18.535
+	Power projection: 7
+	Splendor: 39
+	Score: 6760.062
+	Absolutism: 98.895
+	Tech: 28, 29, 29
+	Golden age started: 24 December 1494
 	Is part HRE: No
-	Trade bonus: Tea, Chinaware, Silk
-	Rivals: Spain, Portugal
-	Allies: None
-	Dependencies: Mori(Tributary), Bhutan(Tributary), Kangra(Tributary), Ferghana(Tributary), Korea(Vassal), Nepal(Tributary), U-tsang(Vassal)
-	Provinces: Miyoo Gasan, Haiilanboo, Deren, Hinggan, Altai Uriankhai, Birija, Kuru, Furdan, Ningguta, Huncun, Boduna, Yehe, Hetu Ala, Andong, Gaizhou, Ereen, Chahar, Ih Huree, Zasagt, Urzhar, Chuguchak, Ili, Kuqa, Hami, Qakilik, Yarkand, Kochkor, Chuy, Yashilkul, Dege, Rebgong, Garze, Xuanhua, Daming, Wuding, Laizhou, Yanzhou, Xuzhou, Huai'an, Fengyang, Fuyang, Zhenjiang, Ningguo, Yongping, Huizhou, Zhending, Shaoxin, Haizhou, Ningbo, Huangzhou, Jinhua, Fengxiang, Poyang, Tongren, Jianning, Hulan, Tingzhou, Jianzhou, Taining, Ju Ud, Chaochow, Anding, Waichow, Shiukwan, Balikul, Leichow, Turpan, Ngaichow, Qurqara-usu, Limchow, Maralbexi, Ngchow, Yangi Hissar, Liuzhou, Dazhou, Namning, Jiazhou, Pu'er, Luzhou, Dehong, Kalar, Lijiang, Fudali, Bozhou, Ulch, Langzhong, Pijin, Songqu, Buteha, Xiangyang, Bayan Tumen, Jingzhou, Khiagt, Yuanling, Dundgovi, Hengyang, Ulaangom, Runing, Hetao, Shangqiu, Ningwu, Lu'an, Yan'an, Tianshui, Pingliang, Liangzhou, Taozhou, Xining, Mergen, Iman, Sartu, Alchuka, Tsetserleg, Qaraqorum, Ejin, Korla, Govi, Sibsongbanna, Dali, Yunnan, Guangnan, Lingyun, Shiuhing, Kingchow, Canton, Fuzhou, Ganzhou, Changsha, Wuling, Zhenyuan, Guiyang, Umung, Tachienlu, Chengdu, Chongqing, Yichang, Wuchang, Nanchang, Hangzhou, Yangzhou, Anqing, Nanyang, Kaifeng, Hanzhong, Qingzhou, Jinan, Huaiqing, Taiyuan, Pingyang, Hejian, Baoding, Datong, Ningxia, Lanzhou, Khara Narin Ula, Xi'an, Jianchang, Ordos, Hohhot, Chengde, Ningyuan, Gyegu, Tsaidam, Yumen, Zhangye, Alxa, Hotan, Qarqan, Aksu, Bechbaliq, Hoboksar, Urumqi, Tannu Uriankhai, Kherlen, Kobdo, Uliastai, Dornogovi, Setsen, Jirem, Xilin Gol, Hulunbuir, Cicigar, Shenyang, Aigun, Tuwan, Bohori, Girin, Ilan Hala, Sakam, Kashgar, Beijing, Nanjing, Suzhou, Wenzhou, Quanzhou, Ji'an, Luoyang, Hefei, Guilin, Yaran, Karamegdan, Taraz, Almaty
-	States: North Hebei, South Jiangsu, Zhejiang, East Guangdong, Ningguta, Liaoning, Shandong, Hubei, Fujian, Sichuan, Shanxi, South Jilin, Jiangxi, Shaanxi, North Henan, Hunan, East Gansu, Inner Mongolia, South Anhui, Eastern Mongolia, West Guangdong, Yun-Gui Hinterland, South Hebei, South Henan, Yun-Gui Frontier, North Jiangsu, Central Heilongjiang, West Gansu, Jetysuu, Kashgaria, South Ilin Hala
-	Advisors: Quartermaster, Philosopher, Navigator
-	Ancients country name: Qing, Manchu
-
+	Trade bonus: Dyes
+	Rivals: Ming, Timurids
+	Allies: Oirat, Bharat
+	Dependencies: Bahmanis(March), Kangra(March), Afghanistan(Vassal)
+	Provinces: Khurda, Gorakhpur, Dhundar, Mewat, Delhi, Lucknow, Kalpi, Central Doab, Upper Doab, Katehar, Gird, Panipat, Etawah, Shekhawati, Kumaon, Chaubisi Rajya, Pathein, Limbuwan, Lakhnor, Mahakoshal, Mandla, Cuttack, Sambalpur, Baisi Rajya, Jaunpur, Tripura, Lower Doab, Mahadeo, Katmandu, Patna, Bahreich, Varanasi, Bundelkhand, Damin, Jharkhand, Baghelkhand, Bengal Delta, Koch, Surguja, Gauda, Dhaka, Bhutan, Assam, Silhet, Chittagong, Naga, Darrang, Cachar, The Andamans, Mrauk U, Kale, Sagaing, Mong Yang, Hsenwi, Ava, Taungoo, Pegu, Kengtung, Mong Nai, Moulmein, Ngari, Changtang, Nyingchi, Qamdo, Markam, Dege, Rebgong, Garze, Hkamti Long, Mong Kawng, Tamanthi, Thaungdut, Pagan, Hsipaw, Mong Pai, Sandoway, Martaban, Anding, Nagchu, Dehong, Lijiang, Songqu, Xining, Shigatse, Lhasa, Tachienlu, Jianchang, Gyegu, Midnapore, Sunderbans, Sadiya, Manipur, Koch Hajo, Balasore, Bhagalpur, Barind, Nasirabad, Tirhut, Garhwal
+	States: Purvanchal, Oudh, Central Doab, Bihar, Lower Doab, Upper Doab, Jaipur, Gondwana, North Bengal, East Bengal, Rakhine, West Bengal, Himalayan Hills, Jharkhand, Garjat, Orissa, Lower Burma, Upper Burma, Nepal, Central Thailand, Aceh, Naga Hills, Assam, Ü, Kachin, Tsang, Kham, Yun-Gui Frontier, Amdo, West Gansu, Karenni, Shan Hills, Indian Ocean Islands, Chuannan, Chuanbei
+	Advisors: Statesman, Inquisitor, Army Reformer
+	Ancients country name: None
+, Nalox : Persia
+	Capital: Isfahan
+	Culture: null
+	Religion: Shia
+	Is a: Feudal Theocracy
+	Rank: Empire
+	Has provinces in: Europe, Asia
+	Institutions embraced: Renaissance, Colonialism, Printing Press, Global Trade, Manufactories, Enlightenment
+	Ideas: Persia ideas(7), Defensive(7), Economic(7), Trade(7), Quality(7), Quantity(7), Religious(7), Offensive(5), Administrative(1)
+	Policies: Production Quota Act, Statute of Monopolies, Military Zeal Act, Field priests and Soldier's prayer books, Weapon Quality Standards
+	Development: 1307
+	Realm development: 1208.64
+	Number of provinces: 98
+	Treasury: 1554.845
+	Income: 514.812
+	Inflation: 1.852
+	Debt: 0
+	Mercantilism: 47%
+	Actual manpower:  0
+	Maximum manpower:  179528
+	Actual sailors: 8187
+	Maximum sailors: 6401
+	Land force limit: 411
+	Active regular regiments: 85
+	Active mercenaries: 199
+	Professionalism: 0.006%
+	Army tradition: 77.527
+	Navy tradition: 40.483
+	Losses: 7727913
+	Stability: 3
+	Legitimacy: 24.906
+	Average autonomy: 9.756
+	Average unrest: -7.983
+	War exhaustion: 1.474
+	Religious unity: 100.0%
+	Prestige: 43.599
+	Power projection: 27
+	Splendor: 783
+	Score: 3074.23
+	Absolutism: 66.84
+	Tech: 29, 29, 29
+	Golden age started: 10 October 1514
+	Is part HRE: No
+	Trade bonus: Spices, Silk
+	Rivals: Bharat, Egypt, Ottomans
+	Allies: Timurids
+	Dependencies: Shirvan(March), Bitlis(March), Great Horde(March)
+	Provinces: Tikrit, Samawat, Wasit, Zufra, Dawasir, Aflaj, Yabrin, Grane, Masirah, Wusta, Hofuf, Gwadar, Quetta, Abarquh, Al-Qatif, Qatar, Bahrain, Bani Yas, Qawasim, Batinah, Muscat, Nizwa, Liwa, Khundzia, Tarki, Basra, Karbala, Baghdad, Melikates, Mosul, Ahvaz, Khorramabad, Urmia, Hamadan, Maragheh, Kirkuk, Tabriz, Terek, Ilam, Lahijan, Kirmanshah, Ardalan, Ganja, Zanjan, Shirvan, Qom, Qazvin, Ardabil, Yasuj, Dagestan, Shiraz, Bandar Langeh, Bam, Teheran, Isfahan, Dashtistan, Larestan, Mogostan, Kerman, Ferah, Yazd, Bamyan, Quhistan, Al-Yamamah, Zaranj, Birjand, Bust, Chakhansur, Hormuz, Kharan, Chabahar, Rafsanjan, Baraimi, Ash Sharqiyah, Ibra, Kandahar, Shatt, Shushtar, Ghor, Hoveyzeh, Qazaniya, Arbil, Sulimaniyeh, Mianeh, Khoy, Shaki, Jask, Fasa, Darab, Kazerun, Siraf, Kashan, Savah, Soltanieh, Rasht, Astara, Malamir, Saidabad
+	States: Tabriz, Iraq Arabi, Armenia, Shahrizor, Basra, Luristan, Azerbaijan, Iraq-e-Ajam, Bahrain, Khuzestan, Isfahan, Gulf Coast, Mogostan, Kerman, Tabarestan, Farsistan, Shirvan, Pirate Coast, Makran, Dagestan, Muscat, Ghor, Sistan, Oman, al-Yamamah, Kalat, Dhofar, Birjand, Al Jazira
+	Advisors: Army Reformer, Theologian, Trader
+	Ancients country name: Qara Qoyunlu
+]
