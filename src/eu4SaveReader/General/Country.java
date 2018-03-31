@@ -758,7 +758,7 @@ public class Country {
 	    inflation = Util.extractInfoDouble(countryInfos, "inflation=");
 	    debt = extractDebt(countryInfos);
 	    mercantilism = Util.extractInfoDouble(countryInfos, "mercantilism=").intValue();
-	    professionalism = new BigDecimal(Util.extractInfo(countryInfos, "army_professionalism=")).multiply(new BigDecimal("100")).setScale(3);
+	    professionalism = Util.extractInfoBigDecimal(countryInfos, "\tarmy_professionalism=").multiply(new BigDecimal("100")).setScale(3);
 	    armyTradition = Util.extractInfoDouble(countryInfos, "army_tradition=");
 	    navyTradition = Util.extractInfoDouble(countryInfos, "navy_tradition=");
 	    manpower = Integer.parseInt(Util.extractInfo(countryInfos, "\n\t\tmanpower=").replace(".", ""));

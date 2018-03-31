@@ -1,5 +1,6 @@
 package eu4SaveReader.Utils;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.GregorianCalendar;
@@ -53,6 +54,17 @@ public final class Util {
     	} catch(NullPointerException e) {
     		return 0;
     	}
+    }
+    
+    public static final BigDecimal extractInfoBigDecimal(String info, String landmark) {
+    	try {
+    		return new BigDecimal(extractInfo(info, landmark));
+    	} catch(NumberFormatException e) {
+    		return new BigDecimal(0);
+    	} catch(NullPointerException e) {
+    		return new BigDecimal(0);
+    	}
+    	
     }
     
 	public static final GregorianCalendar convertStringToDate(String dateString) {
