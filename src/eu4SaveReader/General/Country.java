@@ -681,12 +681,7 @@ public class Country {
 	    	StringBuilder ideasString = new StringBuilder();
 	    	
 	    	for(Entry<String, Integer> i : ideas.entrySet()) {
-	    		if(Character.isUpperCase(i.getKey().charAt(0))) {
-	    			ideasString.append(Tags.tags.get(i.getKey().split("_")[0]) + " ideas");
-	    		} else {
-	    			ideasString.append(Ideas.ideas.get(i.getKey()));
-	    		}
-	    		
+	    		ideasString.append(Ideas.ideas.get(i.getKey()));
 	    		ideasString.append("(");
 	    		ideasString.append(i.getValue());
 	    		ideasString.append(")");	    		
