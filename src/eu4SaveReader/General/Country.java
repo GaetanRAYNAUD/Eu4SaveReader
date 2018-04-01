@@ -420,9 +420,11 @@ public class Country {
     	}
     	
     	for(Entry<Integer, Advisor> entry : advisors.entrySet()) {
-    		if(entry.getValue().getType().equals("army_organiser")) {
-    			modifiers += 0.1;
-    			break;
+    		if(entry.getValue().getType() != null) {
+    			if(entry.getValue().getType().equals("army_organiser")) {
+    				modifiers += 0.1;
+    				break;
+    			}
     		}
     	}
 
@@ -645,8 +647,12 @@ public class Country {
 	    	StringBuilder advisorsString = new StringBuilder();
 	    	
 	    	for(Entry<Integer, Advisor> entry : advisors.entrySet()) {
-	    		advisorsString.append(Advisors.advisorsType.get(entry.getValue().getType()));
-	    		advisorsString.append(", ");
+	    		if(entry.getValue().getType() != null) {
+	    			advisorsString.append(Advisors.advisorsType.get(entry.getValue().getType()));
+	    			advisorsString.append(", ");
+	    		} else if(advisors.size() == 1){
+	    			advisorsString.append("None  ");
+	    		}
 	    	}
 	    	
 	    	return advisorsString.toString().substring(0, advisorsString.toString().length() - 2);
