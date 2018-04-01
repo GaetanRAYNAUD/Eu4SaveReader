@@ -48,7 +48,7 @@ public final class Cultures {
 		cultures.put("atlantean", "Atlantean");
 		cultures.put("austrian", "Austrian");
 		cultures.put("avadhi", "Avadhi");
-		cultures.put("azerbadjani", "Azerbaijani");
+		cultures.put("azerbaijani", "Azerbaijani");
 		cultures.put("aztek", "Aztec");
 		cultures.put("babylonian", "Babylonian");
 		cultures.put("bai", "Bai,");
