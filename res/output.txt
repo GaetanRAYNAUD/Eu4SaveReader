@@ -3,7 +3,7 @@ WARNING: Illegal reflective access by org.apache.poi.openxml4j.util.ZipSecureFil
 WARNING: Please consider reporting this to the maintainers of org.apache.poi.openxml4j.util.ZipSecureFile$1
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Paris",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=184,lastRule=java.util.SimpleTimeZone[id=Europe/Paris,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=1,YEAR=1445,MONTH=1,WEEK_OF_YEAR=5,WEEK_OF_MONTH=1,DAY_OF_MONTH=1,DAY_OF_YEAR=32,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=1,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=0,MILLISECOND=0,ZONE_OFFSET=3600000,DST_OFFSET=0]
+Date : java.util.GregorianCalendar[time=?,areFieldsSet=false,areAllFieldsSet=false,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Paris",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=184,lastRule=java.util.SimpleTimeZone[id=Europe/Paris,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=2,minimalDaysInFirstWeek=4,ERA=?,YEAR=1464,MONTH=1,WEEK_OF_YEAR=?,WEEK_OF_MONTH=?,DAY_OF_MONTH=2,DAY_OF_YEAR=?,DAY_OF_WEEK=?,DAY_OF_WEEK_IN_MONTH=?,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=0,MILLISECOND=?,ZONE_OFFSET=?,DST_OFFSET=?]
 [Sharqu : France
 	Capital: Paris
 	Culture: Francien
@@ -12,48 +12,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: France ideas(0)
+	Ideas: French Ideas(0), Defensive Ideas(2)
 	Policies: None
-	Development: 347
-	Realm development: 273.822
-	Number of provinces: 27
-	Treasury: 203.925
-	Income: 19.99
-	Inflation: 0.0
+	Development: 429
+	Realm development: 318
+	Number of provinces: 32
+	Treasury: 547
+	Income: 32.968
+	Inflation: 1.219
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  24924
-	Maximum manpower:  44200
-	Actual sailors: 595
-	Maximum sailors: 1407
-	Land force limit: 38
-	Active regular regiments: 30
+	Mercantilism: 16%
+	Actual manpower:  33 898
+	Maximum manpower:  44 751
+	Actual sailors: 2 144
+	Maximum sailors: 2 085
+	Land force limit: 41
+	Active regular regiments: 41
 	Active mercenaries: 0
-	Professionalism: 0.024%
-	Army tradition: 12.964
-	Navy tradition: 3.877
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 22.311
-	Average unrest: -7.555
+	Active forces : 100%
+	Professionalism: 7.901%
+	Army tradition: 24.55
+	Navy tradition: 1.558
+	Losses: 50 279
+	Stability: 2
+	Legitimacy: 93.556
+	Average autonomy: 26.962
+	Average unrest: -8.916
 	War exhaustion: 0.0
 	Religious unity: 100.0%
-	Prestige: 8.69
-	Power projection: 26
-	Splendor: 4
-	Score: 1.462
+	Prestige: 31.101
+	Power projection: 67
+	Splendor: 676
+	Score: 129
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Austria, England, Burgundy
-	Allies: Hungary, Provence, Genoa
+	Rivals: Burgundy, Austria
+	Allies: Switzerland, Brabant
 	Dependencies: None
-	Provinces: Narbonne, Périgord, Limousin, Toulouse, Rouergue, Auvergne, Montpellier, Lyonnais, Dauphiné, Saintonge, Quercy, Bas-Poitou, Angoumois, Chartres, Touraine, Troyes, Vivarais, Armagnac, Béarn, Berry, Haut-Poitou, Valois, Paris, Orleanais, Nemours, Reims, Bourbonnais
+	Provinces: Narbonne, Franche-Comté, Périgord, Limousin, Toulouse, Rouergue, Auvergne, Montpellier, Lyonnais, Dauphiné, Saintonge, Quercy, Bas-Poitou, Angoumois, Chartres, Touraine, Troyes, Vivarais, Labourd, Aquitaine, Armagnac, Béarn, Maine, Berry, Haut-Poitou, Valois, Paris, Orleanais, Nemours, Reims, Barrois, Bourbonnais
 	States: Île-de-France, Languedoc, Loire, Poitou, Massif Central, Savoy, Champagne, Gascony, Guyenne
-	Advisors: Statesman, Military Engineer
+	Advisors: Army Reformer, Trader, Master of Mint
 	Ancients country name: None
 
 , Ohroms : England
@@ -62,50 +63,51 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Religion: Catholic
 	Is a: English Monarchy
 	Rank: Kingdom
-	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: England ideas(0)
+	Has provinces in: Europe, Africa
+	Institutions embraced: Renaissance
+	Ideas: English Ideas(1), Exploration Ideas(3)
 	Policies: None
-	Development: 333
-	Realm development: 276.594
-	Number of provinces: 39
-	Treasury: 87.315
-	Income: 27.029
-	Inflation: 0.0
-	Debt: 0
+	Development: 367
+	Realm development: 348
+	Number of provinces: 51
+	Treasury: 108
+	Income: 34.785
+	Inflation: 0.456
+	Debt: 570
 	Mercantilism: 25%
-	Actual manpower:  11889
-	Maximum manpower:  29679
-	Actual sailors: 2886
-	Maximum sailors: 6911
-	Land force limit: 34
-	Active regular regiments: 32
-	Active mercenaries: 0
-	Professionalism: 0.061%
-	Army tradition: 5.19
-	Navy tradition: 4.955
-	Losses: 0
-	Stability: 0
-	Legitimacy: 96.083
-	Average autonomy: 15.342
-	Average unrest: -8.458
+	Actual manpower:  24 552
+	Maximum manpower:  29 778
+	Actual sailors: 6 013
+	Maximum sailors: 6 769
+	Land force limit: 35
+	Active regular regiments: 23
+	Active mercenaries: 12
+	Active forces : 100%
+	Professionalism: 3.412%
+	Army tradition: 25.104
+	Navy tradition: 39.272
+	Losses: 67 064
+	Stability: 1
+	Legitimacy: 100.0
+	Average autonomy: 35.801
+	Average unrest: -10.021
 	War exhaustion: 0.0
-	Religious unity: 100.0%
-	Prestige: 18.852
-	Power projection: 23
-	Splendor: 4
-	Score: 2.064
+	Religious unity: 99.1%
+	Prestige: -24.016
+	Power projection: 78
+	Splendor: 308
+	Score: 111
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: France, Burgundy, Scotland
-	Allies: Leinster, Tyrone, Portugal
-	Dependencies: None
-	Provinces: Norfolk, Derby, Mann, Montgomery, Hull, Scarborough, Carmarthen, Cambridge, Sussex, Coventry, Devon, Dorset, Calais, Alençon, Chester, Leicester, Cotentin, Somerset, Caux, Caen, Cornwall, Hampshire, Kent, London, Labourd, Oxford, Aquitaine, Essex, Gloucester, Shrewsbury, Maine, Glamorgan, Gwynedd, Lincolnshire, Lancashire, York, Pale, Northumberland, Cumbria
-	States: London, Normandy, West Midlands, East Anglia, Wessex, Gascony, Yorkshire, East Midlands, Wales, Loire, Scottish Marches
-	Advisors: Inquisitor, Statesman, Master Recruiter
+	Rivals: Burgundy, Castile, Hungary
+	Allies: Brabant
+	Dependencies: East Frisia(Vassal), Scotland(Vassal)
+	Provinces: Inner Hebrides, Mann, Montgomery, Hull, Scarborough, Carmarthen, Cambridge, Sussex, Coventry, Devon, Dorset, Cork, Chester, Leicester, Kildare, Ormond, Desmond, Midlands, Cotentin, Somerset, Caux, Caen, Shetland, Färöarna, Norfolk, Derby, Calais, Alençon, Ifni, Cornwall, Hampshire, Kent, London, Oxford, Essex, Gloucester, Shrewsbury, Glamorgan, Orkney, Gwynedd, Reykjavik, Lincolnshire, Akureyri, Lancashire, York, Pale, Northumberland, Leinster, Cumbria, Limerick, Outer Hebrides
+	States: London, Normandy, West Midlands, East Anglia, Wessex, Yorkshire, East Midlands, Wales, Scottish Marches
+	Advisors: Naval Reformer, Theologian, Master Recruiter
 	Ancients country name: None
 
 , Poseidon : Castile
@@ -114,50 +116,51 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Religion: Catholic
 	Is a: Feudal Monarchy
 	Rank: Kingdom
-	Has provinces in: Europe
+	Has provinces in: Europe, Africa, South America
 	Institutions embraced: None
-	Ideas: Spain ideas(0)
+	Ideas: Spanish Ideas(1), Exploration Ideas(4)
 	Policies: None
-	Development: 243
-	Realm development: 212.848
-	Number of provinces: 22
-	Treasury: 102.124
-	Income: 17.573
-	Inflation: 0.011
+	Development: 298
+	Realm development: 241
+	Number of provinces: 26
+	Treasury: 27
+	Income: 25.001
+	Inflation: 1.914
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  15406
-	Maximum manpower:  27293
-	Actual sailors: 665
-	Maximum sailors: 2624
-	Land force limit: 28
-	Active regular regiments: 26
+	Actual manpower:  14 935
+	Maximum manpower:  28 886
+	Actual sailors: 2 912
+	Maximum sailors: 2 926
+	Land force limit: 31
+	Active regular regiments: 29
 	Active mercenaries: 0
-	Professionalism: 10.025%
-	Army tradition: 8.988
-	Navy tradition: 6.528
-	Losses: 0
-	Stability: 0
-	Legitimacy: 93.032
-	Average autonomy: 12.663
-	Average unrest: -9.209
+	Active forces : 94%
+	Professionalism: 16.660%
+	Army tradition: 28.489
+	Navy tradition: 54.033
+	Losses: 40 869
+	Stability: 1
+	Legitimacy: 82.455
+	Average autonomy: 25.688
+	Average unrest: -6.052
 	War exhaustion: 0.0
-	Religious unity: 100.0%
-	Prestige: 8.908
-	Power projection: 19
-	Splendor: 4
-	Score: 1.124
+	Religious unity: 97.6%
+	Prestige: 4.563
+	Power projection: 92
+	Splendor: 258
+	Score: 87
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Aragon, Morocco, England
-	Allies: Navarra, Portugal
-	Dependencies: None
-	Provinces: Sevilla, Córdoba, La Mancha, Soria, Rioja, Galicia, The Canarias, Asturias, León, Vizcaya, Cantabria, Burgos, Extremadura, Jaén, Cadiz, Castilla La Vieja, Salamanca, Madrid, Badajoz, Toledo, Murcia, Cuenca
+	Rivals: England, Burgundy, Hungary
+	Allies: Portugal
+	Dependencies: Aragon(Personnal union), Navarra(Vassal)
+	Provinces: La Mancha, Soria, Galicia, Asturias, León, Vizcaya, Cantabria, Burgos, Extremadura, Jaén, Cadiz, Castilla La Vieja, Ceuta, Salamanca, Madrid, Badajoz, Toledo, Murcia, Almería, Granada, Sevilla, Córdoba, Gibraltar, Essequibo, Rioja, The Canarias, Cuenca
 	States: Toledo, Lower Andalucia, Castille, Leon, Asturias, Macaronesia, Vasconia
-	Advisors: Theologian, Grand Captain
+	Advisors: Diplomat, Grand Captain, Theologian
 	Ancients country name: None
 
 , Meteo : Austria
@@ -167,49 +170,50 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Is a: Feudal Monarchy
 	Rank: Duchy
 	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: Austria ideas(0)
+	Institutions embraced: Renaissance
+	Ideas: Austrian Ideas(0), Defensive Ideas(1)
 	Policies: None
-	Development: 165
-	Realm development: 143.766
-	Number of provinces: 12
-	Treasury: 121.219
-	Income: 14.076
-	Inflation: 0.019
+	Development: 187
+	Realm development: 148
+	Number of provinces: 13
+	Treasury: 98
+	Income: 23.26
+	Inflation: 2.004
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  14383
-	Maximum manpower:  57759
-	Actual sailors: 8
+	Actual manpower:  25 551
+	Maximum manpower:  48 812
+	Actual sailors: 15
 	Maximum sailors: 270
 	Land force limit: 22
-	Active regular regiments: 18
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 7.158
-	Navy tradition: 3.654
-	Losses: 0
-	Stability: 0
-	Legitimacy: 95.0
-	Average autonomy: 14.733
-	Average unrest: -7.5
-	War exhaustion: 0.0
+	Active regular regiments: 36
+	Active mercenaries: 2
+	Active forces : 170%
+	Professionalism: 6.702%
+	Army tradition: 19.589
+	Navy tradition: 1.48
+	Losses: 75 350
+	Stability: 2
+	Legitimacy: 100.0
+	Average autonomy: 23.869
+	Average unrest: -3.685
+	War exhaustion: 0.358
 	Religious unity: 100.0%
-	Prestige: 24.921
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Prestige: 49.536
+	Power projection: 13
+	Splendor: 498
+	Score: 56
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 5
 	Golden age started: 
 	Is part HRE: Yes
 	Trade bonus: None
-	Rivals: France, Burgundy, Poland
-	Allies: Alsace, Augsburg, Aragon, The Papal State, Savoy
-	Dependencies: None
-	Provinces: Kärnten, Krain, Steiermark, Linz, Wien, Graz, Lienz, Sundgau, Tirol, Görz, Ostmarch, Trent
-	States: Austria Proper, Inner Austria, Tirol, Carniola, Upper Rhineland
-	Advisors: Artist, Spymaster
+	Rivals: France, Burgundy
+	Allies: Sweden, Switzerland, Trier
+	Dependencies: Bohemia(Personnal union)
+	Provinces: Kärnten, Krain, Steiermark, Linz, Wien, Graz, Lienz, Tirol, Görz, Ostmarch, Straubing, Regensburg, Trent
+	States: Austria Proper, Inner Austria, Tirol, Carniola
+	Advisors: Diplomat, Grand Captain, Artist
 	Ancients country name: None
 
 , Ormace : Hungary
@@ -219,49 +223,50 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Is a: Feudal Monarchy
 	Rank: Kingdom
 	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: Hungary ideas(0)
+	Institutions embraced: Renaissance
+	Ideas: Hungarian Ideas(0), Defensive Ideas(0)
 	Policies: None
-	Development: 210
-	Realm development: 173.614
+	Development: 246
+	Realm development: 292
 	Number of provinces: 27
-	Treasury: 134.582
-	Income: 13.444
-	Inflation: 0.012
+	Treasury: 117
+	Income: 25.833
+	Inflation: 3.392
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  14112
-	Maximum manpower:  23017
-	Actual sailors: 18
-	Maximum sailors: 216
-	Land force limit: 27
-	Active regular regiments: 22
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 5.223
-	Navy tradition: 0.504
-	Losses: 0
-	Stability: 0
-	Legitimacy: 94.375
-	Average autonomy: 16.903
-	Average unrest: -4.635
+	Actual manpower:  15 464
+	Maximum manpower:  22 708
+	Actual sailors: 0
+	Maximum sailors: 360
+	Land force limit: 34
+	Active regular regiments: 24
+	Active mercenaries: 4
+	Active forces : 82%
+	Professionalism: 6.754%
+	Army tradition: 45.189
+	Navy tradition: 2.363
+	Losses: 39 806
+	Stability: 1
+	Legitimacy: 54.922
+	Average autonomy: 12.109
+	Average unrest: -14.561
 	War exhaustion: 0.0
-	Religious unity: 81.4%
-	Prestige: 8.854
-	Power projection: 1
-	Splendor: 4
-	Score: 0.082
+	Religious unity: 84.1%
+	Prestige: 41.345
+	Power projection: 79
+	Splendor: 804
+	Score: 114
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Bohemia, Venice, Aragon
-	Allies: Poland, France
-	Dependencies: None
+	Rivals: Venice, Burgundy, Castile
+	Allies: Poland
+	Dependencies: Bosnia(Vassal), Albania(Vassal), Wallachia(Vassal)
 	Provinces: Zagreb, Sopron, Somogy, Trencin, Syrmia, Belgrade, Fejér, Varasd, Pest, Hont, Békés, Temes, Bihar, Szolnok, Maros, Bacs, Hunyad, Turda, Maramaros, Királyföld, Szabolcs, Zemplén, Lika, Torontál, Spiš, Slavonia, Pozsony
 	States: Transdanubia, Slovakia, Alföld, Croatia, Northern Transylvania, Southern Transylvania, East Adriatic, Serbia
-	Advisors: Artist
+	Advisors: Artist, Diplomat, Quartermaster
 	Ancients country name: None
 
 , UAV-alpha : Muscovy
@@ -272,48 +277,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Duchy
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: Muscovy ideas(0)
+	Ideas: Muscovite Ideas(0)
 	Policies: None
-	Development: 197
-	Realm development: 246.892
-	Number of provinces: 22
-	Treasury: 158.799
-	Income: 13.984
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  11394
-	Maximum manpower:  22698
-	Actual sailors: 0
-	Maximum sailors: 0
+	Development: 263
+	Realm development: 294
+	Number of provinces: 31
+	Treasury: 36
+	Income: 16.995
+	Inflation: 0.354
+	Debt: 131
+	Mercantilism: 9%
+	Actual manpower:  23 945
+	Maximum manpower:  24 229
+	Actual sailors: 129
+	Maximum sailors: 129
 	Land force limit: 35
-	Active regular regiments: 24
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 9.1
+	Active regular regiments: 30
+	Active mercenaries: 4
+	Active forces : 97%
+	Professionalism: 1.999%
+	Army tradition: 31.293
 	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
-	Legitimacy: 93.026
-	Average autonomy: 16.618
-	Average unrest: -7.527
+	Losses: 22 961
+	Stability: 1
+	Legitimacy: 76.617
+	Average autonomy: 33.18
+	Average unrest: -7.691
 	War exhaustion: 0.0
-	Religious unity: 93.4%
-	Prestige: 4.904
-	Power projection: 13
-	Splendor: 4
-	Score: 0.626
+	Religious unity: 95.0%
+	Prestige: -3.493
+	Power projection: 4
+	Splendor: 202
+	Score: 85
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 3, 3, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Novgorod, Lithuania
+	Rivals: None
 	Allies: None
-	Dependencies: Rostov(Vassal), Yaroslavl(Vassal), Beloozero(Vassal), Pskov(Vassal), Perm(Vassal)
-	Provinces: Suzdal, Galich, Totma, Moskva, Sol Galitskaya, Kaluga, Nizhny Novgorod, Kasimov, Vladimir, Bezhetsk, Viatka, Alatyr, Rzhev, Kostroma, Vologda, Murom, Vetluga, Ustyug, Mozhaisk, Kolomna, Yuriev, Starodub
-	States: Moscow, Galich, Suzdal, Vladimir, Yarloslavl, Vologda, Ryazan, Tver
-	Advisors: Trader, Army Organizer
+	Dependencies: Odoyev(Vassal), Beloozero(Vassal), Rostov(Vassal), Pskov(Vassal), Yaroslavl(Vassal), Perm(Vassal)
+	Provinces: Bezhetsk, Rzhev, Kostroma, Murom, Ustyug, Mozhaisk, Kolomna, Karelia, Yuriev, Starodub, Kexholm, Neva, Ingermanland, Suzdal, Galich, Totma, Moskva, Sol Galitskaya, Kaluga, White Karelia, Kola, Nizhny Novgorod, Kasimov, Vladimir, Luki, Novgorod, Viatka, Alatyr, Kholm, Vologda, Vetluga
+	States: Moscow, Galich, Suzdal, Vladimir, Yarloslavl, Vologda, Ryazan, Novgorod
+	Advisors: Army Reformer
 	Ancients country name: None
 
 , Thitub : Poland
@@ -323,49 +329,50 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Is a: Feudal Monarchy
 	Rank: Kingdom
 	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: Poland ideas(0)
+	Institutions embraced: Renaissance
+	Ideas: Polish Ideas(0)
 	Policies: None
-	Development: 181
-	Realm development: 183.556
-	Number of provinces: 14
-	Treasury: 167.616
-	Income: 11.427
-	Inflation: 0.0
+	Development: 258
+	Realm development: 242
+	Number of provinces: 19
+	Treasury: 105
+	Income: 20.73
+	Inflation: 0.85
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  14012
-	Maximum manpower:  21520
-	Actual sailors: 0
-	Maximum sailors: 0
-	Land force limit: 27
-	Active regular regiments: 20
+	Actual manpower:  680
+	Maximum manpower:  22 097
+	Actual sailors: 527
+	Maximum sailors: 490
+	Land force limit: 34
+	Active regular regiments: 22
 	Active mercenaries: 0
+	Active forces : 65%
 	Professionalism: 0.000%
-	Army tradition: 5.167
+	Army tradition: 36.527
 	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
-	Legitimacy: 97.378
-	Average autonomy: 15.135
-	Average unrest: -3.912
+	Losses: 46 424
+	Stability: 1
+	Legitimacy: 71.057
+	Average autonomy: 25.852
+	Average unrest: -30.165
 	War exhaustion: 0.0
-	Religious unity: 79.0%
-	Prestige: 4.921
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Religious unity: 81.0%
+	Prestige: 9.905
+	Power projection: 57
+	Splendor: 18
+	Score: 97
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 3, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Teutonic Order, Bohemia, Austria
-	Allies: Hungary, Lithuania, Brandenburg
-	Dependencies: Moldavia(March), Mazovia(Vassal)
-	Provinces: Sieradz, Sandomierz, Lublin, Halicz, Krakow, Tarnow, Nowy Sacz, Lwow, Leczyca, Notec, Peremyshl, Podolia, Poznan, Kalisz
-	States: Malopolska, Wielkopolska, Red Ruthenia, West Prussia, Podolia Volhynia
-	Advisors: Quartermaster
+	Rivals: Burgundy, Denmark
+	Allies: Hungary, Lithuania
+	Dependencies: Crimea(Vassal), Mazovia(Vassal), Moldavia(March)
+	Provinces: Sieradz, Sandomierz, Lublin, Halicz, Krakow, Memel, Danzig, Tarnow, Nowy Sacz, Lwow, Marienburg, Leczyca, Notec, Tuchola, Peremyshl, Podolia, Bessarabia, Poznan, Kalisz
+	States: Malopolska, Wielkopolska, Red Ruthenia, West Prussia, Podolia Volhynia, Pomerelia
+	Advisors: Diplomat, Commandant
 	Ancients country name: None
 
 , Genesis : Brandenburg
@@ -376,48 +383,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Duchy
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: Prussia ideas(0)
+	Ideas: Prussian Ideas(0)
 	Policies: None
-	Development: 57
-	Realm development: 52.25
-	Number of provinces: 6
-	Treasury: 60.038
-	Income: 4.591
-	Inflation: 0.0
+	Development: 103
+	Realm development: 86
+	Number of provinces: 9
+	Treasury: 65
+	Income: 7.321
+	Inflation: 1.263
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  11570
-	Maximum manpower:  14450
+	Actual manpower:  2 290
+	Maximum manpower:  16 955
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 12
-	Active regular regiments: 8
+	Land force limit: 15
+	Active regular regiments: 14
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 9.306
+	Active forces : 93%
+	Professionalism: 3.003%
+	Army tradition: 41.276
 	Navy tradition: 0.0
-	Losses: 0
+	Losses: 25 221
 	Stability: 0
-	Legitimacy: 97.013
-	Average autonomy: 8.333
-	Average unrest: -6.0
-	War exhaustion: 0.0
+	Legitimacy: 90.791
+	Average autonomy: 21.277
+	Average unrest: -23.013
+	War exhaustion: 2.335
 	Religious unity: 100.0%
-	Prestige: 4.922
-	Power projection: 2
-	Splendor: 4
-	Score: 0.0
+	Prestige: 3.41
+	Power projection: 39
+	Splendor: 422
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 3, 3, 5
 	Golden age started: 
 	Is part HRE: Yes
 	Trade bonus: None
-	Rivals: Teutonic Order, Brunswick, Pomerania
-	Allies: Poland
+	Rivals: Teutonic Order, Pomerania
+	Allies: Hesse, Lüneburg
 	Dependencies: None
-	Provinces: Uckermark, Berlin, Ruppin, Altmark, Sternberg, Potsdam
-	States: Mittelmark, Northern Saxony, Vorpommern, Neumark
-	Advisors: Army Organizer
+	Provinces: Uckermark, Neumark, Berlin, Ruppin, Niederlausitz, Altmark, Sternberg, Oberlausitz, Potsdam
+	States: Mittelmark, Northern Saxony, Vorpommern, Neumark, South Saxony
+	Advisors: Artist
 	Ancients country name: None
 
 , Sisao : Sweden
@@ -428,48 +436,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: Sweden ideas(0)
+	Ideas: Swedish Ideas(0), Innovative Ideas(0)
 	Policies: None
-	Development: 119
-	Realm development: 98.448
-	Number of provinces: 26
-	Treasury: 55.546
-	Income: 8.37
-	Inflation: 0.0
-	Debt: 0
+	Development: 145
+	Realm development: 89
+	Number of provinces: 29
+	Treasury: 66
+	Income: 9.135
+	Inflation: 1.2
+	Debt: 325
 	Mercantilism: 10%
-	Actual manpower:  13149
-	Maximum manpower:  20110
-	Actual sailors: 656
-	Maximum sailors: 1833
-	Land force limit: 18
+	Actual manpower:  79
+	Maximum manpower:  19 793
+	Actual sailors: 1 877
+	Maximum sailors: 1 555
+	Land force limit: 17
 	Active regular regiments: 14
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 11.052
-	Navy tradition: 10.82
-	Losses: 0
+	Active forces : 82%
+	Professionalism: 2.292%
+	Army tradition: 11.419
+	Navy tradition: 8.596
+	Losses: 30 951
 	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 21.38
-	Average unrest: -7.423
-	War exhaustion: 0.0
+	Legitimacy: 50.584
+	Average autonomy: 40.81
+	Average unrest: -56.038
+	War exhaustion: 9.199
 	Religious unity: 100.0%
-	Prestige: -7.964
-	Power projection: 0
-	Splendor: 4
-	Score: 0.0
+	Prestige: -42.266
+	Power projection: 11
+	Splendor: 232
+	Score: 1
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: None
-	Allies: None
+	Rivals: Novgorod, Teutonic Order
+	Allies: Austria, The Palatinate, Pomerania
 	Dependencies: None
-	Provinces: Stockholm, Närke, Östergötland, Kalmar, Elfsborg, Bergslagen, Dal, Värmland, Tiohärad, Skaraborg, Dalaskogen, Hälsingland, Åland, Västerbotten, Rovaniemi, Lappland, Jokkmokk, Österbotten, Åbo, Pirkanmaa, Nyland, Tavastland, Viborg, Savolax, Enare, Kainuu
+	Provinces: Stockholm, Närke, Östergötland, Kalmar, Elfsborg, Bergslagen, Dal, Värmland, Göinge, Tiohärad, Skaraborg, Dalaskogen, Hälsingland, Åland, Västerbotten, Rovaniemi, Lappland, Jokkmokk, Österbotten, Halland, Åbo, Pirkanmaa, Nyland, Tavastland, Viborg, Savolax, Enare, Kainuu, Blekinge
 	States: Östra Svealand, Finland, Norrland, Västra Svealand, Östra Götaland, Västra Götaland, Ostrobothnia, South Karelia, Laponia
-	Advisors: Master of Mint, Commandant
+	Advisors: None
 	Ancients country name: None
 
 , Nalox : Brabant
@@ -479,152 +488,155 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Is a: Feudal Monarchy
 	Rank: Duchy
 	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: Brabant ideas(0)
+	Institutions embraced: Renaissance
+	Ideas: Brabant Ideas(0), Defensive Ideas(2)
 	Policies: None
-	Development: 53
-	Realm development: 46.682
-	Number of provinces: 3
-	Treasury: 77.706
-	Income: 5.255
-	Inflation: 0.0
+	Development: 83
+	Realm development: 63
+	Number of provinces: 5
+	Treasury: 16
+	Income: 12.304
+	Inflation: 1.123
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  10966
-	Maximum manpower:  13559
-	Actual sailors: 606
-	Maximum sailors: 855
-	Land force limit: 10
-	Active regular regiments: 6
+	Actual manpower:  6 255
+	Maximum manpower:  14 598
+	Actual sailors: 1 123
+	Maximum sailors: 1 123
+	Land force limit: 12
+	Active regular regiments: 12
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 15.063
-	Navy tradition: 14.655
-	Losses: 0
+	Active forces : 100%
+	Professionalism: 8.002%
+	Army tradition: 43.777
+	Navy tradition: 16.096
+	Losses: 17 666
 	Stability: 1
-	Legitimacy: 93.029
-	Average autonomy: 11.633
-	Average unrest: -8.4
-	War exhaustion: 0.0
+	Legitimacy: 29.371
+	Average autonomy: 26.62
+	Average unrest: 0.705
+	War exhaustion: 0.457
 	Religious unity: 100.0%
-	Prestige: -4.92
-	Power projection: 0
-	Splendor: 4
-	Score: 0.0
+	Prestige: -0.814
+	Power projection: 23
+	Splendor: 287
+	Score: 2
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: Yes
 	Trade bonus: None
-	Rivals: None
-	Allies: None
+	Rivals: Gelre, Utrecht
+	Allies: England, France, Friesland
 	Dependencies: None
-	Provinces: Antwerpen, Brussels, Breda
-	States: Wallonia, Flanders, Netherlands
-	Advisors: None
+	Provinces: Antwerpen, Brussels, Loon, Breda, Den Haag
+	States: Wallonia, Flanders, Netherlands, Holland
+	Advisors: Commandant, Artist, Trader
 	Ancients country name: None
 
 , Zeleph : Lithuania
 	Capital: Vilna
 	Culture: Lithuanian
+	Religion: Orthodox
+	Is a: Russian Principality
+	Rank: Duchy
+	Has provinces in: Europe
+	Institutions embraced: Renaissance
+	Ideas: Lithuanian Ideas(0)
+	Policies: None
+	Development: 341
+	Realm development: 156
+	Number of provinces: 45
+	Treasury: 75
+	Income: 14.678
+	Inflation: 0.976
+	Debt: 481
+	Mercantilism: 10%
+	Actual manpower:  9 627
+	Maximum manpower:  20 114
+	Actual sailors: 99
+	Maximum sailors: 100
+	Land force limit: 30
+	Active regular regiments: 8
+	Active mercenaries: 0
+	Active forces : 27%
+	Professionalism: 1.001%
+	Army tradition: 20.69
+	Navy tradition: 3.893
+	Losses: 45 906
+	Stability: 1
+	Legitimacy: 100.0
+	Average autonomy: 56.453
+	Average unrest: -9.09
+	War exhaustion: 0.343
+	Religious unity: 79.3%
+	Prestige: 20.819
+	Power projection: 25
+	Splendor: 462
+	Score: 96
+	Absolutism: 0.0
+	Tech: 4, 4, 5
+	Golden age started: 
+	Is part HRE: No
+	Trade bonus: None
+	Rivals: Burgundy
+	Allies: Poland, Kazan
+	Dependencies: Estonia(March), Theodoro(Vassal), Livonia(March)
+	Provinces: Braslaw, Vitebsk, Podlasie, Trakai, Samogitia, Vilna, Kovno, Grodno, Rowne, Ula, Polotsk, Mazyr, Toropets, Borisoglebsk, Minsk, Trubchevsk, Brest, Turov, Vyazma, Pinsk, Zhytomyr, Mstislav, Volhynia, Bratslav, Owrucz, Kiev, Cherkasy, Severia, Yedisan, Zaporozhia, Kuban, Lower Don, Chernigov, Poltava, Kharkov, Mogilev, Smolensk, Ingil, Pereyaslav, Bryansk, Bahmut, Kursk, Voronezh, Azaraba, Beljamen
+	States: Vilna, Smolensk, Podolia Volhynia, West Dniepr, Minsk, East Dniepr, Lower Don, White Ruthenia
+	Advisors: None
+	Ancients country name: None
+
+, Stellaria : Hesse
+	Capital: Hessen
+	Culture: Rhenish
 	Religion: Catholic
 	Is a: Feudal Monarchy
 	Rank: Duchy
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: Lithuania ideas(0)
+	Ideas: Hessian Ideas(0)
 	Policies: None
-	Development: 257
-	Realm development: 150.396
-	Number of provinces: 38
-	Treasury: 70.808
-	Income: 11.246
-	Inflation: 0.0
+	Development: 47
+	Realm development: 36
+	Number of provinces: 4
+	Treasury: 83
+	Income: 4.57
+	Inflation: 0.61
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  15323
-	Maximum manpower:  22772
-	Actual sailors: 8
-	Maximum sailors: 100
-	Land force limit: 25
-	Active regular regiments: 23
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 7.091
-	Navy tradition: 1.981
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 49.91
-	Average unrest: -2.501
-	War exhaustion: 0.0
-	Religious unity: 63.2%
-	Prestige: 8.91
-	Power projection: 21
-	Splendor: 4
-	Score: 0.81
-	Absolutism: 0.0
-	Tech: 3, 3, 3
-	Golden age started: 
-	Is part HRE: No
-	Trade bonus: None
-	Rivals: Hungary, Denmark, Muscovy
-	Allies: Poland
-	Dependencies: None
-	Provinces: Braslaw, Vitebsk, Podlasie, Trakai, Samogitia, Vilna, Kovno, Grodno, Rowne, Ula, Polotsk, Mazyr, Toropets, Minsk, Trubchevsk, Brest, Turov, Vyazma, Pinsk, Zhytomyr, Mstislav, Volhynia, Bratslav, Owrucz, Kiev, Cherkasy, Severia, Yedisan, Zaporozhia, Chernigov, Poltava, Kharkov, Mogilev, Smolensk, Ingil, Pereyaslav, Bryansk, Kursk
-	States: Vilna, Samogitia, Smolensk, Pripyat, Podolia Volhynia, West Dniepr, Minsk
-	Advisors: Master of Mint, Grand Captain
-	Ancients country name: None
-
-, Scoutix : Cologne
-	Capital: Köln
-	Culture: Rhenish
-	Religion: Catholic
-	Is a: Theocracy
-	Rank: Kingdom
-	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: null(0)
-	Policies: None
-	Development: 27
-	Realm development: 25.824
-	Number of provinces: 3
-	Treasury: 35.279
-	Income: 3.482
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  9056
-	Maximum manpower:  11132
+	Actual manpower:  6 762
+	Maximum manpower:  12 557
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 8
-	Active regular regiments: 7
+	Land force limit: 9
+	Active regular regiments: 6
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 7.214
+	Active forces : 67%
+	Professionalism: 7.349%
+	Army tradition: 15.797
 	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
-	Legitimacy: 0.0
-	Average autonomy: 6.6
-	Average unrest: -6.0
-	War exhaustion: 0.0
+	Losses: 10 853
+	Stability: -1
+	Legitimacy: 54.66
+	Average autonomy: 18.15
+	Average unrest: 10.288
+	War exhaustion: 4.47
 	Religious unity: 100.0%
-	Prestige: 15.147
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Prestige: -72.236
+	Power projection: 26
+	Splendor: 232
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 4
 	Golden age started: 
 	Is part HRE: Yes
 	Trade bonus: None
-	Rivals: Cleves, Münster, Hesse
-	Allies: Aachen
+	Rivals: Mainz, Saxony
+	Allies: Brandenburg
 	Dependencies: None
-	Provinces: Westfalen, Köln, Paderborn
-	States: North Rhine, Westphalia
+	Provinces: Hessen, Kassel, Frankfurt, Würzburg
+	States: Hesse, Franconia
 	Advisors: None
 	Ancients country name: None
 
@@ -636,46 +648,47 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Europe, Asia
 	Institutions embraced: None
-	Ideas: null(0)
+	Ideas: Jerusalem Ideas(0)
 	Policies: None
-	Development: 111
-	Realm development: 89.941
-	Number of provinces: 11
-	Treasury: 50.195
-	Income: 5.673
-	Inflation: 0.0
+	Development: 161
+	Realm development: 98
+	Number of provinces: 18
+	Treasury: 72
+	Income: 7.535
+	Inflation: 0.934
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  13303
-	Maximum manpower:  17021
-	Actual sailors: 1078
-	Maximum sailors: 1605
-	Land force limit: 16
-	Active regular regiments: 12
+	Mercantilism: 11%
+	Actual manpower:  13 230
+	Maximum manpower:  18 213
+	Actual sailors: 1 498
+	Maximum sailors: 1 500
+	Land force limit: 18
+	Active regular regiments: 13
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 9.18
-	Navy tradition: 8.852
-	Losses: 0
+	Active forces : 72%
+	Professionalism: 4.001%
+	Army tradition: 27.989
+	Navy tradition: 9.073
+	Losses: 32 136
 	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 16.409
-	Average unrest: -7.66
-	War exhaustion: 0.0
-	Religious unity: 86.4%
-	Prestige: 22.046
-	Power projection: 2
-	Splendor: 8
-	Score: 0.0
+	Legitimacy: 97.095
+	Average autonomy: 44.058
+	Average unrest: -35.21
+	War exhaustion: 0.089
+	Religious unity: 68.9%
+	Prestige: -4.267
+	Power projection: 35
+	Splendor: 692
+	Score: 2
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: None
-	Allies: None
+	Rivals: Syria, Mamluks, Iraq
+	Allies: Candar, Mushasha, Ethiopia
 	Dependencies: None
-	Provinces: Cyprus, Maan, Tarabulus, Jerusalem, Gaza, Al Karak, Aqabah, Ajlun, Jaffa, Damascus, Sidon
+	Provinces: Cyprus, Gaza, Aqabah, Al Wajh, Al Jawf, Maan, Ar Raqqa, Al Ula, Hama, Aleppo, Tarabulus, Jerusalem, Al Karak, Ajlun, Jaffa, Damascus, Sidon, Tabuk
 	States: Çukurova, Palestine, Transjordan, Syria, Tabuk
 	Advisors: None
 	Ancients country name: Cyprus
@@ -686,50 +699,51 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Religion: Catholic
 	Is a: Feudal Monarchy
 	Rank: Kingdom
-	Has provinces in: Europe, Africa
+	Has provinces in: Europe, Africa, North America
 	Institutions embraced: None
-	Ideas: Portugal ideas(0)
+	Ideas: Portuguese Ideas(1), Exploration Ideas(5)
 	Policies: None
-	Development: 121
-	Realm development: 105.224
-	Number of provinces: 11
-	Treasury: 74.802
-	Income: 10.354
-	Inflation: 0.0
-	Debt: 0
+	Development: 164
+	Realm development: 130
+	Number of provinces: 15
+	Treasury: 59
+	Income: 13.589
+	Inflation: 0.488
+	Debt: 161
 	Mercantilism: 10%
-	Actual manpower:  12605
-	Maximum manpower:  17616
-	Actual sailors: 1169
-	Maximum sailors: 2840
-	Land force limit: 17
+	Actual manpower:  16 276
+	Maximum manpower:  17 426
+	Actual sailors: 3 765
+	Maximum sailors: 3 777
+	Land force limit: 18
 	Active regular regiments: 15
 	Active mercenaries: 0
+	Active forces : 83%
 	Professionalism: 4.999%
-	Army tradition: 7.186
-	Navy tradition: 8.891
-	Losses: 0
-	Stability: 0
-	Legitimacy: 99.367
-	Average autonomy: 11.081
-	Average unrest: -8.57
+	Army tradition: 21.303
+	Navy tradition: 89.406
+	Losses: 18 641
+	Stability: 1
+	Legitimacy: 75.258
+	Average autonomy: 22.788
+	Average unrest: -25.373
 	War exhaustion: 0.0
-	Religious unity: 94.2%
-	Prestige: 4.926
-	Power projection: 4
-	Splendor: 12
-	Score: 0.0
+	Religious unity: 94.6%
+	Prestige: 23.295
+	Power projection: 57
+	Splendor: 458
+	Score: 5
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Morocco, Granada, Tunis
-	Allies: England, Castile
+	Rivals: Brittany, Tunis, Morocco
+	Allies: Castile
 	Dependencies: None
-	Provinces: Madeira, Lisboa, Beira, Beja, Algarve, Évora, Porto, Ceuta, Bragança, Coimbra, The Azores
+	Provinces: Lisboa, Beira, Beja, Algarve, Porto, Bragança, Cape Verde, Tangiers, The Azores, Madeira, Gold Coast, St. Vincent, Évora, Trarza, Cayor, Coimbra, Siine
 	States: Alentejo, Beiras, Macaronesia, North Morocco
-	Advisors: Army Reformer
+	Advisors: Diplomat
 	Ancients country name: None
 
 , Morgenstar : Naples
@@ -739,49 +753,50 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Is a: Feudal Monarchy
 	Rank: Kingdom
 	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: Naples ideas(0)
+	Institutions embraced: Renaissance
+	Ideas: Neapolitan Ideas(0)
 	Policies: None
-	Development: 91
-	Realm development: 81.162
-	Number of provinces: 9
-	Treasury: 39.829
-	Income: 7.138
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  14590
-	Maximum manpower:  17978
-	Actual sailors: 1193
-	Maximum sailors: 2895
-	Land force limit: 15
+	Development: 173
+	Realm development: 150
+	Number of provinces: 13
+	Treasury: 42
+	Income: 17.737
+	Inflation: 1.573
+	Debt: 547
+	Mercantilism: 11%
+	Actual manpower:  3 624
+	Maximum manpower:  21 316
+	Actual sailors: 2 421
+	Maximum sailors: 5 149
+	Land force limit: 24
 	Active regular regiments: 10
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 16.903
-	Navy tradition: 12.797
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 12.211
-	Average unrest: -7.666
-	War exhaustion: 0.0
+	Active mercenaries: 5
+	Active forces : 62%
+	Professionalism: 2.304%
+	Army tradition: 53.531
+	Navy tradition: 25.237
+	Losses: 52 572
+	Stability: 2
+	Legitimacy: 0.207
+	Average autonomy: 14.769
+	Average unrest: -2.627
+	War exhaustion: 1.481
 	Religious unity: 100.0%
-	Prestige: -4.92
-	Power projection: 0
-	Splendor: 4
-	Score: 0.0
+	Prestige: -28.814
+	Power projection: 52
+	Splendor: 504
+	Score: 2
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: None
-	Allies: None
-	Dependencies: None
-	Provinces: Salerno, Abruzzi, Cosenza, Napoli, Capitanata, Salento, Calabria, Bari, Lucania
-	States: Lazio-Campania, Apulia, Calabria, Central Italy
-	Advisors: Natural Scientist
+	Rivals: The Papal State, Mamluks, Genoa
+	Allies: Tunis
+	Dependencies: Siena(March)
+	Provinces: Umbria, Syracuse, Salerno, Cosenza, Capitanata, Bari, Lucania, Abruzzi, Napoli, Salento, Calabria, Messina, Palermo
+	States: Lazio-Campania, Apulia, Calabria, Central Italy, Sicily
+	Advisors: None
 	Ancients country name: None
 
 , Tokipant : Milan
@@ -791,49 +806,50 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Is a: Feudal Monarchy
 	Rank: Duchy
 	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: Milan ideas(0)
+	Institutions embraced: Renaissance
+	Ideas: Milanese Ideas(0)
 	Policies: None
-	Development: 85
-	Realm development: 81.0
-	Number of provinces: 4
-	Treasury: 85.979
-	Income: 6.703
-	Inflation: 0.0
+	Development: 128
+	Realm development: 120
+	Number of provinces: 6
+	Treasury: 30
+	Income: 15.175
+	Inflation: 0.661
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  13109
-	Maximum manpower:  16830
+	Mercantilism: 12%
+	Actual manpower:  16 898
+	Maximum manpower:  19 521
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 15
-	Active regular regiments: 11
+	Land force limit: 19
+	Active regular regiments: 16
 	Active mercenaries: 0
-	Professionalism: 4.999%
-	Army tradition: 9.044
+	Active forces : 84%
+	Professionalism: 9.473%
+	Army tradition: 32.234
 	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
-	Legitimacy: 98.014
-	Average autonomy: 6.25
-	Average unrest: -7.263
-	War exhaustion: 0.0
+	Losses: 15 031
+	Stability: 1
+	Legitimacy: 91.545
+	Average autonomy: 9.366
+	Average unrest: -21.268
+	War exhaustion: 0.644
 	Religious unity: 100.0%
-	Prestige: 4.926
-	Power projection: 5
-	Splendor: 12
-	Score: 0.0
+	Prestige: -15.952
+	Power projection: 67
+	Splendor: 298
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 5, 5
 	Golden age started: 
 	Is part HRE: Yes
 	Trade bonus: None
-	Rivals: Savoy, Venice, Switzerland
-	Allies: Augsburg, Mantua, Florence
+	Rivals: Savoy, Florence, Genoa
+	Allies: The Papal State, Venice
 	Dependencies: None
-	Provinces: Novara, Cremona, Milan, Parma
-	States: Lombardy, Piedmont, Emilia-Romagna
-	Advisors: Treasurer
+	Provinces: Novara, Firenze, Cremona, Milan, Parma, Modena
+	States: Lombardy, Piedmont, Emilia-Romagna, Tuscany
+	Advisors: Theologian, Grand Captain
 	Ancients country name: None
 
 , Emacab : Switzerland
@@ -844,103 +860,105 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Duchy
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: Switzerland ideas(0)
+	Ideas: Swiss Ideas(0), Defensive Ideas(2)
 	Policies: None
-	Development: 50
-	Realm development: 40.75
-	Number of provinces: 5
-	Treasury: 70.108
-	Income: 4.306
-	Inflation: 0.0
+	Development: 115
+	Realm development: 87
+	Number of provinces: 11
+	Treasury: 135
+	Income: 9.22
+	Inflation: 4.128
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  11332
-	Maximum manpower:  13515
+	Actual manpower:  13 977
+	Maximum manpower:  16 674
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 10
-	Active regular regiments: 7
+	Land force limit: 16
+	Active regular regiments: 14
 	Active mercenaries: 0
-	Professionalism: 10.001%
-	Army tradition: 15.08
+	Active forces : 88%
+	Professionalism: 14.536%
+	Army tradition: 31.845
 	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
+	Losses: 19 961
+	Stability: 1
 	Legitimacy: 0.0
-	Average autonomy: 20.0
-	Average unrest: -6.4
-	War exhaustion: 0.0
+	Average autonomy: 33.415
+	Average unrest: -4.724
+	War exhaustion: 0.208
 	Religious unity: 100.0%
-	Prestige: 4.854
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Prestige: 16.849
+	Power projection: 50
+	Splendor: 624
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: Yes
 	Trade bonus: None
-	Rivals: Savoy, Baden, Milan
-	Allies: Alsace, Wurttemberg
+	Rivals: Savoy, Burgundy, The Palatinate
+	Allies: France, Austria, Trier
 	Dependencies: None
-	Provinces: Graubünden, Bern, Waldstätte, Zürich, St Gallen
-	States: Romandie, Switzerland
-	Advisors: None
+	Provinces: Graubünden, Bern, Waldstätte, Württemberg, Sundgau, Breisgau, Baden, Vaud, Zürich, St Gallen, Wallis
+	States: Romandie, Switzerland, Upper Rhineland, Lower Swabia
+	Advisors: Statesman, Commandant
 	Ancients country name: None
 
 , Darmius : Candar
 	Capital: Sinop
 	Culture: Turkish
 	Religion: Sunni
-	Is a: Despotic Monarchy
+	Is a: Iqta
 	Rank: Duchy
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: Candar ideas(0)
+	Ideas: Candarid Ideas(0)
 	Policies: None
-	Development: 86
-	Realm development: 74.904
-	Number of provinces: 11
-	Treasury: 21.171
-	Income: 7.151
-	Inflation: 0.0
+	Development: 221
+	Realm development: 135
+	Number of provinces: 21
+	Treasury: 203
+	Income: 11.419
+	Inflation: 5.996
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  11103
-	Maximum manpower:  17309
-	Actual sailors: 294
-	Maximum sailors: 907
-	Land force limit: 14
-	Active regular regiments: 10
+	Actual manpower:  3 247
+	Maximum manpower:  23 089
+	Actual sailors: 637
+	Maximum sailors: 2 647
+	Land force limit: 21
+	Active regular regiments: 13
 	Active mercenaries: 0
+	Active forces : 62%
 	Professionalism: 0.000%
-	Army tradition: 9.18
-	Navy tradition: 10.84
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 14.663
-	Average unrest: -7.662
-	War exhaustion: 0.0
-	Religious unity: 89.5%
-	Prestige: 4.888
-	Power projection: 2
-	Splendor: 4
-	Score: 0.0
+	Army tradition: 36.404
+	Navy tradition: 13.426
+	Losses: 56 632
+	Stability: -3
+	Legitimacy: 0.0
+	Average autonomy: 42.128
+	Average unrest: -3.536
+	War exhaustion: 0.565
+	Religious unity: 81.4%
+	Prestige: -75.634
+	Power projection: 59
+	Splendor: 274
+	Score: 1
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 3, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Karaman, Bulgaria, Byzantium
-	Allies: Ramazan
+	Rivals: Byzantium, Bulgaria, Qara Qoyunlu
+	Allies: Germiyan, Mamluks, Jerusalem
 	Dependencies: None
-	Provinces: Canik, Kastamonu, Amasya, Ankara, Sinop, Kangiri, Sivas, Kirshehir, Tokat, Bolu, Bozok
-	States: Karadeniz, Rum, Ankara
-	Advisors: Master Recruiter
+	Provinces: Canik, Erzincan, Kastamonu, Ankara, Adana, Sinop, Sivas, Trebizond, Erzurum, Amasya, Karasi, Sultanönü, Kangiri, Kirshehir, Tekke, Tokat, Bolu, Bozok, Hüdavendigar, Kayseri, Mentese
+	States: Karadeniz, Rum, Ankara, Hüdavendigar, Karaman
+	Advisors: Natural Scientist
 	Ancients country name: None
 
-, Kali : Morocco
+, Elpha : Morocco
 	Capital: Fez
 	Culture: Moroccan
 	Religion: Sunni
@@ -948,48 +966,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Africa
 	Institutions embraced: None
-	Ideas: null(0)
+	Ideas: Berber Ideas(0)
 	Policies: None
-	Development: 130
-	Realm development: 111.71
+	Development: 144
+	Realm development: 108
 	Number of provinces: 17
-	Treasury: 159.862
-	Income: 12.69
-	Inflation: 0.014
+	Treasury: 277
+	Income: 12.7
+	Inflation: 1.948
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  11491
-	Maximum manpower:  18029
-	Actual sailors: 765
-	Maximum sailors: 1428
-	Land force limit: 20
-	Active regular regiments: 16
+	Actual manpower:  14 978
+	Maximum manpower:  16 741
+	Actual sailors: 1 233
+	Maximum sailors: 1 148
+	Land force limit: 19
+	Active regular regiments: 19
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 7.176
-	Navy tradition: 8.88
-	Losses: 0
+	Active forces : 100%
+	Professionalism: 4.660%
+	Army tradition: 23.849
+	Navy tradition: 8.573
+	Losses: 15 299
 	Stability: 0
-	Legitimacy: 98.028
-	Average autonomy: 14.75
-	Average unrest: -5.997
-	War exhaustion: 0.0
+	Legitimacy: 100.0
+	Average autonomy: 24.302
+	Average unrest: -18.039
+	War exhaustion: 0.659
 	Religious unity: 100.0%
-	Prestige: 6.855
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Prestige: 4.919
+	Power projection: 24
+	Splendor: 568
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 4
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Portugal, Castile
-	Allies: Tlemcen
+	Rivals: Portugal
+	Allies: Tunis
 	Dependencies: None
-	Provinces: Ouarzazate, Draa, Meknes, Tadla, Dukkala, Haha, Tangiers, Melilla, Gharb, Agadir, Fez, Marrakech, Abda, Tafilalt, Ifni, Sus, Saoura
+	Provinces: Ouarzazate, Oujda, Draa, Meknes, Tadla, Dukkala, Haha, Melilla, Tlemcen, Gharb, Agadir, Fez, Marrakech, Abda, Tafilalt, Sus, Saoura
 	States: Central Morocco, Sus, Gharb, Southern Morocco, North Morocco, Tafilalt
-	Advisors: Natural Scientist
+	Advisors: None
 	Ancients country name: None
 
 , Bnlover : Tunis
@@ -1000,51 +1019,52 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Africa
 	Institutions embraced: None
-	Ideas: null(0)
+	Ideas: Berber Ideas(0)
 	Policies: None
-	Development: 101
-	Realm development: 91.47
-	Number of provinces: 15
-	Treasury: 107.73
-	Income: 7.678
-	Inflation: 0.0
+	Development: 137
+	Realm development: 107
+	Number of provinces: 21
+	Treasury: 109
+	Income: 10.36
+	Inflation: 0.904
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  9889
-	Maximum manpower:  15237
-	Actual sailors: 989
-	Maximum sailors: 2496
-	Land force limit: 17
+	Mercantilism: 11%
+	Actual manpower:  10 262
+	Maximum manpower:  18 372
+	Actual sailors: 2 835
+	Maximum sailors: 3 135
+	Land force limit: 20
 	Active regular regiments: 18
 	Active mercenaries: 0
+	Active forces : 90%
 	Professionalism: 0.000%
-	Army tradition: 11.064
-	Navy tradition: 10.827
-	Losses: 0
+	Army tradition: 23.991
+	Navy tradition: 16.903
+	Losses: 21 247
 	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 9.883
-	Average unrest: -6.653
-	War exhaustion: 0.0
-	Religious unity: 94.0%
-	Prestige: 5.003
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Legitimacy: 82.218
+	Average autonomy: 33.451
+	Average unrest: -5.904
+	War exhaustion: 0.036
+	Religious unity: 95.6%
+	Prestige: 4.173
+	Power projection: 43
+	Splendor: 564
+	Score: 5
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Tlemcen, Morocco, The Papal State
-	Allies: Granada
-	Dependencies: None
-	Provinces: Tataouine, Tripoli, Sousse, Djerba, Mitidja, Kabylia, Thubaqt, Constantine, Zuwarah, Tunis, Sfax, Kef, Bizerte, Annaba, Hodna
+	Rivals: The Papal State, Mamluks, Portugal
+	Allies: Naples, Morocco
+	Dependencies: Touggourt(Vassal)
+	Provinces: Tataouine, Tripoli, Sirt, Sousse, Djerba, Fezzan, Oran, Jufra, Mitidja, Ghadames, Kabylia, Thubaqt, Constantine, Zuwarah, Tunis, Sfax, Kef, Bizerte, Annaba, Hodna, Dahra
 	States: Tunisia, Kabylia, Djerba, Algiers, Tripolitania, Ouled Nail
 	Advisors: None
 	Ancients country name: None
 
-, Kebec : Ethiopia
+, Buffalo : Ethiopia
 	Capital: Gonder
 	Culture: Amhara
 	Religion: Coptic
@@ -1052,101 +1072,103 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Empire
 	Has provinces in: Africa
 	Institutions embraced: None
-	Ideas: Ethiopia ideas(0)
+	Ideas: Ethiopian Ideas(0)
 	Policies: None
-	Development: 69
-	Realm development: 85.01
-	Number of provinces: 12
-	Treasury: 72.571
-	Income: 4.191
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  9640
-	Maximum manpower:  14856
-	Actual sailors: 0
-	Maximum sailors: 0
-	Land force limit: 18
-	Active regular regiments: 13
-	Active mercenaries: 0
-	Professionalism: 1.001%
-	Army tradition: 14.992
+	Development: 171
+	Realm development: 166
+	Number of provinces: 27
+	Treasury: 67
+	Income: 13.635
+	Inflation: 4.369
+	Debt: 587
+	Mercantilism: 13%
+	Actual manpower:  4 983
+	Maximum manpower:  20 391
+	Actual sailors: 958
+	Maximum sailors: 1 134
+	Land force limit: 26
+	Active regular regiments: 11
+	Active mercenaries: 11
+	Active forces : 85%
+	Professionalism: 2.356%
+	Army tradition: 42.646
 	Navy tradition: 0.0
-	Losses: 208
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 11.441
-	Average unrest: -2.264
-	War exhaustion: 0.0
-	Religious unity: 63.7%
-	Prestige: -0.021
-	Power projection: 0
-	Splendor: 4
-	Score: 0.0
+	Losses: 54 635
+	Stability: 1
+	Legitimacy: 97.625
+	Average autonomy: 26.348
+	Average unrest: -32.059
+	War exhaustion: 0.874
+	Religious unity: 63.1%
+	Prestige: 47.95
+	Power projection: 5
+	Splendor: 232
+	Score: 1
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Adal
-	Allies: Alodia, Medri Bahri
-	Dependencies: Hadiya(Vassal), Damot(Vassal)
-	Provinces: Angot, Lasta, Agew, Semien, Dembiya, Gojjam, Ankober, Gonder, Aksum, Shewa, Wollo, Enderta
-	States: Central Ethiopia, Tigray, Shewa, Damot, Aussa
+	Rivals: Mamluks
+	Allies: Alodia, Jerusalem
+	Dependencies: Damot(Vassal), Hadiya(Vassal), Malindi(Vassal)
+	Provinces: Sidamo, Welayta, Kaffa, Illubabor, Gojjam, Gambela, Gonder, Aksum, Assab, Enderta, Angot, Lasta, Agew, Semien, Dembiya, Bosaso, Las Khorey, Sanaag, Ankober, Togdheer, Hargeisa, Berbera, Zeila, Shewa, Wollo, Janjiro, Tajura
+	States: Central Ethiopia, Tigray, Shewa, Damot, Aussa, Ifat, Kaffa, Hadiya, Somaliland
 	Advisors: None
 	Ancients country name: None
 
-, Geronimo : Rassids
+, Geronimo : Yemen
 	Capital: Sana'a
 	Culture: Yemeni
 	Religion: Shia
 	Is a: Feudal Theocracy
-	Rank: Duchy
+	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Rassids ideas(0)
+	Ideas: Yemeni Ideas(0)
 	Policies: None
-	Development: 48
-	Realm development: 45.026
-	Number of provinces: 6
-	Treasury: 48.288
-	Income: 4.391
-	Inflation: 0.0
+	Development: 136
+	Realm development: 83
+	Number of provinces: 20
+	Treasury: 9
+	Income: 7.8
+	Inflation: 2.484
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  12807
-	Maximum manpower:  18966
-	Actual sailors: 10
-	Maximum sailors: 485
-	Land force limit: 10
-	Active regular regiments: 10
-	Active mercenaries: 0
-	Professionalism: 1.001%
-	Army tradition: 13.115
-	Navy tradition: 0.0
-	Losses: 0
+	Actual manpower:  11 273
+	Maximum manpower:  16 811
+	Actual sailors: 243
+	Maximum sailors: 1 047
+	Land force limit: 16
+	Active regular regiments: 12
+	Active mercenaries: 3
+	Active forces : 94%
+	Professionalism: 0.000%
+	Army tradition: 38.361
+	Navy tradition: 11.419
+	Losses: 32 814
 	Stability: 0
 	Legitimacy: 100.0
-	Average autonomy: 9.616
-	Average unrest: -5.234
-	War exhaustion: 0.0
-	Religious unity: 82.8%
-	Prestige: -0.014
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Average autonomy: 46.55
+	Average unrest: -12.6
+	War exhaustion: 0.062
+	Religious unity: 82.9%
+	Prestige: 67.798
+	Power projection: 71
+	Splendor: 452
+	Score: 1
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 6
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Hadramut, Adal, Yemen
-	Allies: None
-	Dependencies: None
-	Provinces: Aden, Sana'a, Marib, Beihan, Dhamar, Sahda
-	States: Upper Yemen, Asir, Lower Yemen
+	Rivals: Mamluks, Fars, Mewar
+	Allies: Shirvan
+	Dependencies: Mahra(March)
+	Provinces: Bishah, Mokha, Aden, Mukalla, Masirah, Sana'a, Kathiri, Marib, Beihan, Jazan, Nizwa, Liwa, Zabid, Taiz, Dhamar, Sahda, Shihr, Baraimi, Ash Sharqiyah, Ibra
+	States: Upper Yemen, Asir, Lower Yemen, Tihama al-Yemen
 	Advisors: None
-	Ancients country name: None
+	Ancients country name: Rassids
 
 , Sasaynel : Mushasha
 	Capital: Hoveyzeh
@@ -1156,51 +1178,52 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Duchy
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Mushasha ideas(0)
+	Ideas: Mushasha Ideas(0)
 	Policies: None
-	Development: 78
-	Realm development: 70.074
-	Number of provinces: 11
-	Treasury: 15.443
-	Income: 5.277
-	Inflation: 0.0
+	Development: 156
+	Realm development: 129
+	Number of provinces: 21
+	Treasury: 82
+	Income: 10.666
+	Inflation: 1.319
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  10225
-	Maximum manpower:  14639
-	Actual sailors: 78
-	Maximum sailors: 755
-	Land force limit: 14
-	Active regular regiments: 12
+	Actual manpower:  9 114
+	Maximum manpower:  20 078
+	Actual sailors: 1 235
+	Maximum sailors: 1 848
+	Land force limit: 20
+	Active regular regiments: 13
 	Active mercenaries: 0
-	Professionalism: 4.999%
-	Army tradition: 13.115
-	Navy tradition: 12.787
-	Losses: 0
+	Active forces : 65%
+	Professionalism: 6.351%
+	Army tradition: 23.936
+	Navy tradition: 9.005
+	Losses: 27 575
 	Stability: 0
-	Legitimacy: 97.095
-	Average autonomy: 11.409
-	Average unrest: -4.437
+	Legitimacy: 100.0
+	Average autonomy: 27.904
+	Average unrest: -20.047
 	War exhaustion: 0.0
-	Religious unity: 80.7%
-	Prestige: 4.855
-	Power projection: 0
-	Splendor: 4
-	Score: 0.0
+	Religious unity: 100.0%
+	Prestige: 35.19
+	Power projection: 21
+	Splendor: 264
+	Score: 1
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Haasa
-	Allies: Khorasan
+	Rivals: Ajam, Iraq, Fars
+	Allies: Shirvan, Khorasan, Jerusalem
 	Dependencies: None
-	Provinces: Shatt, Shushtar, Hoveyzeh, Malamir, Samawat, Basra, Wasit, Yasuj, Ahvaz, Khorramabad, Dashtistan
-	States: Khuzestan, Basra, Luristan, Gulf Coast
+	Provinces: Shatt, Shushtar, Hoveyzeh, Qazaniya, Grane, Samawat, Wasit, Yasuj, Al-Qatif, Qatar, Hofuf, Bani Yas, Dashtistan, Qawasim, Malamir, Basra, Karbala, Baghdad, Ahvaz, Khorramabad, Zufra
+	States: Khuzestan, Basra, Luristan, Gulf Coast, Iraq Arabi, Bahrain
 	Advisors: None
 	Ancients country name: None
 
-, Solowee : Khorasan
+, El Battory : Khorasan
 	Capital: Golestan
 	Culture: Khorasani
 	Religion: Shia
@@ -1208,99 +1231,101 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Duchy
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Khorasan ideas(0)
+	Ideas: Khorasani Ideas(0), Defensive Ideas(0)
 	Policies: None
-	Development: 66
-	Realm development: 57.911
-	Number of provinces: 13
-	Treasury: 55.733
-	Income: 5.737
-	Inflation: 0.0
+	Development: 147
+	Realm development: 83
+	Number of provinces: 21
+	Treasury: 64
+	Income: 11.562
+	Inflation: 1.336
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  10673
-	Maximum manpower:  14394
+	Actual manpower:  4 884
+	Maximum manpower:  15 509
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 12
-	Active regular regiments: 8
+	Land force limit: 14
+	Active regular regiments: 14
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 15.04
+	Active forces : 100%
+	Professionalism: 0.702%
+	Army tradition: 35.212
 	Navy tradition: 0.0
-	Losses: 0
+	Losses: 28 368
 	Stability: 0
-	Legitimacy: 96.03
-	Average autonomy: 11.469
-	Average unrest: -0.888
-	War exhaustion: 0.0
-	Religious unity: 45.4%
-	Prestige: 16.705
-	Power projection: 0
-	Splendor: 4
-	Score: 0.0
+	Legitimacy: 90.805
+	Average autonomy: 40.171
+	Average unrest: -4.289
+	War exhaustion: 1.315
+	Religious unity: 62.5%
+	Prestige: 37.448
+	Power projection: 30
+	Splendor: 232
+	Score: 3
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Mazandaran, Transoxiana
-	Allies: Shirvan, Mushasha, Gilan
+	Rivals: Ajam, Transoxiana, Fars
+	Allies: Najd, Mushasha, Afghanistan, Circassia
 	Dependencies: None
-	Provinces: Ghuriyan, Sarakhs, Golestan, Nishapur, Semnan, Qumis, Mashhad, Tabas, Ardakan, Tun, Birjand, Sabzevar, Bojnord
-	States: Iraq-e-Ajam, Isfahan, Birjand, Herat, Mashhad, Tabarestan
-	Advisors: None
+	Provinces: Ghor, Lahijan, Ghuriyan, Sarakhs, Golestan, Nishapur, Semnan, Amol, Qumis, Mashhad, Tabas, Ardakan, Tun, Kerman, Ferah, Yazd, Birjand, Sari, Sabzevar, Bojnord, Herat
+	States: Iraq-e-Ajam, Isfahan, Birjand, Herat, Mashhad, Tabarestan, Kerman
+	Advisors: Theologian
 	Ancients country name: None
 
 , Aikiko : Shirvan
 	Capital: Shirvan
-	Culture: null
+	Culture: Azerbaijani
 	Religion: Shia
 	Is a: Iqta
 	Rank: Kingdom
 	Has provinces in: Europe, Asia
 	Institutions embraced: None
-	Ideas: Shirvan ideas(0)
+	Ideas: Shirvani Ideas(0), Defensive Ideas(1)
 	Policies: None
-	Development: 41
-	Realm development: 37.689
-	Number of provinces: 6
-	Treasury: 55.574
-	Income: 4.199
-	Inflation: 0.0
+	Development: 98
+	Realm development: 81
+	Number of provinces: 11
+	Treasury: 61
+	Income: 9.875
+	Inflation: 2.316
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  9943
-	Maximum manpower:  12760
-	Actual sailors: 0
+	Actual manpower:  1 004
+	Maximum manpower:  15 631
+	Actual sailors: 20
 	Maximum sailors: 0
-	Land force limit: 10
-	Active regular regiments: 8
+	Land force limit: 13
+	Active regular regiments: 12
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 5.247
+	Active forces : 92%
+	Professionalism: 0.006%
+	Army tradition: 37.43
 	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 9.125
-	Average unrest: -4.694
-	War exhaustion: 0.0
-	Religious unity: 78.0%
-	Prestige: 4.925
-	Power projection: 5
-	Splendor: 12
-	Score: 0.0
+	Losses: 34 331
+	Stability: 1
+	Legitimacy: 81.178
+	Average autonomy: 44.254
+	Average unrest: 1.539
+	War exhaustion: 1.791
+	Religious unity: 51.7%
+	Prestige: 40.677
+	Power projection: 82
+	Splendor: 232
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Gazikumukh, Georgia, Biapas
-	Allies: Khorasan
-	Dependencies: None
-	Provinces: Shaki, Ganja, Shirvan, Dagestan, Melikates, Shamakhi
-	States: Shirvan, Dagestan, Armenia
+	Rivals: Qara Qoyunlu, Ajam, Nogai
+	Allies: Yemen, Mushasha
+	Dependencies: Imereti(Vassal), Avaria(Vassal)
+	Provinces: Shaki, Yerevan, Ganja, Shirvan, Tbilisi, Dagestan, Melikates, Shamakhi, Kakheti, Kars, Kartli
+	States: Shirvan, Dagestan, Armenia, Kartli-Kakheti
 	Advisors: None
 	Ancients country name: None
 
@@ -1312,48 +1337,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Empire
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: Byzantium ideas(0)
+	Ideas: Byzantine Ideas(0)
 	Policies: None
-	Development: 100
-	Realm development: 96.487
-	Number of provinces: 8
-	Treasury: 16.461
-	Income: 9.442
-	Inflation: 0.0
+	Development: 120
+	Realm development: 74
+	Number of provinces: 10
+	Treasury: 39
+	Income: 8.502
+	Inflation: 5.844
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  12300
-	Maximum manpower:  16271
-	Actual sailors: 403
-	Maximum sailors: 2848
-	Land force limit: 16
-	Active regular regiments: 15
+	Actual manpower:  6 554
+	Maximum manpower:  15 789
+	Actual sailors: 3 152
+	Maximum sailors: 2 761
+	Land force limit: 14
+	Active regular regiments: 6
 	Active mercenaries: 0
+	Active forces : 43%
 	Professionalism: 0.000%
-	Army tradition: 9.096
-	Navy tradition: 8.769
-	Losses: 0
-	Stability: 1
-	Legitimacy: 95.104
-	Average autonomy: 17.046
-	Average unrest: -11.905
-	War exhaustion: 0.0
-	Religious unity: 100.0%
-	Prestige: 4.821
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Army tradition: 56.62
+	Navy tradition: 10.585
+	Losses: 109 014
+	Stability: -3
+	Legitimacy: 0.0
+	Average autonomy: 41.59
+	Average unrest: -71.095
+	War exhaustion: 15.4
+	Religious unity: 92.5%
+	Prestige: -87.905
+	Power projection: 35
+	Splendor: 526
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 4
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Venice, Mamluks, Serbia
-	Allies: Bulgaria
-	Dependencies: Athens(Vassal)
-	Provinces: Epirus, Morea, Thessaly, Macedonia, Edirne, Constantinople, Achaea, Kastoria
-	States: Thrace, Morea, Macedonia, Northern Greece
-	Advisors: Commandant
+	Rivals: Venice, Bulgaria, Candar
+	Allies: None
+	Dependencies: None
+	Provinces: Epirus, Morea, Athens, Thessaly, Macedonia, Edirne, Constantinople, Kocaeli, Achaea, Kastoria
+	States: Thrace, Morea, Macedonia, Northern Greece, Hüdavendigar
+	Advisors: None
 	Ancients country name: None
 
 , Shingacook : Kazan
@@ -1364,51 +1390,52 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Europe, Asia
 	Institutions embraced: None
-	Ideas: Kazan ideas(0)
+	Ideas: Kazani Ideas(0), Economic Ideas(0)
 	Policies: None
-	Development: 109
-	Realm development: 88.404
-	Number of provinces: 15
-	Treasury: 106.635
-	Income: 8.054
-	Inflation: 0.015
+	Development: 138
+	Realm development: 162
+	Number of provinces: 19
+	Treasury: 30
+	Income: 11.854
+	Inflation: 3.881
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  12329
-	Maximum manpower:  21652
+	Actual manpower:  19 788
+	Maximum manpower:  25 100
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 23
-	Active regular regiments: 16
+	Land force limit: 29
+	Active regular regiments: 21
 	Active mercenaries: 0
+	Active forces : 72%
 	Professionalism: 0.000%
-	Army tradition: 10.972
+	Army tradition: 20.915
 	Navy tradition: 0.0
-	Losses: 0
+	Losses: 40 729
 	Stability: 0
 	Legitimacy: 0.0
-	Average autonomy: 20.246
-	Average unrest: -3.116
-	War exhaustion: 0.0
-	Religious unity: 79.8%
-	Prestige: 4.966
-	Power projection: 5
-	Splendor: 12
-	Score: 0.0
+	Average autonomy: 28.868
+	Average unrest: -18.122
+	War exhaustion: 0.261
+	Religious unity: 84.0%
+	Prestige: 29.362
+	Power projection: 1
+	Splendor: 696
+	Score: 4
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Great Horde, Uzbek
-	Allies: Crimea, Transoxiana
-	Dependencies: None
-	Provinces: Tetyushi, Ar-Chally, Izhkar, Bolgar, Bashgird, Penza, Perm, Kanadey, Udmurtia, Juketau, Veda-Suvar, Samara, Simbirsk, Kazan, Bashkortostan
+	Rivals: None
+	Allies: Lithuania
+	Dependencies: Astrakhan(Vassal), Sibir(Vassal), Ryazan(Vassal)
+	Provinces: Tetyushi, Ar-Chally, Izhkar, Bolgar, Bashgird, Tambov, Shekty, Penza, Perm, Tortkara, Kanadey, Udmurtia, Agyidel, Juketau, Veda-Suvar, Samara, Simbirsk, Kazan, Bashkortostan
 	States: Kazan, Kama, Volga, Bashkiria, Samara, Tambov, Saratov
-	Advisors: None
+	Advisors: Master Recruiter
 	Ancients country name: None
 
-, Pepsi : Denmark
+, Scoutix : Denmark
 	Capital: Sjælland
 	Culture: Danish
 	Religion: Catholic
@@ -1416,48 +1443,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Europe
 	Institutions embraced: None
-	Ideas: Denmark ideas(0)
+	Ideas: Danish Ideas(0), Economic Ideas(0)
 	Policies: None
-	Development: 128
-	Realm development: 124.452
+	Development: 147
+	Realm development: 101
 	Number of provinces: 13
-	Treasury: 49.953
-	Income: 11.27
-	Inflation: 0.0
-	Debt: 0
+	Treasury: 76
+	Income: 13.391
+	Inflation: 3.221
+	Debt: 172
 	Mercantilism: 10%
-	Actual manpower:  14702
-	Maximum manpower:  21316
-	Actual sailors: 1820
-	Maximum sailors: 3470
-	Land force limit: 18
-	Active regular regiments: 16
+	Actual manpower:  1 500
+	Maximum manpower:  16 942
+	Actual sailors: 2 948
+	Maximum sailors: 3 324
+	Land force limit: 16
+	Active regular regiments: 21
 	Active mercenaries: 0
-	Professionalism: 1.001%
-	Army tradition: 9.18
-	Navy tradition: 8.874
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 19.23
-	Average unrest: -7.346
-	War exhaustion: 0.0
+	Active forces : 130%
+	Professionalism: 0.000%
+	Army tradition: 27.765
+	Navy tradition: 14.55
+	Losses: 63 174
+	Stability: -3
+	Legitimacy: 0.0
+	Average autonomy: 27.011
+	Average unrest: 12.783
+	War exhaustion: 6.437
 	Religious unity: 100.0%
-	Prestige: 0.017
-	Power projection: 19
-	Splendor: 12
-	Score: 0.732
+	Prestige: -93.587
+	Power projection: 25
+	Splendor: 238
+	Score: 19
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Burgundy, Scotland, Lithuania
-	Allies: Dithmarschen
-	Dependencies: Holstein(Vassal), Sweden(Personnal union), Norway(Personnal union)
-	Provinces: Nordjylland, Göinge, Lund, Sjælland, Fyn, Østjylland, Vestjylland, Kolding, Gotland, Halland, Bornholm, Blekinge, Lolland
-	States: Denmark, Skåneland, North Jutland, Östra Götaland
-	Advisors: Master Recruiter, Master of Mint
+	Rivals: Burgundy, Poland
+	Allies: None
+	Dependencies: Norway(Personnal union)
+	Provinces: Nordjylland, Lund, Sjælland, Hamburg, Slesvig, Fyn, Østjylland, Vestjylland, Holstein, Kolding, Gotland, Bornholm, Lolland
+	States: Denmark, Skåneland, North Jutland, Östra Götaland, Schleswig-Holstein
+	Advisors: None
 	Ancients country name: None
 
 , Robindesoibs : Venice
@@ -1467,52 +1495,53 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Is a: Peasants Republic
 	Rank: Kingdom
 	Has provinces in: Europe
-	Institutions embraced: None
-	Ideas: Venice ideas(0)
+	Institutions embraced: Renaissance
+	Ideas: Venetian Ideas(0), Plutocratic Ideas(1)
 	Policies: None
-	Development: 147
-	Realm development: 144.515
-	Number of provinces: 10
-	Treasury: 85.016
-	Income: 13.63
-	Inflation: 0.0
+	Development: 178
+	Realm development: 147
+	Number of provinces: 13
+	Treasury: 10
+	Income: 15.092
+	Inflation: 2.16
 	Debt: 0
 	Mercantilism: 25%
-	Actual manpower:  10643
-	Maximum manpower:  18559
-	Actual sailors: 2083
-	Maximum sailors: 4789
-	Land force limit: 21
-	Active regular regiments: 20
+	Actual manpower:  17 407
+	Maximum manpower:  17 440
+	Actual sailors: 5 886
+	Maximum sailors: 5 886
+	Land force limit: 23
+	Active regular regiments: 18
 	Active mercenaries: 0
-	Professionalism: 4.999%
-	Army tradition: 12.954
-	Navy tradition: 12.818
-	Losses: 0
+	Active forces : 78%
+	Professionalism: 9.512%
+	Army tradition: 20.367
+	Navy tradition: 16.685
+	Losses: 23 752
 	Stability: 0
 	Legitimacy: 0.0
-	Average autonomy: 13.855
-	Average unrest: -5.094
-	War exhaustion: 0.0
-	Religious unity: 82.3%
-	Prestige: 8.788
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Average autonomy: 21.688
+	Average unrest: 0.773
+	War exhaustion: 0.647
+	Religious unity: 82.0%
+	Prestige: 4.946
+	Power projection: 15
+	Splendor: 232
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Aragon, Hungary, Mamluks
-	Allies: Genoa
-	Dependencies: Naxos(Vassal), Corfu(Vassal)
-	Provinces: Venezia, Istria, Crete, Dalmatia, Euboea, Brescia, Verona, Treviso, Durrës, Friuli
+	Rivals: Byzantium, Mamluks, Hungary
+	Allies: Milan, The Papal State
+	Dependencies: Serbia(March)
+	Provinces: Istria, Crete, Naxos, Dalmatia, Ragusa, Brescia, Verona, Treviso, Durrës, Corfu, Friuli, Venezia, Euboea
 	States: Venetia, Lombardy, East Adriatic, Morea, Aegean Archipelago, Carniola, Albania
-	Advisors: Master Recruiter, Master of Mint
+	Advisors: Quartermaster, Spymaster, Natural Scientist
 	Ancients country name: None
 
-, Screenfish : Chagatai
+, Azrock : Chagatai
 	Capital: Urumqi
 	Culture: Kyrgyz
 	Religion: Sunni
@@ -1520,100 +1549,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: null(0)
+	Ideas: Horde Ideas(0)
 	Policies: None
-	Development: 83
-	Realm development: 116.03
-	Number of provinces: 13
-	Treasury: 73.293
-	Income: 5.477
-	Inflation: 0.0
-	Debt: 0
+	Development: 111
+	Realm development: 142
+	Number of provinces: 17
+	Treasury: 32
+	Income: 6.56
+	Inflation: 3.49
+	Debt: 56
 	Mercantilism: 10%
-	Actual manpower:  14065
-	Maximum manpower:  22129
+	Actual manpower:  9 068
+	Maximum manpower:  22 226
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 19
-	Active regular regiments: 10
+	Land force limit: 22
+	Active regular regiments: 18
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 14.754
+	Active forces : 82%
+	Professionalism: 1.172%
+	Army tradition: 16.449
 	Navy tradition: 0.0
-	Losses: 98
-	Stability: 0
+	Losses: 40 275
+	Stability: 1
 	Legitimacy: 0.0
-	Average autonomy: 20.269
-	Average unrest: -2.219
+	Average autonomy: 21.679
+	Average unrest: -31.465
 	War exhaustion: 0.0
-	Religious unity: 69.8%
-	Prestige: 4.969
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Religious unity: 81.9%
+	Prestige: 26.875
+	Power projection: 36
+	Splendor: 514
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Oirat, Uzbek
-	Allies: Delhi
-	Dependencies: Yarkand(Vassal), Ladakh(Tributary)
-	Provinces: Karamegdan, Ili, Bechbaliq, Taraz, Urumqi, Qakilik, Uzkend, Almaty, Kochkor, Chuy, Turpan, Qurqara-usu, Talas
-	States: South Zungaria, Jetysuu, Ferghana, Turpan-Kumul, Arys, Shanshan
-	Advisors: None
-	Ancients country name: None
-
-, Azrock : Madurai
-	Capital: Madurai
-	Culture: Tamil
-	Religion: Hindu
-	Is a: Feudal Monarchy
-	Rank: Kingdom
-	Has provinces in: Asia
-	Institutions embraced: None
-	Ideas: null(0)
-	Policies: None
-	Development: 85
-	Realm development: 56.608
-	Number of provinces: 6
-	Treasury: 60.851
-	Income: 6.295
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  10196
-	Maximum manpower:  15209
-	Actual sailors: 273
-	Maximum sailors: 1569
-	Land force limit: 12
-	Active regular regiments: 8
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 6.886
-	Navy tradition: 8.852
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 31.433
-	Average unrest: -7.0
-	War exhaustion: 0.0
-	Religious unity: 100.0%
-	Prestige: 4.838
-	Power projection: 2
-	Splendor: 4
-	Score: 0.0
-	Absolutism: 0.0
-	Tech: 3, 3, 3
-	Golden age started: 
-	Is part HRE: No
-	Trade bonus: None
-	Rivals: Malabar, Andhra, Mysore
-	Allies: Bahmanis, Kochin
-	Dependencies: None
-	Provinces: Tirunelveli, Tiruchirappalli, Madurai, Kongu, Tanjore, Coromandel
-	States: Madura, Carnatic, Coromandel
-	Advisors: None
+	Rivals: Uzbek, Oirat, Transoxiana
+	Allies: Nogai
+	Dependencies: Yarkand(Vassal)
+	Provinces: Karamegdan, Ili, Bechbaliq, Taraz, Urumqi, Qakilik, Uzkend, Almaty, Kochkor, Chuy, Turpan, Qurqara-usu, Alty-Kuduk, Sozak, Syghnak, Talas, Nadym
+	States: South Zungaria, Jetysuu, Ferghana, Turpan-Kumul, Arys, Shanshan, Syr Darya, Balchash, Kyzylkum
+	Advisors: Artist, Trader, Commandant
 	Ancients country name: None
 
 , Vélo : Vijayanagar
@@ -1624,47 +1602,48 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Vijayanagar ideas(0)
+	Ideas: Vijayanagar Ideas(0)
 	Policies: None
-	Development: 61
-	Realm development: 28.192
-	Number of provinces: 6
-	Treasury: 156.009
-	Income: 4.166
-	Inflation: 0.0
-	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  12706
-	Maximum manpower:  12706
-	Actual sailors: 1589
-	Maximum sailors: 565
-	Land force limit: 9
-	Active regular regiments: 9
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 12.869
-	Navy tradition: 10.854
-	Losses: 0
+	Development: 113
+	Realm development: 99
+	Number of provinces: 10
+	Treasury: 46
+	Income: 10.047
+	Inflation: 2.148
+	Debt: 114
+	Mercantilism: 11%
+	Actual manpower:  0
+	Maximum manpower:  14 478
+	Actual sailors: 1 712
+	Maximum sailors: 1 715
+	Land force limit: 15
+	Active regular regiments: 10
+	Active mercenaries: 2
+	Active forces : 80%
+	Professionalism: 7.703%
+	Army tradition: 36.743
+	Navy tradition: 9.705
+	Losses: 33 618
 	Stability: 0
-	Legitimacy: 93.041
-	Average autonomy: 54.5
-	Average unrest: -5.346
-	War exhaustion: 0.0
+	Legitimacy: 87.583
+	Average autonomy: 43.79
+	Average unrest: -28.025
+	War exhaustion: 2.475
 	Religious unity: 100.0%
-	Prestige: 9.918
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Prestige: 33.408
+	Power projection: 26
+	Splendor: 232
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Bahmanis, Malabar, Gujarat
-	Allies: Mysore, Ahmednagar, Andhra
-	Dependencies: None
-	Provinces: Savanur, South Konkan, North Kanara, Chaul, Desh, Goa
-	States: Kanara, Konkan, Maidan, Desh
+	Rivals: Malwa
+	Allies: Madurai, Mewar
+	Dependencies: Bijapur(Vassal), Rewa Kantha(Vassal)
+	Provinces: Savanur, North Konkan, South Konkan, Pune, North Kanara, Surat, Chaul, Desh, South Kanara, Goa
+	States: Kanara, Konkan, Maidan, Desh, Tapti
 	Advisors: None
 	Ancients country name: None
 
@@ -1676,48 +1655,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Bahmanis ideas(0)
+	Ideas: Bahmani Ideas(0), Defensive Ideas(2)
 	Policies: None
-	Development: 61
-	Realm development: 43.125
-	Number of provinces: 6
-	Treasury: 68.044
-	Income: 6.352
-	Inflation: 0.0
+	Development: 133
+	Realm development: 100
+	Number of provinces: 14
+	Treasury: 30
+	Income: 11.927
+	Inflation: 0.695
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  12378
-	Maximum manpower:  13102
-	Actual sailors: 10
-	Maximum sailors: 165
-	Land force limit: 11
-	Active regular regiments: 12
+	Actual manpower:  1 160
+	Maximum manpower:  18 248
+	Actual sailors: 558
+	Maximum sailors: 736
+	Land force limit: 17
+	Active regular regiments: 14
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 15.247
+	Active forces : 82%
+	Professionalism: 2.640%
+	Army tradition: 47.34
 	Navy tradition: 0.0
-	Losses: 0
+	Losses: 34 263
 	Stability: 0
 	Legitimacy: 100.0
-	Average autonomy: 30.354
-	Average unrest: -3.583
+	Average autonomy: 37.698
+	Average unrest: -10.177
 	War exhaustion: 0.0
-	Religious unity: 75.0%
-	Prestige: 9.918
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Religious unity: 78.3%
+	Prestige: 19.692
+	Power projection: 66
+	Splendor: 410
+	Score: 1
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Vijayanagar, Gujarat
-	Allies: Madurai
-	Dependencies: None
-	Provinces: Gulbarga, Konaseema, Warangal, Bidar, Mahur, Golconda
-	States: Maidan, Telingana, Andhra
-	Advisors: Commandant
+	Rivals: Mewar, Jaunpur, Nepal
+	Allies: Orissa, Carnatic
+	Dependencies: Chanda(Vassal)
+	Provinces: Ahmadnagar, Marathwada, Konaseema, West Berar, Chanderi, Mahakoshal, Bhilsa, Mahur, Mahadeo, Gulbarga, Warangal, Bidar, Golconda, Velanadu
+	States: Maidan, Telingana, Andhra, Desh, Maharashtra
+	Advisors: Master Recruiter
 	Ancients country name: None
 
 , Niels : Orissa
@@ -1728,48 +1708,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Orissa ideas(0)
+	Ideas: Orissan Ideas(0), Defensive Ideas(2)
 	Policies: None
-	Development: 74
-	Realm development: 64.646
-	Number of provinces: 5
-	Treasury: 23.863
-	Income: 6.216
-	Inflation: 0.0
+	Development: 197
+	Realm development: 139
+	Number of provinces: 18
+	Treasury: 115
+	Income: 20.725
+	Inflation: 0.68
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  12030
-	Maximum manpower:  16208
-	Actual sailors: 661
-	Maximum sailors: 1668
-	Land force limit: 14
-	Active regular regiments: 10
+	Mercantilism: 11%
+	Actual manpower:  8 848
+	Maximum manpower:  18 696
+	Actual sailors: 2 591
+	Maximum sailors: 2 757
+	Land force limit: 20
+	Active regular regiments: 18
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 16.918
-	Navy tradition: 14.754
-	Losses: 0
+	Active forces : 90%
+	Professionalism: 0.439%
+	Army tradition: 41.605
+	Navy tradition: 22.263
+	Losses: 24 803
 	Stability: 0
-	Legitimacy: 98.017
-	Average autonomy: 22.36
-	Average unrest: -7.6
-	War exhaustion: 0.0
+	Legitimacy: 93.805
+	Average autonomy: 50.783
+	Average unrest: -4.2
+	War exhaustion: 1.634
 	Religious unity: 100.0%
-	Prestige: 9.879
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Prestige: 0.614
+	Power projection: 100
+	Splendor: 588
+	Score: 2
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 5, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Malwa, Andhra, Bengal
-	Allies: Mewar, Chanda
-	Dependencies: Garjat(Vassal)
-	Provinces: Srikakulam, Bengal Delta, Midnapore, Cuttack, Balasore
-	States: Orissa, Andhra, West Bengal
-	Advisors: None
+	Rivals: Madurai, Nepal
+	Allies: Bahmanis, Jaunpur
+	Dependencies: Koch(Vassal), Jharkhand(Vassal)
+	Provinces: Srikakulam, Garjat, Lakhnor, Khurda, Raipur, Bastar, Kalingandhra, Mandla, Cuttack, Sambalpur, Bengal Delta, Gauda, Dhaka, Midnapore, Balasore, Bhagalpur, Barind, Nasirabad
+	States: Orissa, Andhra, West Bengal, East Bengal, North Bengal, Garjat
+	Advisors: Theologian, Army Reformer
 	Ancients country name: None
 
 , Prince : Mewar
@@ -1780,100 +1761,102 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: null(0)
+	Ideas: Rajput Ideas(0), Defensive Ideas(1)
 	Policies: None
-	Development: 44
-	Realm development: 46.75
-	Number of provinces: 5
-	Treasury: 67.451
-	Income: 6.155
-	Inflation: 0.051
+	Development: 120
+	Realm development: 70
+	Number of provinces: 13
+	Treasury: 135
+	Income: 5.96
+	Inflation: 3.044
 	Debt: 0
-	Mercantilism: 10%
-	Actual manpower:  12428
-	Maximum manpower:  14349
-	Actual sailors: 0
-	Maximum sailors: 0
-	Land force limit: 11
-	Active regular regiments: 8
+	Mercantilism: 11%
+	Actual manpower:  0
+	Maximum manpower:  15 099
+	Actual sailors: 98
+	Maximum sailors: 100
+	Land force limit: 15
+	Active regular regiments: 5
 	Active mercenaries: 0
-	Professionalism: 1.001%
-	Army tradition: 17.048
-	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
-	Legitimacy: 96.021
-	Average autonomy: 15.0
-	Average unrest: -5.8
-	War exhaustion: 0.0
+	Active forces : 33%
+	Professionalism: 9.064%
+	Army tradition: 37.681
+	Navy tradition: 1.419
+	Losses: 47 319
+	Stability: 1
+	Legitimacy: 88.368
+	Average autonomy: 59.484
+	Average unrest: -4.742
+	War exhaustion: 2.666
 	Religious unity: 100.0%
-	Prestige: 4.923
-	Power projection: 2
-	Splendor: 4
-	Score: 0.0
+	Prestige: 20.081
+	Power projection: 44
+	Splendor: 232
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Gujarat, Malwa, Sind
-	Allies: Orissa, Kathiawar, Rewa Kantha
-	Dependencies: Hadoti(Vassal)
-	Provinces: Marwar, Gorwar, Chittor, Ajmer, Mewar
+	Rivals: Malwa, Jaunpur, Yemen
+	Allies: Vijayanagar, Punjab
+	Dependencies: Hadoti(March), Sind(Vassal)
+	Provinces: Jaisalmer, Marwar, Patan, Chittor, Ahmadabad, Ajmer, Umarkot, Kathiawar, Mewar, Nagaur, Gorwar, Kutch, Thatta
 	States: Mewar, Marwar
-	Advisors: None
+	Advisors: Statesman, Master of Mint
 	Ancients country name: None
 
-, Labtec : Jaunpur
-	Capital: Central Doab
-	Culture: Avadhi
-	Religion: Sunni
-	Is a: Iqta
+, Labtec : Madurai
+	Capital: Tirunelveli
+	Culture: Tamil
+	Religion: Hindu
+	Is a: Feudal Monarchy
 	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Jaunpur ideas(0)
+	Ideas: South Indian Ideas(0)
 	Policies: None
-	Development: 67
-	Realm development: 56.604
-	Number of provinces: 4
-	Treasury: 151.565
-	Income: 6.272
-	Inflation: 0.0
+	Development: 118
+	Realm development: 107
+	Number of provinces: 9
+	Treasury: 108
+	Income: 12.036
+	Inflation: 1.223
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  11697
-	Maximum manpower:  12710
-	Actual sailors: 0
-	Maximum sailors: 0
-	Land force limit: 12
-	Active regular regiments: 10
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 9.124
-	Navy tradition: 0.0
-	Losses: 0
+	Actual manpower:  2 188
+	Maximum manpower:  16 316
+	Actual sailors: 2 528
+	Maximum sailors: 2 789
+	Land force limit: 16
+	Active regular regiments: 12
+	Active mercenaries: 2
+	Active forces : 88%
+	Professionalism: 4.553%
+	Army tradition: 23.415
+	Navy tradition: 14.254
+	Losses: 33 556
 	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 18.468
-	Average unrest: -3.75
-	War exhaustion: 0.0
-	Religious unity: 75.0%
-	Prestige: 9.863
-	Power projection: 1
-	Splendor: 4
-	Score: 0.0
+	Legitimacy: 86.656
+	Average autonomy: 41.294
+	Average unrest: -2.471
+	War exhaustion: 1.725
+	Religious unity: 100.0%
+	Prestige: 26.932
+	Power projection: 34
+	Splendor: 232
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 4, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Delhi, Malwa
-	Allies: Khandesh, Mewat
-	Dependencies: None
-	Provinces: Kalpi, Lower Doab, Central Doab, Etawah
-	States: Central Doab, Lower Doab
-	Advisors: None
+	Rivals: Bahmanis, Orissa
+	Allies: Vijayanagar
+	Dependencies: Ceylon(Vassal), Mysore(Vassal)
+	Provinces: Tirunelveli, Tiruchirappalli, Malabar, Kochin, Madurai, Kongu, Tanjore, Tondainadu, Coromandel
+	States: Madura, Carnatic, Coromandel, Kerala
+	Advisors: Natural Scientist
 	Ancients country name: None
 
 , Jayllos112 : Punjab
@@ -1884,48 +1867,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Punjab ideas(0)
+	Ideas: Punjabi Ideas(0)
 	Policies: None
-	Development: 80
-	Realm development: 75.554
-	Number of provinces: 4
-	Treasury: 40.42
-	Income: 7.073
-	Inflation: 0.0
+	Development: 152
+	Realm development: 107
+	Number of provinces: 10
+	Treasury: 89
+	Income: 8.775
+	Inflation: 1.359
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  10236
-	Maximum manpower:  14885
+	Actual manpower:  1 685
+	Maximum manpower:  16 765
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 13
-	Active regular regiments: 9
-	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 0.134
+	Land force limit: 18
+	Active regular regiments: 4
+	Active mercenaries: 1
+	Active forces : 28%
+	Professionalism: 0.745%
+	Army tradition: 31.748
 	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
-	Legitimacy: 18.041
-	Average autonomy: 6.55
-	Average unrest: -2.09
-	War exhaustion: 0.0
-	Religious unity: 100.0%
-	Prestige: 9.927
-	Power projection: 11
-	Splendor: 2
-	Score: 0.0
+	Losses: 45 137
+	Stability: 1
+	Legitimacy: 20.436
+	Average autonomy: 46.76
+	Average unrest: 6.553
+	War exhaustion: 7.142
+	Religious unity: 85.1%
+	Prestige: -5.471
+	Power projection: 54
+	Splendor: 556
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 3, 4, 4
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Delhi
-	Allies: Kangra
-	Dependencies: None
-	Provinces: Lahore, Doaba, Sialkot, Sirhind
-	States: Lahore, Sirhind
-	Advisors: Trader
+	Rivals: Afghanistan, Jaunpur
+	Allies: Mewar
+	Dependencies: Kangra(Vassal)
+	Provinces: Shekhawati, Jangladesh, Bhattiana, Multan, Lahore, Doaba, Sialkot, Sirhind, Panipat, Sind Sagar
+	States: Lahore, Sirhind, Upper Doab, Jaipur, Multan
+	Advisors: Philosopher
 	Ancients country name: None
 
 , Sephirt : Nepal
@@ -1936,48 +1920,49 @@ Date : java.util.GregorianCalendar[time=-16563920400000,areFieldsSet=true,areAll
 	Rank: Kingdom
 	Has provinces in: Asia
 	Institutions embraced: None
-	Ideas: Nepal ideas(0)
+	Ideas: Nepali Ideas(0), Defensive Ideas(0)
 	Policies: None
-	Development: 25
-	Realm development: 25.0
-	Number of provinces: 4
-	Treasury: 53.648
-	Income: 2.433
-	Inflation: 0.0
+	Development: 97
+	Realm development: 74
+	Number of provinces: 11
+	Treasury: 89
+	Income: 6.049
+	Inflation: 2.515
 	Debt: 0
 	Mercantilism: 10%
-	Actual manpower:  10823
-	Maximum manpower:  12650
+	Actual manpower:  229
+	Maximum manpower:  15 396
 	Actual sailors: 0
 	Maximum sailors: 0
-	Land force limit: 10
-	Active regular regiments: 7
+	Land force limit: 19
+	Active regular regiments: 14
 	Active mercenaries: 0
-	Professionalism: 0.000%
-	Army tradition: 8.852
-	Navy tradition: 0.0
-	Losses: 0
-	Stability: 0
-	Legitimacy: 100.0
-	Average autonomy: 0.0
-	Average unrest: -7.0
+	Active forces : 74%
+	Professionalism: 3.702%
+	Army tradition: 34.31
+	Navy tradition: 0.076
+	Losses: 35 003
+	Stability: 2
+	Legitimacy: 97.587
+	Average autonomy: 37.906
+	Average unrest: -25.587
 	War exhaustion: 0.0
 	Religious unity: 100.0%
-	Prestige: 4.921
-	Power projection: 2
-	Splendor: 4
-	Score: 0.0
+	Prestige: 22.969
+	Power projection: 77
+	Splendor: 532
+	Score: 0
 	Absolutism: 0.0
-	Tech: 3, 3, 3
+	Tech: 5, 4, 5
 	Golden age started: 
 	Is part HRE: No
 	Trade bonus: None
-	Rivals: Tirhut, Koch, U-tsang
-	Allies: Kham, Bengal
-	Dependencies: None
-	Provinces: Chaubisi Rajya, Limbuwan, Baisi Rajya, Katmandu
-	States: Nepal
-	Advisors: None
+	Rivals: Jaunpur, Mewar, Orissa
+	Allies: None
+	Dependencies: Bundelkhand(Vassal), Bhutan(Vassal)
+	Provinces: Baghelkhand, Kumaon, Chaubisi Rajya, Limbuwan, Gorakhpur, Baisi Rajya, Jaunpur, Katmandu, Tirhut, Varanasi, Garhwal
+	States: Nepal, Purvanchal, Bihar, Lower Doab, Himalayan Hills
+	Advisors: Grand Captain
 	Ancients country name: None
 
 ]

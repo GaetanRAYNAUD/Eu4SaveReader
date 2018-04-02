@@ -1,6 +1,9 @@
 package eu4SaveReader.General;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.GregorianCalendar;
@@ -48,6 +51,7 @@ public class Country {
     private int forceLimit;
     private int army;
     private int mercenaries;
+    private BigDecimal activeForces;
     private int losses;
     private int stability;
     private double legitimacy;
@@ -592,6 +596,8 @@ public class Country {
     	}
     	
     	this.forceLimit = (int) (forceLimit * modifiers); 
+    	
+    	activeForces = new BigDecimal(army + mercenaries).divide(new BigDecimal(this.forceLimit), new MathContext(2, RoundingMode.HALF_EVEN)).multiply(new BigDecimal("100"), new MathContext(0, RoundingMode.HALF_EVEN));
     }
     
     private String printContinents() {
@@ -650,7 +656,9 @@ public class Country {
 	    		if(entry.getValue().getType() != null) {
 	    			advisorsString.append(Advisors.advisorsType.get(entry.getValue().getType()));
 	    			advisorsString.append(", ");
-	    		} else if(advisors.size() == 1){
+	    		} 
+	    		
+	    		if(advisorsString.length() == 0){
 	    			advisorsString.append("None  ");
 	    		}
 	    	}
@@ -836,24 +844,25 @@ public class Country {
 		+ "\n\tIdeas: " + printIdeas()
 		+ "\n\tPolicies: " + printPolicies()
 		+ "\n\tDevelopment: " + dev
-		+ "\n\tRealm development: " + realmDev
+		+ "\n\tRealm development: " + NumberFormat.getIntegerInstance().format(realmDev)
 		+ "\n\tNumber of provinces: " + nbProvince
-		+ "\n\tTreasury: " + cash
+		+ "\n\tTreasury: " + NumberFormat.getIntegerInstance().format(cash)
 		+ "\n\tIncome: " + income
 		+ "\n\tInflation: " + inflation
-		+ "\n\tDebt: " + debt
+		+ "\n\tDebt: " + NumberFormat.getIntegerInstance().format(debt)
 		+ "\n\tMercantilism: " + mercantilism + "%"
-		+ "\n\tActual manpower:  " + manpower
-		+ "\n\tMaximum manpower:  " + maxManpower
-		+ "\n\tActual sailors: " + sailors
-		+ "\n\tMaximum sailors: " + maxSailors
-		+ "\n\tLand force limit: "	+ forceLimit
+		+ "\n\tActual manpower: " + NumberFormat.getIntegerInstance().format(manpower)
+		+ "\n\tMaximum manpower: " + NumberFormat.getIntegerInstance().format(maxManpower)
+		+ "\n\tActual sailors: " + NumberFormat.getIntegerInstance().format(sailors)
+		+ "\n\tMaximum sailors: " + NumberFormat.getIntegerInstance().format(maxSailors)
+		+ "\n\tLand force limit: "	+ NumberFormat.getIntegerInstance().format(forceLimit)
 		+ "\n\tActive regular regiments: "	+ army
 		+ "\n\tActive mercenaries: " + mercenaries
+		+ "\n\tActive forces : " + activeForces.intValue() + "%"
 		+ "\n\tProfessionalism: " + professionalism	+ "%"
 		+ "\n\tArmy tradition: " + armyTradition
 		+ "\n\tNavy tradition: " + navyTradition
-		+ "\n\tLosses: " + losses
+		+ "\n\tLosses: " + NumberFormat.getIntegerInstance().format(losses)
 		+ "\n\tStability: " + stability
 		+ "\n\tLegitimacy: " + legitimacy
 		+ "\n\tAverage autonomy: " + averageAutonomy
@@ -863,7 +872,7 @@ public class Country {
 		+ "\n\tPrestige: " + prestige
 		+ "\n\tPower projection: " + powerProjection
 		+ "\n\tSplendor: " + splendor
-		+ "\n\tScore: " + score
+		+ "\n\tScore: " + NumberFormat.getIntegerInstance().format(score)
 		+ "\n\tAbsolutism: " + absolutism
 		+ "\n\tTech: " + admTech + ", " + dipTech + ", " + milTech
 		+ "\n\tGolden age started: " + Util.printDate(goldenAge)
@@ -1309,5 +1318,13 @@ public class Country {
 
 	public void setStates(ArrayList<String> states) {
 		this.states = states;
+	}
+
+	public BigDecimal getActiveForces() {
+		return activeForces;
+	}
+
+	public void setActiveForces(BigDecimal activeForces) {
+		this.activeForces = activeForces;
 	}	
 }
