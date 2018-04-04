@@ -85,6 +85,7 @@ public class Country {
     private ArrayList<String> policies = new ArrayList<String>();
     private ArrayList<Double> factions = new ArrayList<Double>();
     private ArrayList<String> states = new ArrayList<String>();
+    private int nbStolenBuildings;
     
     public Country(String tag) {
 		this.tag = tag;
@@ -600,6 +601,20 @@ public class Country {
     	activeForces = new BigDecimal(army + mercenaries).divide(new BigDecimal(this.forceLimit), new MathContext(2, RoundingMode.HALF_EVEN)).multiply(new BigDecimal("100"), new MathContext(0, RoundingMode.HALF_EVEN));
     }
     
+    private int countStolenBuildings() {
+    	int nbStolenBuildings = 0;
+    	
+    	for(Province p : provinces.values()) {
+    		for(String s : p.getBuildings().values()) {
+    			if(!ancientsTags.contains(s) && !s.equals(tag)) {
+    				nbStolenBuildings++;
+    			}
+    		}
+    	}
+    	
+    	return nbStolenBuildings;
+    }
+    
     private String printContinents() {
     	if(!continents.contains(true)) {
     		return "None";
@@ -817,6 +832,7 @@ public class Country {
 	    	p.updateAutonomy(states);
 	    }
 	    
+	    nbStolenBuildings = countStolenBuildings();
     }
     
     public void addDependencies(HashMap<Country, String> dependencies) {
@@ -885,6 +901,7 @@ public class Country {
 		+ "\n\tStates: " + printStates()
 		+ "\n\tAdvisors: " + printAdvisors()
 		+ "\n\tAncients country name: " + Util.printCountryList(ancientsTags)
+		+ "\n\tStolen buildings: " + nbStolenBuildings
 		+ "\n";
     }
     
@@ -1326,5 +1343,13 @@ public class Country {
 
 	public void setActiveForces(BigDecimal activeForces) {
 		this.activeForces = activeForces;
+	}
+
+	public int getNbStolenBuildings() {
+		return nbStolenBuildings;
+	}
+
+	public void setNbStolenBuildings(int nbStolenBuildings) {
+		this.nbStolenBuildings = nbStolenBuildings;
 	}	
 }

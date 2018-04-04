@@ -30,7 +30,7 @@ public class Excel {
 		this.filePath = filePath;
 	}
 	
-	public ArrayList<Player> extractPlayers() {
+	public ArrayList<Player> extractPlayers() throws FileNotFoundException {
 		FileInputStream excelFile;
         Workbook workbook;
         ArrayList<Player> players = new ArrayList<Player>();
@@ -66,7 +66,7 @@ public class Excel {
             workbook.close();
             excelFile.close();
 		} catch (FileNotFoundException e) {
-            e.printStackTrace();
+            throw new FileNotFoundException();
         } catch (IOException e) {
 			e.printStackTrace();
 		}

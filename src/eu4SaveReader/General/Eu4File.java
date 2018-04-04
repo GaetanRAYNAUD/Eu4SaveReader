@@ -154,7 +154,7 @@ public class Eu4File {
 	
 	@Override
 	public String toString() {
-		return "Date : " + currentDate
+		return "Date : " + Util.printDate(currentDate)
 		+ "\n" + players.toString();
 	    
 	}

@@ -86,7 +86,7 @@ public class Province {
 		    	for(String builder : buildingsBuilders) {
 		    		for(String building : buildingsInfos) {
 			    		if(builder.split("=\"")[0].compareTo(building) == 0) {
-			    			buildings.put(building, builder.split("=\"")[1].substring(1, builder.split("=\"")[1].length() - 1));
+			    			buildings.put(building, builder.split("=\"")[1].substring(0, builder.split("=\"")[1].length() - 1));
 			    			break;
 			    		}
 		    		}
