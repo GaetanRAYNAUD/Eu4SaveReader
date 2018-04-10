@@ -7,7 +7,7 @@ import eu4SaveReader.Excel.Excel;
 public class Main {
 	
 	public static void main(String[] args) {
-	    String savePath = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\Session 1\\kebab finally gets removed session 1.eu4";
+	    String savePath = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\Session 2\\kebab finally gets removed session 2.eu4";
 	    String excelPath = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\kebab finally gets removed.xlsx";
 	    
 	    Eu4File save = new Eu4File(savePath);
@@ -22,7 +22,7 @@ public class Main {
 
 	    save.extractPlayersInfos();
 	    
-	    //excel.writeInfos(save);
+	    excel.writeInfos(save);
 	    
 	    System.out.println(save);
 	}
