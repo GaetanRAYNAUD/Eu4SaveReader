@@ -6,7 +6,7 @@ public final class Tags {
 	
 	private Tags() {}
 	
-	public static final HashMap<String, String> tags = new HashMap<String, String>();
+	public static final HashMap<String, String> tags = new HashMap<>();
 	static {
 		tags.put("AAC", "Aachen");
 		tags.put("ABB", "Dongola");
@@ -24,7 +24,7 @@ public final class Tags {
 		tags.put("AKM", "Akamatsu");
 		tags.put("AKT", "Ando");
 		tags.put("ALB", "Albania");
-		tags.put("ALE", "Alençon");
+		tags.put("ALE", "Alenï¿½on");
 		tags.put("ALG", "Algiers");
 		tags.put("ALH", "Haasa");
 		tags.put("ALO", "Alodia");
@@ -266,7 +266,7 @@ public final class Tags {
 		tags.put("HOB", "Hobyo");
 		tags.put("HOD", "Khodynt");
 		tags.put("HOL", "Holland");
-		tags.put("HSA", "Lübeck");
+		tags.put("HSA", "Lï¿½beck");
 		tags.put("HSC", "Gaeldom");
 		tags.put("HSE", "Hsenwi");
 		tags.put("HSK", "Hosokawa");
@@ -300,7 +300,7 @@ public final class Tags {
 		tags.put("JIN", "Jin");
 		tags.put("JJI", "Janjiro");
 		tags.put("JMN", "Jan Mayen");
-		tags.put("JNN", "Jenné");
+		tags.put("JNN", "Jennï¿½");
 		tags.put("JNP", "Jaunpur");
 		tags.put("JOH", "Johor");
 		tags.put("JOL", "Jolof");
@@ -382,14 +382,14 @@ public final class Tags {
 		tags.put("LNO", "Lanao");
 		tags.put("LOA", "Loango");
 		tags.put("LOI", "The Isles");
-		tags.put("LON", "León");
+		tags.put("LON", "Leï¿½n");
 		tags.put("LOR", "Lorraine");
 		tags.put("LOU", "Louisiana");
 		tags.put("LRI", "Luristan");
 		tags.put("LUA", "Luang Prabang");
 		tags.put("LUB", "Luba");
 		tags.put("LUC", "Lucca");
-		tags.put("LUN", "Lüneburg");
+		tags.put("LUN", "Lï¿½neburg");
 		tags.put("LUW", "Luwu");
 		tags.put("LUX", "Luxembourg");
 		tags.put("LVA", "Livonia");
@@ -467,7 +467,7 @@ public final class Tags {
 		tags.put("MTR", "Mataram");
 		tags.put("MUG", "Mughals");
 		tags.put("MUL", "Multan");
-		tags.put("MUN", "Münster");
+		tags.put("MUN", "Mï¿½nster");
 		tags.put("MUR", "Murom");
 		tags.put("MVA", "Moravia");
 		tags.put("MYA", "Mong Yang");
@@ -573,7 +573,7 @@ public final class Tags {
 		tags.put("RMP", "Rohilkhand");
 		tags.put("ROM", "Roman Empire");
 		tags.put("RSO", "Rostov");
-		tags.put("RUM", "Rûm");
+		tags.put("RUM", "Rï¿½m");
 		tags.put("RUS", "Russia");
 		tags.put("RVA", "Ravensburg");
 		tags.put("RWA", "Rwanda");
@@ -699,7 +699,7 @@ public final class Tags {
 		tags.put("VLA", "Vladimir");
 		tags.put("VND", "Venad");
 		tags.put("VNZ", "Venezuela");
-		tags.put("VOL", "Galicia–Volhynia");
+		tags.put("VOL", "Galiciaï¿½Volhynia");
 		tags.put("WAL", "Wallachia");
 		tags.put("WAR", "Warsangali");
 		tags.put("WBG", "Wurzburg");

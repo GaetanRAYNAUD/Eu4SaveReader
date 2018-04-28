@@ -6,7 +6,7 @@ public final class Buildings {
 
 	private Buildings() {}
 	
-	public static final HashMap<String, String> buildings = new HashMap<String, String>();
+	public static final HashMap<String, String> buildings = new HashMap<>();
 	static {
 		buildings.put("barracks", "Barracks");
 		buildings.put("fort_16th", "Bastion");

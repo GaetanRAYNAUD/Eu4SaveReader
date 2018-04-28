@@ -6,7 +6,7 @@ public final class Dependencies {
 
 	private Dependencies() {}
 	
-	public static final HashMap<String, String> dependenciesTypes = new HashMap<String, String>();
+	public static final HashMap<String, String> dependenciesTypes = new HashMap<>();
 	static {
 		dependenciesTypes.put("vassal", "Vassal");
 		dependenciesTypes.put("march", "March");

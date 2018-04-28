@@ -6,7 +6,7 @@ public final class Cultures {
 	
 	private Cultures() {}
 	
-	public static final HashMap<String, String> cultures = new HashMap<String, String>();
+	public static final HashMap<String, String> cultures = new HashMap<>();
 	static {
 		cultures.put("abenaki", "Abenaki");
 		cultures.put("aboriginal", "Aboriginal");

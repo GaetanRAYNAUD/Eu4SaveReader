@@ -10,7 +10,7 @@ public final class Util {
 
 	private Util() {}
 	
-	public static final List<String> mouth = Arrays.asList("December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November");
+	private static final List<String> mouth = Arrays.asList("December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November");
 	
 	public static final List<String> govRanks = Arrays.asList("", "Duchy", "Kingdom", "Empire");
 	
@@ -18,7 +18,7 @@ public final class Util {
 	
 	public static final List<String> institutions = Arrays.asList("Feudalism", "Renaissance", "Colonialism", "Printing Press", "Global Trade", "Manufactories", "Enlightenment");
 	
-    public static final String extractInfo(String info, String landmark) {
+    public static String extractInfo(String info, String landmark) {
     	int startAddr, endAddr;
     	String infoString;
 
@@ -36,38 +36,32 @@ public final class Util {
 		return null;
     }
     
-    public static final Double extractInfoDouble(String info, String landmark) {
+    public static Double extractInfoDouble(String info, String landmark) {
 		try {
 			return Double.parseDouble(extractInfo(info, landmark));
-		} catch(NumberFormatException e) {
-			return 0.;
-		} catch(NullPointerException e) {
+		} catch(NumberFormatException | NullPointerException e) {
 			return 0.;
 		}
-    }
+	}
     
-    public static final int extractInfoInt(String info, String landmark) {
+    public static int extractInfoInt(String info, String landmark) {
     	try {
     		return Integer.parseInt(extractInfo(info, landmark));
-    	} catch(NumberFormatException e) {
-    		return 0;
-    	} catch(NullPointerException e) {
+    	} catch(NumberFormatException | NullPointerException e) {
     		return 0;
     	}
-    }
+	}
     
-    public static final BigDecimal extractInfoBigDecimal(String info, String landmark) {
+    public static BigDecimal extractInfoBigDecimal(String info, String landmark) {
     	try {
     		return new BigDecimal(extractInfo(info, landmark));
-    	} catch(NumberFormatException e) {
-    		return new BigDecimal(0);
-    	} catch(NullPointerException e) {
+    	} catch(NumberFormatException | NullPointerException e) {
     		return new BigDecimal(0);
     	}
-    	
-    }
+
+	}
     
-	public static final GregorianCalendar convertStringToDate(String dateString) {
+	public static GregorianCalendar convertStringToDate(String dateString) {
 		if(dateString != null) {
 			String[] date = dateString.split("\\.");
 			return new GregorianCalendar(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
@@ -76,7 +70,7 @@ public final class Util {
 		return new GregorianCalendar(0, 0, 0);
 	}
 	
-    public static final String printCountryList(ArrayList<String> list) {
+    public static String printCountryList(ArrayList<String> list) {
     	if(list.size() > 0) {
 	    	StringBuilder listString = new StringBuilder();
 	    	
@@ -91,7 +85,7 @@ public final class Util {
     	return "None";
     }
     
-    public static final String printDate(GregorianCalendar date) {
+    public static String printDate(GregorianCalendar date) {
     	if(date.equals(new GregorianCalendar(0, 0, 0))) {
     		return "";
     	}
@@ -99,7 +93,7 @@ public final class Util {
     	return date.get(GregorianCalendar.DAY_OF_MONTH) + " " + Util.mouth.get(date.get(GregorianCalendar.MONTH)) + " " + date.get(GregorianCalendar.YEAR);
     }
     
-    public static final String printBoolean(Boolean bool) {
+    public static String printBoolean(Boolean bool) {
     	return (bool ? "Yes" : "No");
     }
 }

@@ -6,7 +6,7 @@ public final class Governments {
 
 	private Governments() {}
 	
-	public static final HashMap<String, String> governementTypes = new HashMap<String, String>();
+	public static final HashMap<String, String> governementTypes = new HashMap<>();
 	static {
 		governementTypes.put("absolute_monarchy", "Absolute Monarchy");
 		governementTypes.put("administrative_monarchy", "Administrative Monarchy");

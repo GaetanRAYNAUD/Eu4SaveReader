@@ -6,7 +6,7 @@ public final class Ideas {
 	
 	private Ideas() {}
 	
-	public static final HashMap<String, String> ideas = new HashMap<String, String>();
+	public static final HashMap<String, String> ideas = new HashMap<>();
 	static {
 		ideas.put("AAC_ideas", "Aachen Ideas");
 		ideas.put("administrative_ideas", "Administrative Ideas");

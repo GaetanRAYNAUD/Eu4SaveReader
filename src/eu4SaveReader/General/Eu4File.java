@@ -13,10 +13,9 @@ import eu4SaveReader.Utils.Util;
 public class Eu4File {
 	
 	private String save;
-	private ArrayList<Player> players = new ArrayList<Player>();
+	private ArrayList<Player> players = new ArrayList<>();
 	private GregorianCalendar currentDate;
-	private int nbCountriesHRE;
-	
+
 	public Eu4File(String savePath) {
 		loadSave(savePath);
 		extractDate();
@@ -137,7 +136,7 @@ public class Eu4File {
 	}
 	
 	public void extractPlayersInfos() {
-	    nbCountriesHRE = 0;
+		int nbCountriesHRE = 0;
 	    
 		for(Player p : players) {
 			extractInfosCountry(p.getCountry());
@@ -161,7 +160,7 @@ public class Eu4File {
 	
 	public Player getPlayerByTag(String tag) {
 		for(Player p : players) {
-			if(p.getCountry().getTag() == tag) {
+			if(p.getCountry().getTag().equals(tag)) {
 				return p;
 			}
 		}

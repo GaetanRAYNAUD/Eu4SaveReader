@@ -6,7 +6,7 @@ public final class Religions {
 	
 	private Religions() {}
 	
-	public static final HashMap<String, String> religions = new HashMap<String, String>();
+	public static final HashMap<String, String> religions = new HashMap<>();
 	static {
 		religions.put("catholic", "Catholic");
 		religions.put("protestant", "Protestant");

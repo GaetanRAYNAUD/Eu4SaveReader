@@ -6,7 +6,7 @@ public final class Goods {
 	
 	private Goods() {}
 	
-	public static final HashMap<String, String> goodsNames = new HashMap<String, String>();
+	public static final HashMap<String, String> goodsNames = new HashMap<>();
 	static {
 		goodsNames.put("chinaware", "Chinaware");
 		goodsNames.put("cloth", "Cloth");
@@ -40,7 +40,7 @@ public final class Goods {
 		goodsNames.put("coal", "Coal");
 	}
 	
-	public static final HashMap<Integer, String> goodsId = new HashMap<Integer, String>();
+	public static final HashMap<Integer, String> goodsId = new HashMap<>();
 	static {
 		goodsId.put(1, "grain");
 		goodsId.put(2, "wine");
@@ -75,7 +75,7 @@ public final class Goods {
 		goodsId.put(31, "unknown");
 	}
 	
-	public static final String getGoodFromId(int id) {
+	public static String getGoodFromId(int id) {
 		return goodsNames.get(goodsId.get(id));
 	}
 }

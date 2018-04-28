@@ -6,7 +6,7 @@ public final class Estates {
 
 	private Estates() {}
 	
-	public static final HashMap<Integer, String> estates = new HashMap<Integer, String>();
+	public static final HashMap<Integer, String> estates = new HashMap<>();
 	static {
 		estates.put(0, "None");
 		estates.put(1, "Clergy");

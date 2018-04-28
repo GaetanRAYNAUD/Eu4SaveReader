@@ -6,7 +6,7 @@ public final class Policies {
 	
 	private Policies() {}
 	
-	public static final HashMap<String, String> policies = new HashMap<String, String>();
+	public static final HashMap<String, String> policies = new HashMap<>();
 	static {
 		policies.put("agricultural_cultivations", "Agricultural Cultivation");
 		policies.put("anti_heresy_act", "Anti-Heresy Act");

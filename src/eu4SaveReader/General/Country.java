@@ -67,6 +67,7 @@ public class Country {
     private int admTech;
     private int dipTech;
     private int milTech;
+    private double innovativeness;
     private int capital;
     private String religion;
     private String culture;
@@ -358,13 +359,17 @@ public class Country {
     		}
     		
     		for(Entry<String, String> b : p.getBuildings().entrySet()) {
-    			if(b.getKey().equals("native_fortified_house")) {
-    				localForceLimit += 10;
-    			} else if(b.getKey().equals("regimental_camp")) {
-    				localForceLimit += 1;
-    			} else if(b.getKey().equals("conscription_center")) {
-    				localForceLimit += 2;
-    			}
+                switch (b.getKey()) {
+                    case "native_fortified_house":
+                        localForceLimit += 10;
+                        break;
+                    case "regimental_camp":
+                        localForceLimit += 1;
+                        break;
+                    case "conscription_center":
+                        localForceLimit += 2;
+                        break;
+                }
     		}
     		
     		if(p.getEstate() != 2 && p.getEstate() != 4 && p.getEstate() != 5) {
@@ -376,15 +381,19 @@ public class Country {
     	
     	int bonus = 0;
     	for(Entry<Country, String> d : dependencies.entrySet()) {
-    		if(d.getValue().equals("vassal")) {
-    			bonus += 1;		
-    		} else if(d.getValue().equals("march")) {
-    			bonus += 2;
-    		} else if(d.getValue().equals("colony")) {
-    			if(d.getKey().getNbProvince() >= 10) {
-    				bonus += 5;
-    			}
-    		}
+            switch (d.getValue()) {
+                case "vassal":
+                    bonus += 1;
+                    break;
+                case "march":
+                    bonus += 2;
+                    break;
+                case "colony":
+                    if (d.getKey().getNbProvince() >= 10) {
+                        bonus += 5;
+                    }
+                    break;
+            }
     	}
     	
     	forceLimit += bonus;
@@ -802,6 +811,7 @@ public class Country {
 	    admTech = Util.extractInfoInt(countryInfos, "adm_tech=");
 	    dipTech = Util.extractInfoInt(countryInfos, "dip_tech=");
 	    milTech = Util.extractInfoInt(countryInfos, "mil_tech=");
+        innovativeness = Util.extractInfoDouble(countryInfos, "innovativeness=");
 	    capital = Util.extractInfoInt(countryInfos, "\n\t\tcapital=");
 	    averageAutonomy = Util.extractInfoDouble(countryInfos, "average_autonomy=");
 	    averageUnrest = Util.extractInfoDouble(countryInfos, "average_unrest=");
@@ -850,59 +860,60 @@ public class Country {
     @Override
     public String toString() {
 		return Tags.tags.get(tag)
-		+ "\n\tCapital: " + ProvincesId.provincesId.get(capital)
-		+ "\n\tCulture: " + Cultures.cultures.get(culture)
-		+ "\n\tReligion: " + Religions.religions.get(religion)
-		+ "\n\tIs a: " + Governments.governementTypes.get(govType)
-		+ "\n\tRank: " + Util.govRanks.get(govRank)
-		+ "\n\tHas provinces in: " + printContinents()
-		+ "\n\tInstitutions embraced: " + printInstitutions()
-		+ "\n\tIdeas: " + printIdeas()
-		+ "\n\tPolicies: " + printPolicies()
-		+ "\n\tDevelopment: " + dev
-		+ "\n\tRealm development: " + NumberFormat.getIntegerInstance().format(realmDev)
-		+ "\n\tNumber of provinces: " + nbProvince
-		+ "\n\tTreasury: " + NumberFormat.getIntegerInstance().format(cash)
-		+ "\n\tIncome: " + income
-		+ "\n\tInflation: " + inflation
-		+ "\n\tDebt: " + NumberFormat.getIntegerInstance().format(debt)
-		+ "\n\tMercantilism: " + mercantilism + "%"
-		+ "\n\tActual manpower: " + NumberFormat.getIntegerInstance().format(manpower)
-		+ "\n\tMaximum manpower: " + NumberFormat.getIntegerInstance().format(maxManpower)
-		+ "\n\tActual sailors: " + NumberFormat.getIntegerInstance().format(sailors)
-		+ "\n\tMaximum sailors: " + NumberFormat.getIntegerInstance().format(maxSailors)
-		+ "\n\tLand force limit: "	+ NumberFormat.getIntegerInstance().format(forceLimit)
-		+ "\n\tActive regular regiments: "	+ army
-		+ "\n\tActive mercenaries: " + mercenaries
-		+ "\n\tActive forces : " + activeForces.intValue() + "%"
-		+ "\n\tProfessionalism: " + professionalism	+ "%"
-		+ "\n\tArmy tradition: " + armyTradition
-		+ "\n\tNavy tradition: " + navyTradition
-		+ "\n\tLosses: " + NumberFormat.getIntegerInstance().format(losses)
-		+ "\n\tStability: " + stability
-		+ "\n\tLegitimacy: " + legitimacy
-		+ "\n\tAverage autonomy: " + averageAutonomy
-		+ "\n\tAverage unrest: " + averageUnrest
-		+ "\n\tWar exhaustion: " + warExhaustion
-		+ "\n\tReligious unity: " + religiousUnity + "%"
-		+ "\n\tPrestige: " + prestige
-		+ "\n\tPower projection: " + powerProjection
-		+ "\n\tSplendor: " + splendor
-		+ "\n\tScore: " + NumberFormat.getIntegerInstance().format(score)
-		+ "\n\tAbsolutism: " + absolutism
-		+ "\n\tTech: " + admTech + ", " + dipTech + ", " + milTech
-		+ "\n\tGolden age started: " + Util.printDate(goldenAge)
-		+ "\n\tIs part HRE: " + Util.printBoolean(isPartHRE)
-		+ "\n\tTrade bonus: " + printTradeBonus()
-		+ "\n\tRivals: " + Util.printCountryList(rivals)
-		+ "\n\tAllies: " + Util.printCountryList(allies)
-		+ "\n\tDependencies: " + printDependencies()
-		+ "\n\tProvinces: " + printProvinces()
-		+ "\n\tStates: " + printStates()
-		+ "\n\tAdvisors: " + printAdvisors()
-		+ "\n\tAncients country name: " + Util.printCountryList(ancientsTags)
-		+ "\n\tStolen buildings: " + nbStolenBuildings
-		+ "\n";
+            + "\n\tCapital: " + ProvincesId.provincesId.get(capital)
+            + "\n\tCulture: " + Cultures.cultures.get(culture)
+            + "\n\tReligion: " + Religions.religions.get(religion)
+            + "\n\tIs a: " + Governments.governementTypes.get(govType)
+            + "\n\tRank: " + Util.govRanks.get(govRank)
+            + "\n\tHas provinces in: " + printContinents()
+            + "\n\tInstitutions embraced: " + printInstitutions()
+            + "\n\tIdeas: " + printIdeas()
+            + "\n\tPolicies: " + printPolicies()
+            + "\n\tDevelopment: " + dev
+            + "\n\tRealm development: " + NumberFormat.getIntegerInstance().format(realmDev)
+            + "\n\tNumber of provinces: " + nbProvince
+            + "\n\tTreasury: " + NumberFormat.getIntegerInstance().format(cash)
+            + "\n\tIncome: " + income
+            + "\n\tInflation: " + inflation
+            + "\n\tDebt: " + NumberFormat.getIntegerInstance().format(debt)
+            + "\n\tMercantilism: " + mercantilism + "%"
+            + "\n\tActual manpower: " + NumberFormat.getIntegerInstance().format(manpower)
+            + "\n\tMaximum manpower: " + NumberFormat.getIntegerInstance().format(maxManpower)
+            + "\n\tActual sailors: " + NumberFormat.getIntegerInstance().format(sailors)
+            + "\n\tMaximum sailors: " + NumberFormat.getIntegerInstance().format(maxSailors)
+            + "\n\tLand force limit: "	+ NumberFormat.getIntegerInstance().format(forceLimit)
+            + "\n\tActive regular regiments: "	+ army
+            + "\n\tActive mercenaries: " + mercenaries
+            + "\n\tActive forces : " + activeForces.intValue() + "%"
+            + "\n\tProfessionalism: " + professionalism	+ "%"
+            + "\n\tArmy tradition: " + armyTradition
+            + "\n\tNavy tradition: " + navyTradition
+            + "\n\tLosses: " + NumberFormat.getIntegerInstance().format(losses)
+            + "\n\tStability: " + stability
+            + "\n\tLegitimacy: " + legitimacy
+            + "\n\tAverage autonomy: " + averageAutonomy
+            + "\n\tAverage unrest: " + averageUnrest
+            + "\n\tWar exhaustion: " + warExhaustion
+            + "\n\tReligious unity: " + religiousUnity + "%"
+            + "\n\tPrestige: " + prestige
+            + "\n\tPower projection: " + powerProjection
+            + "\n\tSplendor: " + splendor
+            + "\n\tScore: " + NumberFormat.getIntegerInstance().format(score)
+            + "\n\tAbsolutism: " + absolutism
+            + "\n\tTech: " + admTech + ", " + dipTech + ", " + milTech
+            + "\n\tInnovativeness: " + innovativeness
+            + "\n\tGolden age started: " + Util.printDate(goldenAge)
+            + "\n\tIs part HRE: " + Util.printBoolean(isPartHRE)
+            + "\n\tTrade bonus: " + printTradeBonus()
+            + "\n\tRivals: " + Util.printCountryList(rivals)
+            + "\n\tAllies: " + Util.printCountryList(allies)
+            + "\n\tDependencies: " + printDependencies()
+            + "\n\tProvinces: " + printProvinces()
+            + "\n\tStates: " + printStates()
+            + "\n\tAdvisors: " + printAdvisors()
+            + "\n\tAncients country name: " + Util.printCountryList(ancientsTags)
+            + "\n\tStolen buildings: " + nbStolenBuildings
+            + "\n";
     }
     
     public int getAdmTech() {
@@ -1351,5 +1362,13 @@ public class Country {
 
 	public void setNbStolenBuildings(int nbStolenBuildings) {
 		this.nbStolenBuildings = nbStolenBuildings;
-	}	
+	}
+
+    public double getInnovativeness() {
+        return innovativeness;
+    }
+
+    public void setInnovativeness(double innovativeness) {
+        this.innovativeness = innovativeness;
+    }
 }
