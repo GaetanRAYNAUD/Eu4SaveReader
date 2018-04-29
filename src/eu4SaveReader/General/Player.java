@@ -30,7 +30,7 @@ public class Player {
 		return name + " : " + country.toString() + "\n";
     }
     
-    public Country getCountry() {
+    public Country getCountry () {
 		return country;
 	}
     
