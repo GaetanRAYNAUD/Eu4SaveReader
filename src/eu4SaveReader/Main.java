@@ -1,54 +1,36 @@
 package eu4SaveReader;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import eu4SaveReader.Web.page.Session;
+import eu4SaveReader.General.Game;
+import eu4SaveReader.General.Session;
 
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.*;
 
 public class Main {
 
     public static void main (String[] args) {
+        List<String> sessionsFilesPath = new ArrayList<>();
+        String session1Path = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\Session 1\\kebab_1.eu4";
+        String session2Path = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\Session 2\\kebab_2.eu4";
+        String session3Path = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\Session 3\\kebab_3.eu4";
         String session4Path = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\Session 4\\kebab_4.eu4";
-/*	    String excelPath = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\kebab finally gets removed.xlsx";
+        String session5Path = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\Session 5\\kebab_5.eu4";
+        String session6Path = "C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\kebab finally gets removed\\Session 6\\kebab_6.eu4";
 
-        EnumSet<GamePlayer> gamePlayers = GamePlayer.getAllPlayers();
+        Path exportFilePath = Paths.get("C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\Web\\scripts\\data.js");
 
-	    Eu4File save = new Eu4File(session4Path);
-*//*	    Excel excel = new Excel(excelPath);
+        String title = "Kebab finally gets removed";
 
-	    try {
-			save.addPlayers(excel.extractPlayers());
-		} catch (FileNotFoundException e) {
-			System.out.println("File not found or open in other program");
-			System.exit(1);
-		}*//*
+        sessionsFilesPath.add(session1Path);
+        sessionsFilesPath.add(session2Path);
+        sessionsFilesPath.add(session3Path);
+        sessionsFilesPath.add(session4Path);
+        sessionsFilesPath.add(session5Path);
+        sessionsFilesPath.add(session6Path);
 
-        for(GamePlayer p : gamePlayers) {
-            Player newPlayer = new Player(p.getName(), p.getTag());
-            save.addPlayer(newPlayer);
-        }
+        Game game = new Game(sessionsFilesPath, exportFilePath, title);
 
-	    save.extractPlayersInfos();
-
-*//*	    excel.writeInfos(save);*//*
-
-	    System.out.println(save);*/
-
-        Session session4 = new Session(session4Path, 4);
-        Path file = Paths.get("C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\Web\\session4.js");
-
-        try {
-            Files.write(file, session4.toScript(), Charset.forName("UTF-8"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(session4.toScript());
+        game.export();
     }
 }
