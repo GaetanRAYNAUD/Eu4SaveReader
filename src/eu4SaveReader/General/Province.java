@@ -1,18 +1,10 @@
 package eu4SaveReader.General;
 
+import eu4SaveReader.Utils.*;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
-
-import eu4SaveReader.Utils.Areas;
-import eu4SaveReader.Utils.Buildings;
-import eu4SaveReader.Utils.Cultures;
-import eu4SaveReader.Utils.Estates;
-import eu4SaveReader.Utils.Goods;
-import eu4SaveReader.Utils.ProvincesId;
-import eu4SaveReader.Utils.Religions;
-import eu4SaveReader.Utils.Tags;
-import eu4SaveReader.Utils.Util;
 
 public class Province {
 

@@ -1,11 +1,11 @@
 package eu4SaveReader;
 
 import eu4SaveReader.General.Game;
-import eu4SaveReader.General.Session;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -20,7 +20,7 @@ public class Main {
 
         Path exportFilePath = Paths.get("C:\\Users\\gaeta\\OneDrive\\Documents\\Eu4\\Web\\scripts\\data.js");
 
-        String title = "Kebab finally gets removed";
+        String title = "Kebab finally gets removed !";
 
         sessionsFilesPath.add(session1Path);
         sessionsFilesPath.add(session2Path);

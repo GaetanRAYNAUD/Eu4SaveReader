@@ -13,6 +13,7 @@ import java.math.RoundingMode;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -397,11 +398,11 @@ public class Game {
         }
     }
 
-    private void addRanksToPlayerScript(JsonObject playerJson) {
+    private void addRanksToPlayerScript (JsonObject playerJson) {
         String pseudo = playerJson.get("pseudo").getAsString();
         JsonArray playerSessionsJson = playerJson.get("sessions").getAsJsonArray();
 
-        for(int i = 0; i < playerSessionsJson.size(); i++) {
+        for (int i = 0; i < playerSessionsJson.size(); i++) {
             JsonObject playerSessionJson = playerSessionsJson.get(i).getAsJsonObject();
             playerSessionJson.addProperty("devRank", devRank.get(i).get(pseudo));
             playerSessionJson.addProperty("incomeRank", incomeRank.get(i).get(pseudo).intValue());
@@ -418,6 +419,10 @@ public class Game {
     public void export () {
         try {
             Files.write(exportFilePath, toScript(), Charset.forName("UTF-8"));
+
+            for (Session s : sessions) {
+                Files.write(Paths.get(s.getSave().getSaveFilePath().substring(0, s.getSave().getSaveFilePath().length() - 3) + "txt"), s.toListString(), Charset.forName("UTF-8"));
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
