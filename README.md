@@ -68,7 +68,7 @@ To add a Eu4 save file, add the path to the `sessionsFilesPath` in Main.java.
 ##
 The project export part of the stats as a Javascript object in a separed file, the path can be changed (`exportFilePath`) in Main.java.
 
-The exported Javascript object is means to be used with my other project [Europa Universalis 4 Web Viewer](https://github.com/GaetanRAYNAUD/Eu4SaveWebViewer) witch is a small website to display all theses stats.
+The exported Javascript object is meant to be used with my other project [Europa Universalis 4 Web Viewer](https://github.com/GaetanRAYNAUD/Eu4SaveWebViewer) witch is a small website to display all theses stats.
 
 Here's an example : [Demo](https://gaetanraynaud.github.io/Eu4SaveWebViewer/).
 
