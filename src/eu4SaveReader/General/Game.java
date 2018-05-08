@@ -63,8 +63,6 @@ public class Game {
             professionalismRank.add(new LinkedHashMap<>());
             innovativenessRank.add(new LinkedHashMap<>());
         }
-
-        System.out.println(toScript());
     }
 
     private List<String> toScript () {
