@@ -59,7 +59,7 @@ This project read [Europa Universalis 4's](http://www.europauniversalis4.com/) s
     - Number of stolen buildings
     
 ## 
-The list can be accessed with a `Eu4Save.toString()`.
+The stats are exported in a txt file in the same folder and with the same name as the save file (It will delete it if a txt file already exist with the same name).
 
 To add a player, add him to Utils/Players.java, this file contains the list players for each sessions with username and tag.
 
