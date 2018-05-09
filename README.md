@@ -59,7 +59,7 @@ This project read [Europa Universalis 4's](http://www.europauniversalis4.com/) s
     - Number of stolen buildings
     
 ## 
-The list can be accessed with a `Eu4Save.toString()`.
+The stats are exported in a txt file in the same folder and with the same name as the save file (It will delete it if a txt file already exist with the same name).
 
 To add a player, add him to Utils/Players.java, this file contains the list players for each sessions with username and tag.
 
@@ -68,7 +68,7 @@ To add a Eu4 save file, add the path to the `sessionsFilesPath` in Main.java.
 ##
 The project export part of the stats as a Javascript object in a separed file, the path can be changed (`exportFilePath`) in Main.java.
 
-The exported Javascript object is means to be used with my other project [Europa Universalis 4 Web Viewer](https://github.com/GaetanRAYNAUD/Eu4SaveWebViewer) witch is a small website to display all theses stats.
+The exported Javascript object is meant to be used with my other project [Europa Universalis 4 Web Viewer](https://github.com/GaetanRAYNAUD/Eu4SaveWebViewer) witch is a small website to display all theses stats.
 
 Here's an example : [Demo](https://gaetanraynaud.github.io/Eu4SaveWebViewer/).
 
