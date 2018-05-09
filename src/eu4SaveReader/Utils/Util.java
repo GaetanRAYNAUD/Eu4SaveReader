@@ -11,7 +11,7 @@ public final class Util {
     private Util () {
     }
 
-    private static final List<String> mouth = Arrays.asList("December", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November");
+    private static final List<String> mouth = Arrays.asList("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
     public static final List<String> govRanks = Arrays.asList("", "Duchy", "Kingdom", "Empire");
 
@@ -65,7 +65,7 @@ public final class Util {
     public static GregorianCalendar convertStringToDate (String dateString) {
         if (dateString != null) {
             String[] date = dateString.split("\\.");
-            return new GregorianCalendar(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]));
+            return new GregorianCalendar(Integer.parseInt(date[0]), Integer.parseInt(date[1]) - 1, Integer.parseInt(date[2]));
         }
 
         return new GregorianCalendar(0, 0, 0);
