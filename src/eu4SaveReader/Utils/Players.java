@@ -255,6 +255,117 @@ public final class Players {
         Session6.put("Sephirt", "NPL");
     }
 
+    private static final HashMap<String, String> Session7 = new HashMap<>();
+
+    static {
+        Session7.put("Sharqu", "FRA");
+        Session7.put("Ohroms", "GBR");
+        Session7.put("Poseidon", "SPA");
+        Session7.put("Meteo", "HAB");
+        Session7.put("Ormace", "HUN");
+        Session7.put("UAV-alpha", "RUS");
+        Session7.put("Thitub", "POL");
+        Session7.put("Genesis", "PRU");
+        Session7.put("Sisao", "SWE");
+        Session7.put("Nalox", "NED");
+        Session7.put("Zeleph", "UKR");
+        Session7.put("Stellaria", "WES");
+        Session7.put("Assassin blanc", "KOJ");
+        Session7.put("Pietrobu", "POR");
+        Session7.put("Morgenstar", "NAP");
+        Session7.put("Tokipant", "TUS");
+        Session7.put("Emacab", "SWI");
+        Session7.put("Darmius", "RUM");
+        Session7.put("Bnlover", "TUN");
+        Session7.put("Buffalo", "ETH");
+        Session7.put("Geronimo", "YEM");
+        Session7.put("Sasaynel", "MSY");
+        Session7.put("El Battory", "PER");
+        Session7.put("Aikiko", "SRV");
+        Session7.put("Shingacook", "KAZ");
+        Session7.put("Scoutix", "DAN");
+        Session7.put("Robindesoibs", "VEN");
+        Session7.put("Azrock", "CHG");
+        Session7.put("Vélo", "VIJ");
+        Session7.put("Miox", "BHA");
+        Session7.put("Jayllos112", "PUN");
+        Session7.put("Sephirt", "NPL");
+    }
+
+    private static final HashMap<String, String> Session8 = new HashMap<>();
+
+    static {
+        Session8.put("Sharqu", "FRA");
+        Session8.put("Ohroms", "GBR");
+        Session8.put("Poseidon", "SPA");
+        Session8.put("Meteo", "HAB");
+        Session8.put("Ormace", "HUN");
+        Session8.put("UAV-alpha", "RUS");
+        Session8.put("Thitub", "POL");
+        Session8.put("Genesis", "PRU");
+        Session8.put("Sisao", "SWE");
+        Session8.put("Nalox", "NED");
+        Session8.put("Zeleph", "UKR");
+        Session8.put("Stellaria", "WES");
+        Session8.put("Assassin blanc", "KOJ");
+        Session8.put("Pietrobu", "POR");
+        Session8.put("Morgenstar", "NAP");
+        Session8.put("Tokipant", "TUS");
+        Session8.put("Emacab", "SWI");
+        Session8.put("Darmius", "RUM");
+        Session8.put("Bnlover", "TUN");
+        Session8.put("Buffalo", "ETH");
+        Session8.put("Geronimo", "YEM");
+        Session8.put("Sasaynel", "MSY");
+        Session8.put("El Battory", "PER");
+        Session8.put("Aikiko", "SRV");
+        Session8.put("Shingacook", "KAZ");
+        Session8.put("Scoutix", "DAN");
+        Session8.put("Robindesoibs", "VEN");
+        Session8.put("Azrock", "CHG");
+        Session8.put("Vélo", "VIJ");
+        Session8.put("Miox", "BHA");
+        Session8.put("Jayllos112", "PUN");
+        Session8.put("Sephirt", "NPL");
+    }
+
+    private static final HashMap<String, String> Session9 = new HashMap<>();
+
+    static {
+        Session9.put("Sharqu", "FRA");
+        Session9.put("Ohroms", "GBR");
+        Session9.put("Poseidon", "SPA");
+        Session9.put("Meteo", "HAB");
+        Session9.put("Ormace", "HUN");
+        Session9.put("UAV-alpha", "RUS");
+        Session9.put("Thitub", "POL");
+        Session9.put("Genesis", "PRU");
+        Session9.put("Sisao", "SWE");
+        Session9.put("Nalox", "NED");
+        Session9.put("Zeleph", "UKR");
+        Session9.put("Stellaria", "WES");
+        Session9.put("Assassin blanc", "KOJ");
+        Session9.put("Pietrobu", "POR");
+        Session9.put("Morgenstar", "NAP");
+        Session9.put("Tokipant", "TUS");
+        Session9.put("Emacab", "SWI");
+        Session9.put("Darmius", "RUM");
+        Session9.put("Bnlover", "TUN");
+        Session9.put("Buffalo", "ETH");
+        Session9.put("Geronimo", "YEM");
+        Session9.put("Sasaynel", "MSY");
+        Session9.put("El Battory", "PER");
+        Session9.put("Aikiko", "SRV");
+        Session9.put("Shingacook", "KAZ");
+        Session9.put("Scoutix", "DAN");
+        Session9.put("Robindesoibs", "VEN");
+        Session9.put("Azrock", "CHG");
+        Session9.put("Vélo", "VIJ");
+        Session9.put("Miox", "BHA");
+        Session9.put("Jayllos112", "PUN");
+        Session9.put("Sephirt", "NPL");
+    }
+
     public static List<HashMap<String, String>> getSessions () {
         List<HashMap<String, String>> sessions = new ArrayList<>();
         sessions.add(Session1);
@@ -263,6 +374,9 @@ public final class Players {
         sessions.add(Session4);
         sessions.add(Session5);
         sessions.add(Session6);
+        sessions.add(Session7);
+        sessions.add(Session8);
+        sessions.add(Session9);
 
         return sessions;
     }
