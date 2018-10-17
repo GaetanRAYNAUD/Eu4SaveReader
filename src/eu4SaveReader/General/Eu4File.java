@@ -1,15 +1,13 @@
 package eu4SaveReader.General;
 
+import eu4SaveReader.Utils.Areas;
 import eu4SaveReader.Utils.Util;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.GregorianCalendar;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.Map.Entry;
 
 public class Eu4File {
@@ -73,8 +71,42 @@ public class Eu4File {
                 p.extractInfos(provinceInfos);
             }
         }
+    }
 
-        country.updateProvinceBasedInfos();
+    private void extractStates () {
+        int startAddr, endAddr;
+
+        if ((startAddr = save.indexOf("map_area_data{")) != - 1) {
+            startAddr += 14;
+            endAddr = save.indexOf("\n}\n", startAddr);
+
+            String areasInfos = save.substring(startAddr, endAddr);
+
+            Areas.areas.forEach((key, value) -> {
+                if (areasInfos.contains(key)) {
+                    int beginAddr = areasInfos.indexOf("area=\"" + key + "\"");
+
+                    if (beginAddr > - 1) {
+                        int stopAddr = areasInfos.indexOf("\n\t\t}\n", beginAddr);
+
+                        String areaInfos = areasInfos.substring(beginAddr, stopAddr);
+                        List<String> countries = new ArrayList<>(Arrays.asList(areaInfos.split("country_state=\\{")));
+                        countries.remove(0);
+                        countries.forEach(country -> {
+                            int countryAddr = country.indexOf("country=");
+
+                            if (countryAddr > - 1) {
+                                String countryTag = country.substring(countryAddr + 9, country.indexOf("\n", countryAddr + 8) - 1);
+
+                                Optional<Player> player = players.stream().filter(player1 -> player1.getCountry().getTag().equalsIgnoreCase(countryTag)).findFirst();
+
+                                player.ifPresent(player1 -> player1.getCountry().addState(key));
+                            }
+                        });
+                    }
+                }
+            });
+        }
     }
 
     private void updateDependencyName (Country country) {
@@ -150,7 +182,10 @@ public class Eu4File {
             }
         }
 
+        extractStates();
+
         for (Player p : players) {
+            p.getCountry().updateProvinceBasedInfos();
             p.addDependencies(extractDependenciesPlayer(p));
             p.updateForceLimit(nbCountriesHRE);
         }

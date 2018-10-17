@@ -161,7 +161,7 @@ public class Province {
             autonomy = 25;
         }
 
-        if (! states.contains(Areas.provinceArea.get(id)) && autonomy < 75) {
+        if (!states.contains(Areas.provinceArea.get(id)) && autonomy < 75) {
             autonomy = 75;
         }
     }

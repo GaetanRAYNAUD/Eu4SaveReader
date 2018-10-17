@@ -767,7 +767,7 @@ public class Country {
         dev = Util.extractInfoDouble(countryInfos, "raw_development=").intValue();
         realmDev = Util.extractInfoDouble(countryInfos, "realm_development=");
         nbProvince = Util.extractInfoInt(countryInfos, "num_of_cities=");
-        govType = Util.extractInfo(countryInfos, "government=\"").replace("\"", "");
+        govType = Util.extractInfo(countryInfos, "government_name=\"").replace("\"", "");
         govRank = Util.extractInfoInt(countryInfos, "government_rank=");
         continents = extractContinents(countryInfos);
         institutions = extractInstitutions(countryInfos);
@@ -803,7 +803,7 @@ public class Country {
         warExhaustion = Util.extractInfoDouble(countryInfos, "war_exhaustion=");
         religiousUnity = new BigDecimal(Util.extractInfo(countryInfos, "religious_unity=")).multiply(new BigDecimal("100")).setScale(1);
         religion = Util.extractInfo(countryInfos, "\n\t\treligion=");
-        culture = Util.extractInfo(countryInfos, "primary_culture=");
+        culture = Util.extractInfo(countryInfos, "\n\t\tprimary_culture=");
         goldenAge = Util.convertStringToDate(Util.extractInfo(countryInfos, "golden_era_date="));
         isRevolutionTarget = (govType.equals("revolutionary_empire") || govType.equals("revolutionary_republic"));
         tradeBonus = extractTradeBonus(countryInfos);
@@ -1340,6 +1340,10 @@ public class Country {
 
     public void setStates (ArrayList<String> states) {
         this.states = states;
+    }
+
+    public void addState(String state) {
+        this.states.add(state);
     }
 
     public BigDecimal getActiveForces () {
