@@ -281,7 +281,10 @@ public class Country {
 
         switch (govType) {
             case "dutch_republic":
-                factions.add(Double.parseDouble(Util.extractInfo(countryInfos, "statists_vs_orangists=")));
+                String stats = Util.extractInfo(countryInfos, "statists_vs_orangists=");
+                if (stats != null) {
+                    factions.add(Double.parseDouble(stats));
+                }
                 break;
 
             case "revolutionary_republic":
@@ -291,7 +294,10 @@ public class Country {
                 while ((startAddr = countryInfos.indexOf("faction={", startAddr)) != - 1) {
                     startAddr += 9;
                     endAddr = countryInfos.indexOf("}", startAddr);
-                    factions.add(Double.parseDouble(Util.extractInfo(countryInfos.substring(startAddr, endAddr), "influence=")));
+                    String influence = Util.extractInfo(countryInfos, "statists_vs_orangists=");
+                    if (influence != null) {
+                        factions.add(Double.parseDouble(influence));
+                    }
                 }
                 break;
         }
@@ -437,7 +443,7 @@ public class Country {
                 break;
 
             case "dutch_republic":
-                if (factions.get(0) > 0) {
+                if (!factions.isEmpty() && factions.get(0) > 0) {
                     modifiers += 0.25;
                 }
                 break;
