@@ -15,7 +15,7 @@ public final class Util {
 
     public static final List<String> govRanks = Arrays.asList("", "Duchy", "Kingdom", "Empire");
 
-    public static final List<String> continents = Arrays.asList("Europe", "Asia", "Africa", "North America", "South America", "Oceania");
+    public static final List<String> continents = Arrays.asList("Europe", "Asia", "Africa", "North America", "South America", "Oceania", "Indian Ocean");
 
     public static final List<String> institutions = Arrays.asList("Feudalism", "Renaissance", "Colonialism", "Printing Press", "Global Trade", "Manufactories", "Enlightenment");
 
